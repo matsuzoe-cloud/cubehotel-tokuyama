@@ -156,12 +156,10 @@ section{padding:clamp(72px,9vw,120px) 0}
 
 /* business */
 .biz{background:var(--paper-2)}
-.biz .cols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:44px;border-top:1px solid var(--line)}
-.biz .c{padding:32px clamp(20px,3vw,32px) 38px 0;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
-.biz .c:nth-child(3n){border-right:0}
-.biz .c .cn{font-family:"Shippori Mincho B1",serif;color:var(--accent);font-size:14px}
-.biz .c b{font-family:"Shippori Mincho B1",serif;font-size:19px;display:block;margin:12px 0 10px}
-.biz .c p{font-size:13px;color:var(--ink-2);line-height:1.95}
+.biz .blist{border-top:2px solid var(--ink);max-width:900px;margin-top:44px}
+.biz .brow{display:grid;grid-template-columns:280px 1fr;gap:clamp(24px,4vw,56px);padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.biz .brow h4{font-family:"Shippori Mincho B1",serif;font-size:clamp(18px,2.4vw,22px);font-weight:700;margin:0}
+.biz .brow p{font-size:13.5px;color:var(--ink-2);line-height:1.95;margin:0}
 
 /* around */
 .around .list{border-top:2px solid var(--ink);max-width:900px}
@@ -203,7 +201,7 @@ footer a{color:rgba(243,237,225,.65)}
   .two .ph{order:-1}
   .news .wrap{grid-template-columns:1fr;gap:18px}
   .g2{columns:2}
-  .biz .cols{grid-template-columns:1fr}.biz .c{border-right:0;padding-right:0}
+  .biz .brow{grid-template-columns:1fr;gap:8px}
   .around .a{grid-template-columns:90px 1fr;gap:16px}
   footer .wrap{flex-direction:column;align-items:flex-start}footer .faddr{text-align:left}
 }
@@ -372,10 +370,10 @@ footer a{color:rgba(243,237,225,.65)}
   <div class="wrap">
     <header class="sh"><span class="sh-n">06</span><span class="sh-l">BUSINESS &amp; LONG STAY</span></header>
     <p class="lead">仕事にも、長い滞在にも。<br><span class="mk">法人・団体・マンスリー。</span></p>
-    <div class="cols">
-      <div class="c"><span class="cn">A</span><b>テレワーク・出張</b><p>全室 無料Wi-Fi・コンセント完備。駅前1分で、移動の合間もそのまま個室で仕事に集中。ショートステイ（1,000円/1h）での休憩利用も可能です。</p></div>
-      <div class="c"><span class="cn">B</span><b>団体でのご宿泊</b><p>工場・プラントの定期修繕など、まとまった人数でのご宿泊に。全72室、駅前立地で移動もスムーズ。特別価格をご用意しますので、お電話でご相談ください。</p></div>
-      <div class="c"><span class="cn">C</span><b>マンスリー・長期</b><p>長期滞在（マンスリー）は特別価格をご用意。単身赴任・長期出張の拠点としても。期間・人数に応じてお見積りいたします。</p></div>
+    <div class="blist">
+      <div class="brow"><h4>テレワーク・出張</h4><p>全室 無料Wi-Fi・コンセント完備。駅前1分で、移動の合間もそのまま個室で仕事に集中。ショートステイ（1,000円／1h）での休憩利用も可能です。</p></div>
+      <div class="brow"><h4>団体でのご宿泊</h4><p>工場・プラントの定期修繕など、まとまった人数でのご宿泊に。全72室、駅前立地で移動もスムーズ。特別価格をご用意しますので、お電話でご相談ください。</p></div>
+      <div class="brow"><h4>マンスリー・長期</h4><p>長期滞在（マンスリー）は特別価格をご用意。単身赴任・長期出張の拠点としても。期間・人数に応じてお見積りいたします。</p></div>
     </div>
     <p class="subnote" style="margin-top:26px">団体・長期のご相談・お見積りは <b style="color:var(--accent)">TEL 0834-32-1270</b>（受付 目安 9:00–22:00）まで。</p>
   </div>
