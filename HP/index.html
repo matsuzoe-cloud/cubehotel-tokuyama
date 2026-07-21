@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>キューブホテル徳山｜JR徳山駅 徒歩1分・サウナ併設・全72室</title>
+<meta name="description" content="JR徳山駅 北口から徒歩1分、サウナ併設のキューブホテル徳山。全72室・全室Wi-Fi＆コンセント完備で、ビジネス・テレワーク・観光の拠点に。素泊まり4,800円（税込）から。ショートステイ・団体・マンスリーもご相談ください。">
+<meta property="og:title" content="キューブホテル徳山｜徳山駅 徒歩1分・サウナ併設">
+<meta property="og:description" content="駅前1分の、自由自在な滞在拠点。全72室・サウナ併設。素泊まり4,800円から。">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f3ede1;--paper-2:#eae2d1;--card:#faf6ec;
+  --ink:#1c1a15;--ink-2:#6d665a;
+  --accent:#b8402a;
+  --line:rgba(28,26,21,.18);--maxw:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--paper);
+  font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-weight:400;line-height:1.95;letter-spacing:.01em;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:"Shippori Mincho B1",serif;font-weight:700;margin:0;letter-spacing:.02em;line-height:1.4}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+
+/* header */
+header.nav{position:sticky;top:0;z-index:20;background:rgba(243,237,225,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:24px}
+.brand{font-family:"Shippori Mincho B1",serif;font-weight:700;font-size:16px;letter-spacing:.14em;white-space:nowrap}
+.brand small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:8px;letter-spacing:.34em;color:var(--ink-2);margin-top:3px}
+.nav .right{display:flex;align-items:center;gap:26px}
+.navlinks{display:flex;gap:24px}
+.navlinks a{font-size:12.5px;font-weight:500;text-decoration:none;color:var(--ink-2);letter-spacing:.06em}
+.navlinks a:hover{color:var(--accent)}
+.nav a.book{font-size:13px;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:.08em;border-bottom:2px solid var(--accent);padding-bottom:3px;white-space:nowrap}
+.nav a.book::after{content:" →";font-weight:400}
+.nav a.book:hover{color:var(--accent)}
+
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;flex-direction:column;color:#fff;
+  background:linear-gradient(90deg,rgba(8,7,5,.6),rgba(8,7,5,.12) 58%,rgba(8,7,5,0) 82%),
+    linear-gradient(0deg,rgba(8,7,5,.8),rgba(8,7,5,0) 58%),url("img/hero.jpg") center/cover}
+.hero .wrap{width:100%;display:flex;flex-direction:column;flex:1;padding-top:46px;padding-bottom:60px}
+.hero-logo{font-family:"Shippori Mincho B1",serif;font-size:14px;letter-spacing:.24em}
+.hero-logo span{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:8.5px;letter-spacing:.4em;color:rgba(255,255,255,.7);margin-top:6px}
+.hero-body{margin-top:auto}
+.hero h1{font-size:clamp(38px,7.4vw,80px);line-height:1.2;font-weight:700;letter-spacing:.03em;text-shadow:0 2px 30px rgba(0,0,0,.4)}
+.hero .sub{max-width:460px;font-size:14px;line-height:2.1;color:rgba(255,255,255,.85);margin-top:24px}
+.hero-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-top:36px}
+.hero .price{font-family:"Shippori Mincho B1",serif;display:inline-flex;align-items:baseline;gap:6px}
+.hero .price .from{font-size:12px;opacity:.8}
+.hero .price b{font-size:clamp(40px,6vw,60px);line-height:.9}
+.hero .price .yen{font-size:16px}
+.hero .cta{display:flex;gap:16px 32px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.05em;padding:0 0 5px;border-bottom:2px solid;transition:opacity .2s}
+.btn::after{content:" →";font-weight:400}
+.btn-primary{color:#fff;border-color:var(--accent)}
+.btn-primary:hover{opacity:.65}
+.btn-ghost{color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.4)}
+.btn-ghost:hover{color:#fff}
+
+/* sections */
+section{padding:clamp(72px,9vw,120px) 0}
+.sh{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:22px;border-top:2px solid var(--ink);padding-top:18px;margin-bottom:clamp(36px,5vw,56px)}
+.sh-n{font-family:"Shippori Mincho B1",serif;font-size:clamp(28px,4.6vw,52px);color:var(--accent);line-height:.85;font-weight:700}
+.sh-l{font-size:12px;letter-spacing:.3em;font-weight:700;color:var(--ink-2);text-align:right}
+.lead{font-family:"Shippori Mincho B1",serif;font-size:clamp(26px,4.4vw,46px);font-weight:700;line-height:1.45;letter-spacing:.02em;margin:0;max-width:18em}
+.lead .mk{color:var(--accent)}
+.note{color:var(--ink-2);font-size:15px;line-height:2.15;max-width:36em;margin-top:26px}
+
+/* about */
+.about .st{font-family:"Shippori Mincho B1",serif;font-size:clamp(17px,2vw,21px);color:var(--ink);line-height:2.3;max-width:26em;margin-top:26px}
+
+/* 2カラム（写真＋説明） */
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,4vw,60px);align-items:center}
+.two.rev{grid-template-columns:1fr 1.1fr}
+.two .ph img{width:100%;object-fit:cover}
+.two .ph .ph-a{aspect-ratio:4/3}
+.spec{border-top:1px solid var(--line);margin-top:8px}
+.spec div{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:15px 0;border-bottom:1px solid var(--line);font-size:14px}
+.spec dt{font-family:"Shippori Mincho B1",serif;color:var(--ink);white-space:nowrap}
+.spec dd{margin:0;color:var(--ink-2);font-size:13px;line-height:1.7}
+
+/* 写真の帯（アメニティ小） */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.gal figure{margin:0}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover}
+.gal figcaption{font-size:11.5px;color:var(--ink-2);margin-top:8px}
+
+/* 料金・サウナ（罫線表） */
+.rate{border-top:2px solid var(--ink);max-width:760px}
+.rate .r{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line)}
+.rate .r .k{font-family:"Shippori Mincho B1",serif;font-size:clamp(17px,2.2vw,21px)}
+.rate .r .k small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:var(--ink-2);margin-top:4px;font-weight:400}
+.rate .r .v{font-family:"Shippori Mincho B1",serif;font-size:clamp(18px,2.4vw,24px);color:var(--accent);white-space:nowrap}
+.rate .r .v small{font-size:12px;color:var(--ink-2);font-family:"Zen Kaku Gothic New",sans-serif}
+.subnote{margin-top:22px;font-size:12.5px;color:var(--ink-2);line-height:1.9}
+
+/* サウナ帯（写真上） */
+.saunaband{position:relative;min-height:56vh;display:flex;align-items:flex-end;
+  background:linear-gradient(0deg,rgba(10,8,6,.8),rgba(10,8,6,0) 62%),url("img/bokeh.jpg") center/cover no-repeat}
+.saunaband .cap{max-width:var(--maxw);width:100%;margin:0 auto;padding:0 clamp(24px,5vw,64px) 56px;color:#fff}
+.saunaband .cap .en{font-size:10.5px;letter-spacing:.3em;color:rgba(255,255,255,.72);margin-bottom:14px}
+.saunaband .cap h3{font-size:clamp(24px,4.8vw,42px);color:#fff;line-height:1.4;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+
+/* アクセス */
+.access{background:var(--paper-2)}
+.acc-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,5vw,64px);align-items:start}
+.acc-grid .big{font-family:"Shippori Mincho B1",serif;font-size:clamp(24px,3.6vw,38px);line-height:1.4}
+.acc-grid .big .em{color:var(--accent)}
+.acc-grid .addr{margin-top:22px;color:var(--ink-2);font-size:13.5px;line-height:2.05}
+.acc-grid .near{margin-top:20px;font-size:13px;color:var(--ink);line-height:2}
+.acc-grid .near b{color:var(--accent);font-family:"Shippori Mincho B1",serif;margin-right:8px}
+.acc-grid .links{margin-top:28px;display:flex;gap:14px 30px;flex-wrap:wrap}
+.acc-grid .links a{font-size:13px;text-decoration:none;color:var(--ink);font-weight:700;border-bottom:1px solid var(--accent);padding-bottom:3px}
+.acc-grid .links a::after{content:" ↗";font-weight:400;color:var(--ink-2)}
+.acc-grid .links a:hover{color:var(--accent)}
+.acc-grid .map iframe{display:block;width:100%;height:400px;border:0}
+
+/* LP誘導バナー */
+.feat{position:relative;color:#fff;min-height:52vh;display:flex;align-items:center;
+  background:linear-gradient(90deg,rgba(8,7,5,.66),rgba(8,7,5,.2)),url("img/night2.jpg") center 45%/cover no-repeat}
+.feat .wrap{width:100%}
+.feat .fl{font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.75);margin-bottom:16px}
+.feat h3{font-size:clamp(26px,4.6vw,44px);color:#fff;line-height:1.4;max-width:16em}
+.feat p{margin-top:16px;max-width:30em;color:rgba(255,255,255,.85);font-size:14px;line-height:1.9}
+.feat .go{margin-top:26px;display:inline-block;font-weight:700;font-size:15px;color:#fff;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:4px}
+.feat .go::after{content:" →";font-weight:400}
+
+/* news */
+.news{background:var(--paper-2);border-bottom:1px solid var(--line);padding:clamp(40px,6vw,64px) 0}
+.news .wrap{display:grid;grid-template-columns:200px 1fr;gap:clamp(20px,4vw,56px);align-items:start}
+.news .nh{font-family:"Shippori Mincho B1",serif;font-size:20px;letter-spacing:.06em}
+.news .nh span{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:10px;letter-spacing:.3em;color:var(--accent);margin-top:6px}
+.news .nlist{border-top:1px solid var(--line)}
+.news .ni{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.news .ni .date{font-family:"Shippori Mincho B1",serif;font-size:13px;color:var(--ink-2);letter-spacing:.04em}
+.news .ni .t{font-size:14px;line-height:1.7}
+.news .ni a.t{text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
+.news .ni a.t:hover{color:var(--accent)}
+
+/* gallery (masonry) */
+.gallery2{background:var(--paper)}
+.g2{columns:3;column-gap:14px;margin-top:44px}
+.g2 figure{margin:0 0 14px;break-inside:avoid;overflow:hidden;position:relative}
+.g2 img{width:100%;display:block}
+.g2 figcaption{position:absolute;left:0;bottom:0;width:100%;padding:16px 14px 10px;color:#fff;font-size:11.5px;
+  background:linear-gradient(transparent,rgba(10,8,6,.6));font-family:"Shippori Mincho B1",serif}
+
+/* business */
+.biz{background:var(--paper-2)}
+.biz .cols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:44px;border-top:1px solid var(--line)}
+.biz .c{padding:32px clamp(20px,3vw,32px) 38px 0;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.biz .c:nth-child(3n){border-right:0}
+.biz .c .cn{font-family:"Shippori Mincho B1",serif;color:var(--accent);font-size:14px}
+.biz .c b{font-family:"Shippori Mincho B1",serif;font-size:19px;display:block;margin:12px 0 10px}
+.biz .c p{font-size:13px;color:var(--ink-2);line-height:1.95}
+
+/* around */
+.around .list{border-top:2px solid var(--ink);max-width:900px}
+.around .a{display:grid;grid-template-columns:130px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.around .a .d{font-family:"Shippori Mincho B1",serif;color:var(--accent);font-size:14px}
+.around .a b{font-family:"Shippori Mincho B1",serif;font-size:clamp(17px,2.2vw,21px)}
+.around .a small{display:block;color:var(--ink-2);font-size:13px;margin-top:5px;line-height:1.8}
+
+/* faq */
+.faq .list{max-width:820px}
+.faq .q{border-bottom:1px solid var(--line);padding:24px 0}
+.faq .q:first-child{border-top:2px solid var(--ink)}
+.faq .q dt{font-family:"Shippori Mincho B1",serif;font-size:clamp(16px,2vw,19px);display:flex;gap:14px;line-height:1.6}
+.faq .q dt::before{content:"Q.";color:var(--accent)}
+.faq .q dd{margin:12px 0 0 34px;color:var(--ink-2);font-size:14px;line-height:1.95}
+
+/* booking */
+.booking{background:var(--ink);color:var(--paper)}
+.booking .sh{border-color:rgba(255,255,255,.35)}.booking .sh-n{color:#e79a86}.booking .sh-l{color:rgba(243,237,225,.6)}
+.booking .lead{color:#fff}
+.booking .blinks{margin-top:36px;display:flex;gap:18px 40px;flex-wrap:wrap}
+.booking .blinks a{font-size:15px;text-decoration:none;color:#fff;font-weight:700;border-bottom:2px solid var(--accent);padding-bottom:4px}
+.booking .blinks a::after{content:" ↗";font-weight:400;color:rgba(255,255,255,.6)}
+.booking .btel{margin-top:26px;font-family:"Shippori Mincho B1",serif;font-size:clamp(22px,3vw,30px)}
+.booking .btel small{font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:rgba(243,237,225,.6);display:block;margin-top:6px}
+
+/* footer */
+footer{background:var(--ink);color:rgba(243,237,225,.65);padding:56px 0 72px;font-size:12px;line-height:2.1;border-top:1px solid rgba(255,255,255,.14)}
+footer .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+footer .brand2{font-family:"Shippori Mincho B1",serif;color:#fff;font-size:17px;letter-spacing:.16em}
+footer .en{font-size:9px;letter-spacing:.3em;color:var(--accent);margin-top:5px}
+footer .faddr{text-align:right;font-size:11.5px}
+footer a{color:rgba(243,237,225,.65)}
+
+@media(max-width:820px){
+  .navlinks{display:none}
+  .hero-foot{flex-direction:column;align-items:flex-start}
+  .two,.two.rev,.acc-grid{grid-template-columns:1fr}
+  .two .ph{order:-1}
+  .news .wrap{grid-template-columns:1fr;gap:18px}
+  .g2{columns:2}
+  .biz .cols{grid-template-columns:1fr}.biz .c{border-right:0;padding-right:0}
+  .around .a{grid-template-columns:90px 1fr;gap:16px}
+  footer .wrap{flex-direction:column;align-items:flex-start}footer .faddr{text-align:left}
+}
+@media(max-width:560px){ .gal{grid-template-columns:repeat(2,1fr)} .g2{columns:1} .news .ni{grid-template-columns:1fr;gap:4px} }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <div class="brand">キューブホテル徳山<small>CUBE HOTEL TOKUYAMA</small></div>
+    <div class="right">
+      <nav class="navlinks">
+        <a href="#room">客室</a>
+        <a href="#amenity">設備</a>
+        <a href="#sauna">サウナ</a>
+        <a href="#plan">料金</a>
+        <a href="#access">アクセス</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="book" href="#book">空室・予約</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-logo">キューブホテル徳山<span>CUBE HOTEL TOKUYAMA</span></div>
+    <div class="hero-body">
+      <h1>駅前1分の、<br>自由自在な滞在拠点。</h1>
+      <div class="hero-foot">
+        <p class="sub">JR徳山駅 北口から徒歩1分、サウナ併設。ビジネスにもテレワークにも観光にも。全72室・全室Wi-Fi＆コンセント完備の、あたらしい定宿。</p>
+        <div>
+          <div class="price"><span class="from">素泊まり</span><b>4,800</b><span class="yen">円〜（税込）</span></div>
+          <div class="cta" style="margin-top:20px">
+            <a class="btn btn-primary" href="#book">空室・予約</a>
+            <a class="btn btn-ghost" href="#room">館内を見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お知らせ NEWS -->
+<section class="news" aria-label="お知らせ">
+  <div class="wrap">
+    <div class="nh">お知らせ<span>NEWS</span></div>
+    <div class="nlist">
+      <div class="ni"><span class="date">2026.07.01</span><a class="t" href="../LP/index.html">「周南ノスタルジー」まちごとホテル特集を公開しました。</a></div>
+      <div class="ni"><span class="date">2026.04.01</span><span class="t">テレワーク・ショートステイのご利用が可能です（1,000円／1時間）。</span></div>
+      <div class="ni"><span class="date">2025.10.01</span><span class="t">サウナの貸し切り（6,000円／1時間）を承っています。宿泊されない方のご利用も可能です。</span></div>
+      <div class="ni"><span class="date">2024.09.13</span><span class="t">キューブホテル徳山、開業しました。</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 ABOUT -->
+<section class="about">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">01</span><span class="sh-l">ABOUT</span></header>
+    <p class="lead">テレワークするもよし、<br><span class="mk">ゆったりするもよし。</span></p>
+    <p class="st">JR徳山駅北口を出て、左手すぐ。仕事の合間にも、旅の夜にも寄り添う、自由自在な最適空間です。全室にネットワークとコンセントを備え、疲れた体はセルフロウリュのサウナで整える。飾らず、必要なものだけが、ちょうどよく揃っています。</p>
+  </div>
+</section>
+
+<!-- 02 ROOM -->
+<section id="room">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">02</span><span class="sh-l">ROOM</span></header>
+    <div class="two">
+      <div class="ph"><img class="ph-a" src="img/room.jpg" alt="キューブホテル徳山の客室"></div>
+      <div>
+        <p class="lead" style="font-size:clamp(23px,3.2vw,32px)">眠るためだけの、潔い一室。</p>
+        <dl class="spec">
+          <div><dt>客室数</dt><dd>全72室（約5㎡のキューブ個室）</dd></div>
+          <div><dt>設備</dt><dd>ベッド／机／椅子。全室 無料Wi-Fi・コンセント完備。リモート業務にも最適。</dd></div>
+          <div><dt>水回り</dt><dd>各階に共用シャワールーム・洗面所を完備。</dd></div>
+          <div><dt>ご注意</dt><dd>簡易宿泊施設のため、客室に鍵はございません。貴重品は2・3階のロッカー、またはフロントでお預かりします。24:00〜翌6:00は入口を施錠（インターホン対応）。</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 AMENITY -->
+<section id="amenity">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">03</span><span class="sh-l">AMENITY</span></header>
+    <div class="two rev">
+      <div>
+        <p class="lead" style="font-size:clamp(23px,3.2vw,32px)">手ぶらでも、快適に。</p>
+        <dl class="spec">
+          <div><dt>共用設備</dt><dd>電子レンジ・電気ケトル・テレビを無料でご利用いただけます。</dd></div>
+          <div><dt>ランドリー</dt><dd>洗濯機 500円／乾燥機 100円（10分）／洗濯洗剤 100円</dd></div>
+          <div><dt>販売</dt><dd>タオル 200円／スリッパ 100円／歯ブラシ 50円／髭剃り 50円（税込）</dd></div>
+          <div><dt>宿泊者へ</dt><dd>スリッパ・タオル・ナイトガウンをお渡しします。</dd></div>
+        </dl>
+      </div>
+      <div class="ph"><img class="ph-a" src="img/desk.jpg" alt="客室のデスクとチェア"></div>
+    </div>
+    <div class="gal">
+      <figure><img src="img/amenity.jpg" alt="電子レンジ・ケトル"><figcaption>共用の電子レンジ・ケトル</figcaption></figure>
+      <figure><img src="img/hangers.jpg" alt="ハンガー"><figcaption>客室の設え</figcaption></figure>
+      <figure><img src="img/towel.jpg" alt="タオル・アメニティ"><figcaption>タオル・アメニティ（宿泊者へお渡し）</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery2" id="gallery">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n" style="font-size:clamp(22px,2.8vw,30px)">館内</span><span class="sh-l">GALLERY</span></header>
+    <div class="g2">
+      <figure><img src="img/room.jpg" alt="キューブホテル徳山の客室"><figcaption>客室・ベッド</figcaption></figure>
+      <figure><img src="img/amenity.jpg" alt="共用の電子レンジ・ケトル"><figcaption>共用の電子レンジ・ケトル</figcaption></figure>
+      <figure><img src="img/desk.jpg" alt="客室のデスク"><figcaption>デスク・テレビ</figcaption></figure>
+      <figure><img src="img/hangers.jpg" alt="客室のハンガー"><figcaption>客室の設え</figcaption></figure>
+      <figure><img src="img/towel.jpg" alt="タオル・アメニティ"><figcaption>タオル・アメニティ</figcaption></figure>
+      <figure><img src="img/night2.jpg" alt="徳山駅前の夜"><figcaption>駅前1分の立地</figcaption></figure>
+      <figure><img src="img/hero.jpg" alt="徳山駅前の夜景"><figcaption>徳山駅前の夜</figcaption></figure>
+      <figure><img src="img/bokeh.jpg" alt="まちの灯り"><figcaption>まちの灯り</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- サウナ帯 -->
+<section class="saunaband" aria-label="サウナ">
+  <div class="cap">
+    <p class="en">SAUNA · SELF LÖYLY</p>
+    <h3>歩き疲れた体を、<br>セルフロウリュで整える。</h3>
+  </div>
+</section>
+
+<!-- 04 SAUNA -->
+<section id="sauna">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">04</span><span class="sh-l">SAUNA</span></header>
+    <p class="lead" style="margin-bottom:44px">宿泊なしでも、<span class="mk">ととのえる。</span></p>
+    <div class="rate">
+      <div class="r"><div class="k">宿泊者利用<small>1時間</small></div><div class="v">700<small>円</small></div></div>
+      <div class="r"><div class="k">一般利用<small>1時間・宿泊なしでもOK</small></div><div class="v">1,000<small>円</small></div></div>
+      <div class="r"><div class="k">貸し切り<small>1時間</small></div><div class="v">6,000<small>円</small></div></div>
+    </div>
+    <p class="subnote">営業時間 11:00〜23:00（最終受付 22:00）／ セルフロウリュ・水風呂・整いエリア完備。<br>※タオル等のアメニティは別途料金。料金は税込表記です。</p>
+  </div>
+</section>
+
+<!-- 05 PLAN -->
+<section id="plan">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">05</span><span class="sh-l">STAY &amp; RATE</span></header>
+    <p class="lead" style="margin-bottom:44px">使い方は、<span class="mk">自由自在。</span></p>
+    <div class="rate">
+      <div class="r"><div class="k">素泊まり<small>1泊・税込</small></div><div class="v">4,800<small>円〜</small></div></div>
+      <div class="r"><div class="k">ショートステイ<small>1時間・宿泊以外の休憩利用に</small></div><div class="v">1,000<small>円</small></div></div>
+      <div class="r"><div class="k">団体・マンスリー<small>工場・プラント定期修繕／長期滞在</small></div><div class="v">特別価格<small>お電話で</small></div></div>
+    </div>
+    <p class="subnote">団体（工場・プラントの定期修繕など）や長期（マンスリー）のご利用は、特別価格をご用意しております。お電話（<b style="color:var(--accent)">0834-32-1270</b>）でお気軽にご相談ください。</p>
+  </div>
+</section>
+
+<!-- 06 BUSINESS -->
+<section class="biz" id="business">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">06</span><span class="sh-l">BUSINESS &amp; LONG STAY</span></header>
+    <p class="lead">仕事にも、長い滞在にも。<br><span class="mk">法人・団体・マンスリー。</span></p>
+    <div class="cols">
+      <div class="c"><span class="cn">A</span><b>テレワーク・出張</b><p>全室 無料Wi-Fi・コンセント完備。駅前1分で、移動の合間もそのまま個室で仕事に集中。ショートステイ（1,000円/1h）での休憩利用も可能です。</p></div>
+      <div class="c"><span class="cn">B</span><b>団体でのご宿泊</b><p>工場・プラントの定期修繕など、まとまった人数でのご宿泊に。全72室、駅前立地で移動もスムーズ。特別価格をご用意しますので、お電話でご相談ください。</p></div>
+      <div class="c"><span class="cn">C</span><b>マンスリー・長期</b><p>長期滞在（マンスリー）は特別価格をご用意。単身赴任・長期出張の拠点としても。期間・人数に応じてお見積りいたします。</p></div>
+    </div>
+    <p class="subnote" style="margin-top:26px">団体・長期のご相談・お見積りは <b style="color:var(--accent)">TEL 0834-32-1270</b>（受付 目安 9:00–22:00）まで。</p>
+  </div>
+</section>
+
+<!-- 07 ACCESS -->
+<section class="access" id="access">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">07</span><span class="sh-l">ACCESS</span></header>
+    <div class="acc-grid">
+      <div id="book">
+        <p class="big">JR徳山駅 北口から、<span class="em">徒歩1分。</span></p>
+        <p class="addr">キューブホテル徳山<br>山口県周南市有楽町<br>北口を出て左手すぐ・徒歩1分<br>チェックイン 15:00–23:00 ／ チェックアウト 10:00<br>TEL 0834-32-1270</p>
+        <p class="near"><b>電車</b>JR山陽本線・山陽新幹線 徳山駅 北口すぐ<br><b>お車</b>専用駐車場はございません。近隣コインパーキングをご利用ください<br><b>徒歩1分</b>スターバックス・蔦屋書店<br><b>徒歩3分</b>大型商業施設 TOKUYAMA DECK<br><b>隣接</b>吉野家・ローソン、ほか飲食店・居酒屋 徒歩圏内多数</p>
+        <div class="links">
+          <a href="https://www.jalan.net/yad343195/" target="_blank" rel="noopener">じゃらんで予約</a>
+          <a href="https://travel.yahoo.co.jp/00919706/" target="_blank" rel="noopener">Yahoo!トラベル</a>
+          <a href="tel:0834321270">電話 0834-32-1270</a>
+          <a href="https://www.instagram.com/cubehotel.tokuyama/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="キューブホテル徳山の地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%96%E5%BE%B3%E5%B1%B1&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 AROUND -->
+<section class="around" id="around">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">08</span><span class="sh-l">AROUND</span></header>
+    <p class="lead" style="margin-bottom:44px">駅前に、<span class="mk">たのしみが集まっている。</span></p>
+    <div class="list">
+      <div class="a"><span class="d">徒歩1分</span><div><b>蔦屋書店・周南市立徳山駅前図書館</b><small>本とスターバックスが同居する、駅前のランドマーク。夜まで灯りがともる。</small></div></div>
+      <div class="a"><span class="d">徒歩3分</span><div><b>TOKUYAMA DECK</b><small>飲食・物販が集まる大型商業施設。</small></div></div>
+      <div class="a"><span class="d">徒歩・車圏</span><div><b>周南の工場夜景</b><small>海側に広がるコンビナート。夕闇に浮かぶ光は、周南ならではの絶景。</small></div></div>
+      <div class="a"><span class="d">駅前一帯</span><div><b>銀南街アーケード・昭和通り</b><small>純喫茶や大衆酒場が点在する、昭和の面影を残す商店街。</small></div></div>
+    </div>
+    <p class="subnote">まちを丸ごと楽しむ「周南ノスタルジー」特集も、あわせてご覧ください。</p>
+  </div>
+</section>
+
+<!-- 09 FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">09</span><span class="sh-l">FAQ</span></header>
+    <p class="lead" style="margin-bottom:44px">よくある、<span class="mk">ご質問。</span></p>
+    <dl class="list">
+      <div class="q"><dt>客室に鍵はありますか？</dt><dd>簡易宿泊施設のため、客室に鍵はございません。貴重品は2・3階のロッカー、またはフロントでお預かりします。24:00〜翌6:00は入口を施錠し、インターホンで対応いたします。</dd></div>
+      <div class="q"><dt>サウナは宿泊しなくても利用できますか？</dt><dd>はい。一般利用 1,000円／1時間、宿泊者 700円／1時間、貸し切り 6,000円／1時間でご利用いただけます。営業は11:00〜23:00（最終受付22:00）。フロントにてお申し付けください。</dd></div>
+      <div class="q"><dt>駐車場はありますか？</dt><dd>専用駐車場はございません。お車の場合は、近隣のコインパーキングをご利用ください。</dd></div>
+      <div class="q"><dt>Wi-Fiやコンセントはありますか？</dt><dd>全室に無料Wi-Fi・コンセントを完備しています。テレワークや長期滞在にもご利用いただけます。</dd></div>
+      <div class="q"><dt>チェックイン・チェックアウトの時間は？</dt><dd>チェックイン 15:00〜23:00、チェックアウト 10:00 です。</dd></div>
+      <div class="q"><dt>連泊・団体・長期滞在はできますか？</dt><dd>マンスリー（長期）や団体（工場・プラント定期修繕など）でのご宿泊は特別価格をご用意しています。お電話（0834-32-1270）でご相談ください。</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 10 RESERVATION -->
+<section class="booking" id="reserve">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">10</span><span class="sh-l">RESERVATION</span></header>
+    <p class="lead">この駅前を、<span class="mk">あなたの定宿に。</span></p>
+    <div class="blinks">
+      <a href="https://www.jalan.net/yad343195/" target="_blank" rel="noopener">じゃらん</a>
+      <a href="https://travel.yahoo.co.jp/00919706/" target="_blank" rel="noopener">Yahoo!トラベル</a>
+      <a href="https://www.jtb.co.jp/kokunai-hotel/htl/7220A16/" target="_blank" rel="noopener">JTB</a>
+      <a href="https://www.instagram.com/cubehotel.tokuyama/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="btel">お電話でのご予約・お問い合わせ　TEL 0834-32-1270<small>受付目安 9:00〜22:00</small></p>
+  </div>
+</section>
+
+<!-- LP誘導 -->
+<section class="feat" aria-label="周南ノスタルジー特集">
+  <div class="wrap">
+    <p class="fl">FEATURE · 周南ノスタルジー</p>
+    <h3>町まるごとが、あなたの宿になる。</h3>
+    <p>提携の純喫茶や大衆酒場をチケットでめぐる「まちごとホテル」企画。作られていない昭和を歩く、周南ノスタルジー旅の特集ページ。</p>
+    <a class="go" href="../LP/index.html">特集を見る</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand2">キューブホテル徳山</div>
+      <div class="en">CUBE HOTEL TOKUYAMA</div>
+    </div>
+    <div class="faddr">山口県周南市有楽町／JR徳山駅北口 徒歩1分<br>TEL 0834-32-1270 ／ チェックイン 15:00–23:00・アウト 10:00<br><a href="https://www.instagram.com/cubehotel.tokuyama/" target="_blank" rel="noopener">Instagram @cubehotel.tokuyama</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
