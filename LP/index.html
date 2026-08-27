@@ -45,11 +45,11 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 .nav a.book{font-family:"Zen Maru Gothic",sans-serif;font-size:13px;font-weight:700;background:var(--mustard);color:var(--ink);padding:10px 20px;border-radius:999px;text-decoration:none;white-space:nowrap}
 .nav a.book:hover{background:var(--mustard-d)}
 
-/* ===== ヒーロー：全幅写真 ===== */
-.hero{position:relative;min-height:clamp(460px,80vh,720px);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;
-  background:linear-gradient(0deg,rgba(20,14,8,.5),rgba(20,14,8,.12) 55%,rgba(20,14,8,.35)),url("img/hero.jpg") center/cover}
-.hero .in{padding:40px 24px;position:relative;z-index:2}
-.hero .ey{font-size:12px;letter-spacing:.34em;color:#fff;opacity:.9;margin-bottom:18px}
+/* ===== ヒーロー：うきうきする夜のイラスト ===== */
+.hero{position:relative;min-height:clamp(520px,88vh,780px);display:flex;align-items:flex-end;justify-content:center;text-align:center;color:#fff;
+  background:linear-gradient(0deg,rgba(18,12,7,.78) 0%,rgba(18,12,7,.24) 40%,rgba(18,12,7,0) 66%),url("img/hero-il.jpg") center/cover}
+.hero .in{padding:0 24px clamp(40px,6vw,68px);position:relative;z-index:2}
+.hero .ey{font-size:12px;letter-spacing:.34em;color:#ffe6a6;opacity:.95;margin-bottom:16px}
 .hero h1{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:clamp(30px,6.2vw,58px);line-height:1.4;letter-spacing:.06em;margin:0;text-shadow:0 2px 24px rgba(0,0,0,.4)}
 .hero .sub{margin:22px auto 0;max-width:560px;font-size:14.5px;line-height:2;color:rgba(255,255,255,.92);text-shadow:0 1px 8px rgba(0,0,0,.4)}
 .hero .cta{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
@@ -87,6 +87,9 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
 .chip{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:13px;color:var(--teal-d);background:#e7f5f3;padding:8px 16px;border-radius:999px}
 
+/* 一日：導入イラスト */
+.dayil{max-width:940px;margin:0 auto 44px;border-radius:20px;overflow:hidden;box-shadow:0 18px 40px rgba(40,28,12,.16)}
+.dayil img{width:100%;display:block}
 /* 一日：カード */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 24px rgba(40,28,12,.06)}
@@ -235,6 +238,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
       <span class="en" data-en="A DAY IN SHUNAN">A DAY IN SHUNAN</span>
       <h2 data-en="From check-in<br>to tomorrow's coffee.">チェックインから、<br>翌朝の珈琲まで。</h2>
     </div>
+    <div class="dayil"><img src="img/couple.jpg" alt="夜の町を歩くふたり" loading="lazy"></div>
     <div class="cards">
       <div class="card"><div class="ph"><img src="img/room.jpg" alt="客室"><span class="tag" data-en="Room">客室</span></div><div class="bd"><b data-en="First, drop your bags.">まず、荷物を置いて。</b><p data-en="A clean cube room by the station—the base for your trip.">駅前の潔いキューブ個室。旅の拠点はここから。</p></div></div>
       <div class="card"><div class="ph"><img src="img/hero.jpg" alt="夕暮れの駅前"><span class="tag" data-en="Town">まち</span></div><div class="bd"><b data-en="Wander the arcade.">路地とアーケードへ。</b><p data-en="The Ginnangai arcade and early-Shōwa buildings—camera in hand.">銀南街のアーケード、昭和初期の建物。カメラ片手に。</p></div></div>
