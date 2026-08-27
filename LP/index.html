@@ -2,14 +2,31 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>なつかしい町に、泊まることにした。｜キューブホテル徳山</title>
-<meta name="description" content="徳山駅 徒歩1分・サウナ併設のキューブホテル徳山を拠点に、純喫茶・工場夜景・赤提灯をめぐる周南ノスタルジー旅。まちごとホテルで、駅前の一日を。素泊まり4,800円から。">
-<meta property="og:title" content="なつかしい町に、泊まることにした。">
-<meta property="og:description" content="まちごとホテルで、駅前のノスタルジー旅。一泊4,800円から。">
-<meta property="og:image" content="img/hero.jpg">
+<meta name="description" content="広島・福岡から在来線でふらり途中下車。JR徳山駅 徒歩1分・サウナ併設のキューブホテル徳山を拠点に、純喫茶・工場夜景・赤提灯をめぐる周南ノスタルジー旅。素泊まり4,800円〜で泊まれる、山口の穴場のまち。">
+<meta name="keywords" content="徳山 宿泊,周南 ホテル 安い,広島 宿泊 安い,福岡 山口 旅行,山口 穴場,周南 観光 穴場,徳山駅 サウナ,工場夜景 周南,まちごとホテル,ノスタルジー旅,徳山 素泊まり">
+<meta name="author" content="キューブホテル徳山">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#d8b74c">
+<!-- ▼本番公開時：canonical / og:url / og:image / twitter:image / JSON-LDのurl・image を本番ドメインへ差し替え -->
+<link rel="canonical" href="https://matsuzoe-cloud.github.io/cubehotel-tokuyama/LP/">
+<meta property="og:site_name" content="キューブホテル徳山">
+<meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://matsuzoe-cloud.github.io/cubehotel-tokuyama/LP/">
+<meta property="og:title" content="なつかしい町に、泊まることにした。｜周南ノスタルジー旅">
+<meta property="og:description" content="広島・福岡から途中下車。徳山駅1分・サウナ併設で一泊4,800円〜。まちごとホテルで昭和の路地とサウナの夜を。山口の穴場、周南のまち旅。">
+<meta property="og:image" content="https://matsuzoe-cloud.github.io/cubehotel-tokuyama/LP/img/hero.jpg">
+<meta property="og:image:alt" content="夜の徳山駅前を歩くふたり">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="なつかしい町に、泊まることにした。｜周南ノスタルジー旅">
+<meta name="twitter:description" content="広島・福岡から途中下車。徳山駅1分・サウナ併設で一泊4,800円〜の穴場旅。">
+<meta name="twitter:image" content="https://matsuzoe-cloud.github.io/cubehotel-tokuyama/LP/img/hero.jpg">
+<meta name="geo.region" content="JP-35">
+<meta name="geo.placename" content="山口県周南市">
+<meta name="geo.position" content="34.0526;131.8060">
+<meta name="ICBM" content="34.0526, 131.8060">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
@@ -46,8 +63,10 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 .nav a.book:hover{background:var(--mustard-d)}
 
 /* ===== ヒーロー：実写背景＋人物切り抜き ===== */
-.hero{position:relative;overflow:hidden;min-height:clamp(600px,94vh,880px);text-align:center;color:#fff;
-  background:linear-gradient(180deg,rgba(15,10,6,.74) 0%,rgba(15,10,6,.34) 24%,rgba(15,10,6,.12) 44%,rgba(15,10,6,.16) 70%,rgba(15,10,6,.55) 100%),url("img/hero.jpg") center/cover}
+.hero{position:relative;overflow:hidden;min-height:clamp(600px,94vh,880px);text-align:center;color:#fff;background:#1a120c;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-2%;z-index:0;background:url("img/hero.jpg") center/cover;will-change:transform}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(15,10,6,.74) 0%,rgba(15,10,6,.34) 24%,rgba(15,10,6,.12) 44%,rgba(15,10,6,.16) 70%,rgba(15,10,6,.6) 100%)}
 .hero .couple{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:min(55%,580px);width:auto;z-index:2;filter:drop-shadow(0 18px 24px rgba(0,0,0,.5))}
 .hero .in{position:relative;z-index:3;padding:clamp(40px,6vw,72px) 24px 0}
 .hero .ey{font-size:12px;letter-spacing:.34em;color:#ffe6a6;opacity:.95;margin-bottom:16px}
@@ -69,13 +88,14 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 .mission p{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:clamp(17px,2.6vw,24px);line-height:2;margin:0;text-shadow:0 1px 6px rgba(150,110,20,.25)}
 
 /* ===== セクション共通 ===== */
-.sec{padding:clamp(60px,8vw,104px) 0;position:relative}
-/* 各所に登場するふたり */
-.peek{position:absolute;bottom:0;z-index:4;pointer-events:none;filter:drop-shadow(0 12px 16px rgba(30,20,8,.18))}
-.peek.r{right:clamp(4px,3vw,40px)}
-.peek.l{left:clamp(4px,3vw,40px)}
+.sec{padding:clamp(60px,8vw,104px) 0;position:relative;z-index:0}
+/* 各所に登場するふたり（文字の背面） */
+.peek{position:absolute;bottom:0;z-index:-1;pointer-events:none;filter:drop-shadow(0 12px 16px rgba(30,20,8,.18))}
+.peek.r{right:clamp(4px,2vw,28px)}
+.peek.l{left:clamp(4px,2vw,28px)}
 .peek.top{top:clamp(64px,9vw,116px);bottom:auto}
-@media(max-width:1180px){.peek{display:none}}
+.peek.on-dark{filter:drop-shadow(0 12px 20px rgba(0,0,0,.4))}
+@media(max-width:1240px){.peek{display:none}}
 .soft{background:var(--soft)}
 .slabel{text-align:center;margin-bottom:clamp(30px,5vw,52px)}
 .slabel .en{font-size:12px;color:var(--teal);font-weight:700;display:block;margin-bottom:12px}
@@ -182,7 +202,31 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 .sticky small{font-size:10.5px;color:var(--ink2);margin-left:10px}
 .sticky a{font-family:"Zen Maru Gothic",sans-serif;flex:none;background:var(--mustard);color:var(--ink);text-decoration:none;font-weight:700;font-size:13.5px;padding:11px 22px;border-radius:999px}
 
-@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ホバーの手触り */
+.card{transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(40,28,12,.16)}
+.card .ph img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.card:hover .ph img{transform:scale(1.05)}
+.feat{transition:transform .22s ease}.feat:hover{transform:translateY(-5px)}
+.feat:hover .ic{color:var(--mustard-d)}
+.shop{transition:transform .22s ease,border-color .22s ease}.shop:hover{transform:translateY(-4px);border-color:var(--teal)}
+
+/* ===== モーション（登場・ゆらぎ） ===== */
+@media (prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}
+  .reveal.vis{opacity:1;transform:none}
+  .hero::before{animation:kenburns 26s ease-in-out infinite alternate}
+  .hero .ey,.hero h1,.hero .sub,.hero .cta{opacity:0;animation:heroUp .9s cubic-bezier(.2,.7,.2,1) forwards}
+  .hero h1{animation-delay:.12s}.hero .sub{animation-delay:.26s}.hero .cta{animation-delay:.4s}
+  .hero .couple{animation:coupleUp 1.1s cubic-bezier(.2,.8,.2,1) .15s both}
+  .peek{opacity:0;transition:opacity .9s ease}
+  .peek.vis{opacity:1;animation:float 7s ease-in-out infinite}
+  @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.09)}}
+  @keyframes heroUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @keyframes coupleUp{from{opacity:0;transform:translateX(-50%) translateY(46px)}to{opacity:1;transform:translateX(-50%)}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media(max-width:860px){
   .feats{grid-template-columns:repeat(2,1fr)}
   .cards{grid-template-columns:1fr}
@@ -191,6 +235,78 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 }
 @media(max-width:520px){ .tl-row{grid-template-columns:60px 1fr;gap:14px} .sticky small{display:none} }
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LodgingBusiness",
+ "@id": "https://matsuzoe-cloud.github.io/cubehotel-tokuyama/HP/#hotel",
+ "name": "キューブホテル徳山",
+ "alternateName": "CUBE HOTEL TOKUYAMA",
+ "url": "https://matsuzoe-cloud.github.io/cubehotel-tokuyama/HP/",
+ "image": "https://matsuzoe-cloud.github.io/cubehotel-tokuyama/LP/img/hero.jpg",
+ "telephone": "+81-834-32-1270",
+ "priceRange": "¥4,800〜",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "有楽町",
+  "addressLocality": "周南市",
+  "addressRegion": "山口県",
+  "postalCode": "745-0034",
+  "addressCountry": "JP"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 34.0526,
+  "longitude": 131.806
+ },
+ "sameAs": [
+  "https://www.instagram.com/cubehotel.tokuyama/",
+  "https://www.jalan.net/yad343195/"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Product",
+ "name": "周南ノスタルジック・パスポート付き宿泊プラン",
+ "description": "キューブホテル徳山の宿泊＋サウナ＋提携店チケット＋ノスタルジック・マップ。広島・福岡から途中下車、山口の穴場のまちを丸ごと楽しむプラン。",
+ "brand": {
+  "@type": "Brand",
+  "name": "キューブホテル徳山"
+ },
+ "image": "https://matsuzoe-cloud.github.io/cubehotel-tokuyama/LP/img/couple.jpg",
+ "offers": {
+  "@type": "Offer",
+  "priceCurrency": "JPY",
+  "lowPrice": "4800",
+  "highPrice": "6000",
+  "price": "5500",
+  "availability": "https://schema.org/InStock",
+  "url": "https://matsuzoe-cloud.github.io/cubehotel-tokuyama/LP/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "キューブホテル徳山",
+   "item": "https://matsuzoe-cloud.github.io/cubehotel-tokuyama/HP/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "周南ノスタルジー（特集）",
+   "item": "https://matsuzoe-cloud.github.io/cubehotel-tokuyama/LP/"
+  }
+ ]
+}
+</script>
 </head>
 <body>
 
@@ -230,7 +346,6 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 <!-- ===== 特徴アイコン ===== -->
 <section class="sec">
   <div class="wrap">
-    <img class="peek r" src="img/couple-photo.png" alt="" style="height:clamp(200px,24vw,290px)">
     <div class="feats">
       <div class="feat"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="27" cy="10" r="4"/><path d="M25 16l-6 8 6 4 2 10M25 16l7 5M19 24l-5 9M31 28l4 8"/></svg><b data-en="1 min walk">徒歩1分</b><small data-en="from JR Tokuyama Sta.">JR徳山駅から</small></div>
       <div class="feat"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 42V24l10-8 10 8v18"/><path d="M10 42h28M20 42v-8h8v8"/><path d="M18 12c0-3 3-3 3-6M27 12c0-3 3-3 3-6"/></svg><b data-en="Sauna">サウナ併設</b><small data-en="11:00–23:00">11:00–23:00</small></div>
@@ -242,6 +357,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== ふたりの一日 ===== -->
 <section class="sec soft" id="day">
+  <img class="peek r top" src="img/couple-photo.png" alt="" style="height:clamp(180px,20vw,250px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="A DAY IN SHUNAN">A DAY IN SHUNAN</span>
@@ -344,6 +460,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
       <div>
         <p class="big" data-en="Just <em>1 min</em> from JR Tokuyama Sta., North Exit.">JR徳山駅 北口から、<em>徒歩1分。</em></p>
         <p class="addr" data-en="Cube Hotel Tokuyama · Yūrakuchō, Shunan, Yamaguchi<br>North Exit, turn left — 1 min. Starbucks &amp; Tsutaya 1 min / TOKUYAMA DECK 3 min<br>Check-in 15:00–23:00 / Check-out 10:00 · TEL 0834-32-1270">キューブホテル徳山／山口県周南市有楽町<br>北口を出て左手・徒歩1分。スタバ・蔦屋書店 徒歩1分／TOKUYAMA DECK 徒歩3分<br>チェックイン 15:00–23:00 ／ チェックアウト 10:00 ／ TEL 0834-32-1270</p>
+        <p class="addr" style="margin-top:10px" data-en="Shinkansen: about 30 min from Hiroshima, about 45 min from Hakata (Fukuoka). A hidden-gem stop for a cheap weekend trip.">新幹線なら<b style="color:var(--teal-d)">広島から約30分・博多（福岡）から約45分</b>。広島・福岡からの週末旅、安く泊まれる山口の穴場に。</p>
         <div class="links">
           <a href="https://www.jalan.net/yad343195/" target="_blank" rel="noopener" data-en="Book on Jalan">じゃらんで予約</a>
           <a class="alt" href="tel:0834321270" data-en="Call">電話 0834-32-1270</a>
@@ -369,7 +486,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 最終CTA ===== -->
 <section class="sec final">
-  <img class="peek r" src="img/couple-wave.png" alt="" style="height:clamp(210px,25vw,300px)">
+  <img class="peek r on-dark" src="img/couple-wave.png" alt="" style="height:clamp(210px,25vw,300px)">
   <div class="wrap">
     <h2 data-en="See you in this town.">またこの町で、会いましょう。</h2>
     <p data-en="From ¥4,800 a night. This weekend, come soak in a little Shōwa at the station front.">一泊4,800円から。この週末、駅前で少しだけ昭和にひたりに。</p>
@@ -412,6 +529,23 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 })();
 document.querySelectorAll('.mchip').forEach(function(a){
   a.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(a.dataset.q);a.target='_blank';a.rel='noopener';});
+
+/* ===== スクロール登場（reveal） ===== */
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var sel='.mission p,.slabel,.feat,.dayil,.card,.tl-row,.pass,.shop,.fact,.rgrid .ph,.sauna,.acc-grid>div,.final h2,.final p,.pmore,.chip';
+  var els=[].slice.call(document.querySelectorAll(sel));
+  els.forEach(function(el){
+    el.classList.add('reveal');
+    var sibs=[].slice.call(el.parentNode.children).filter(function(c){return c.classList&&c.classList.contains('reveal');});
+    var i=sibs.indexOf(el);if(i>0)el.style.transitionDelay=Math.min(i*0.08,0.5)+'s';
+  });
+  var peeks=[].slice.call(document.querySelectorAll('.peek'));
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.concat(peeks).forEach(function(el){io.observe(el);});
+})();
 </script>
 
 </body>
