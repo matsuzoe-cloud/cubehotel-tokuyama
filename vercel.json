@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/HP", "destination": "/", "permanent": true },
+    { "source": "/HP/", "destination": "/", "permanent": true },
+    { "source": "/LP", "destination": "/trip/", "permanent": true },
+    { "source": "/LP/", "destination": "/trip/", "permanent": true }
+  ]
+}
