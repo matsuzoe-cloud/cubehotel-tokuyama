@@ -69,7 +69,13 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 .mission p{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:clamp(17px,2.6vw,24px);line-height:2;margin:0;text-shadow:0 1px 6px rgba(150,110,20,.25)}
 
 /* ===== セクション共通 ===== */
-.sec{padding:clamp(60px,8vw,104px) 0}
+.sec{padding:clamp(60px,8vw,104px) 0;position:relative}
+/* 各所に登場するふたり */
+.peek{position:absolute;bottom:0;z-index:4;pointer-events:none;filter:drop-shadow(0 12px 16px rgba(30,20,8,.18))}
+.peek.r{right:clamp(4px,3vw,40px)}
+.peek.l{left:clamp(4px,3vw,40px)}
+.peek.top{top:clamp(64px,9vw,116px);bottom:auto}
+@media(max-width:1180px){.peek{display:none}}
 .soft{background:var(--soft)}
 .slabel{text-align:center;margin-bottom:clamp(30px,5vw,52px)}
 .slabel .en{font-size:12px;color:var(--teal);font-weight:700;display:block;margin-bottom:12px}
@@ -224,6 +230,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 <!-- ===== 特徴アイコン ===== -->
 <section class="sec">
   <div class="wrap">
+    <img class="peek r" src="img/couple-photo.png" alt="" style="height:clamp(200px,24vw,290px)">
     <div class="feats">
       <div class="feat"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="27" cy="10" r="4"/><path d="M25 16l-6 8 6 4 2 10M25 16l7 5M19 24l-5 9M31 28l4 8"/></svg><b data-en="1 min walk">徒歩1分</b><small data-en="from JR Tokuyama Sta.">JR徳山駅から</small></div>
       <div class="feat"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 42V24l10-8 10 8v18"/><path d="M10 42h28M20 42v-8h8v8"/><path d="M18 12c0-3 3-3 3-6M27 12c0-3 3-3 3-6"/></svg><b data-en="Sauna">サウナ併設</b><small data-en="11:00–23:00">11:00–23:00</small></div>
@@ -280,6 +287,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 提携店 ===== -->
 <section class="sec soft" id="partners">
+  <img class="peek l top" src="img/couple-cheers.png" alt="" style="height:clamp(150px,18vw,210px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="PARTNER SHOPS">PARTNER SHOPS</span>
@@ -359,6 +367,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 最終CTA ===== -->
 <section class="sec final">
+  <img class="peek r" src="img/couple-wave.png" alt="" style="height:clamp(210px,25vw,300px)">
   <div class="wrap">
     <h2 data-en="See you in this town.">またこの町で、会いましょう。</h2>
     <p data-en="From ¥4,800 a night. This weekend, come soak in a little Shōwa at the station front.">一泊4,800円から。この週末、駅前で少しだけ昭和にひたりに。</p>
