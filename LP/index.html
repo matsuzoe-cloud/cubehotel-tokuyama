@@ -45,10 +45,11 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 .nav a.book{font-family:"Zen Maru Gothic",sans-serif;font-size:13px;font-weight:700;background:var(--mustard);color:var(--ink);padding:10px 20px;border-radius:999px;text-decoration:none;white-space:nowrap}
 .nav a.book:hover{background:var(--mustard-d)}
 
-/* ===== ヒーロー：うきうきする夜のイラスト ===== */
-.hero{position:relative;min-height:clamp(520px,88vh,780px);display:flex;align-items:flex-end;justify-content:center;text-align:center;color:#fff;
-  background:linear-gradient(0deg,rgba(18,12,7,.78) 0%,rgba(18,12,7,.24) 40%,rgba(18,12,7,0) 66%),url("img/hero-il.jpg") center/cover}
-.hero .in{padding:0 24px clamp(40px,6vw,68px);position:relative;z-index:2}
+/* ===== ヒーロー：実写背景＋人物切り抜き ===== */
+.hero{position:relative;overflow:hidden;min-height:clamp(600px,94vh,880px);text-align:center;color:#fff;
+  background:linear-gradient(180deg,rgba(15,10,6,.74) 0%,rgba(15,10,6,.34) 24%,rgba(15,10,6,.12) 44%,rgba(15,10,6,.16) 70%,rgba(15,10,6,.55) 100%),url("img/hero.jpg") center/cover}
+.hero .couple{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:min(55%,580px);width:auto;z-index:2;filter:drop-shadow(0 18px 24px rgba(0,0,0,.5))}
+.hero .in{position:relative;z-index:3;padding:clamp(40px,6vw,72px) 24px 0}
 .hero .ey{font-size:12px;letter-spacing:.34em;color:#ffe6a6;opacity:.95;margin-bottom:16px}
 .hero h1{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:clamp(30px,6.2vw,58px);line-height:1.4;letter-spacing:.06em;margin:0;text-shadow:0 2px 24px rgba(0,0,0,.4)}
 .hero .sub{margin:22px auto 0;max-width:560px;font-size:14.5px;line-height:2;color:rgba(255,255,255,.92);text-shadow:0 1px 8px rgba(0,0,0,.4)}
@@ -199,6 +200,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="top">
+  <img class="couple" src="img/couple-cut.png" alt="夜の町を歩くふたり">
   <div class="in">
     <p class="ey" data-en="Shunan Nostalgia Trip">周南ノスタルジー旅</p>
     <h1 data-en="Stay in a nostalgic town,<br>a whole-town hotel.">なつかしい町に、<br>泊まることにした。</h1>
