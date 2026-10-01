@@ -207,14 +207,6 @@ section{padding:clamp(72px,9vw,120px) 0}
 .news .ni a.t{text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:1px}
 .news .ni a.t:hover{color:var(--accent)}
 
-/* gallery (masonry) */
-.gallery2{background:var(--paper)}
-.g2{columns:3;column-gap:14px;margin-top:44px}
-.g2 figure{margin:0 0 14px;break-inside:avoid;overflow:hidden;position:relative}
-.g2 img{width:100%;display:block}
-.g2 figcaption{position:absolute;left:0;bottom:0;width:100%;padding:16px 14px 10px;color:#fff;font-size:11.5px;
-  background:linear-gradient(transparent,rgba(10,8,6,.6));font-family:"Shippori Mincho B1",serif}
-
 /* business */
 .biz{background:var(--paper-2)}
 .biz .blist{border-top:2px solid var(--ink);max-width:900px;margin-top:44px}
@@ -277,12 +269,11 @@ section{position:relative;z-index:0}
   .hero-foot{max-width:100%}
   .town .wrap{grid-template-columns:1fr}
   .news .wrap{grid-template-columns:1fr;gap:18px}
-  .g2{columns:2}
   .biz .brow{grid-template-columns:1fr;gap:8px}
   .around .a{grid-template-columns:90px 1fr;gap:16px}
   footer .wrap{flex-direction:column;align-items:flex-start}footer .faddr{text-align:left}
 }
-@media(max-width:560px){ .gal{grid-template-columns:repeat(2,1fr)} .g2{columns:1} .news .ni{grid-template-columns:1fr;gap:4px} }
+@media(max-width:560px){ .gal{grid-template-columns:repeat(2,1fr)} .news .ni{grid-template-columns:1fr;gap:4px} }
 @media(max-width:640px){
   .trio{display:block;width:100%}
   .trio a{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:0 14px;border-right:0;margin-right:0;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.25)}
@@ -595,7 +586,7 @@ section{position:relative;z-index:0}
         </ul>
         <div class="cta">
           <a class="btn btn-primary" href="#book">空室・予約</a>
-          <a class="btn btn-ghost" href="#gallery">館内を見る</a>
+          <a class="btn btn-ghost" href="#room">館内を見る</a>
         </div>
       </div>
     </div>
@@ -651,23 +642,10 @@ section{position:relative;z-index:0}
       </div>
       <div class="ph"><figure><img loading="lazy" decoding="async" class="ph-a" src="img/desk.jpg" alt="共用のテレビとデスク"><figcaption>共用のテレビとデスク。客室にテレビはありません。</figcaption></figure></div>
     </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="gallery2" id="gallery">
-  <div class="wrap">
-    <header class="sh"><span class="sh-n" style="font-size:clamp(22px,2.8vw,30px)">館内</span><span class="sh-l">GALLERY</span></header>
-    <div class="g2">
-      <figure><img loading="lazy" decoding="async" src="img/room-wide.jpg" alt="キューブホテル徳山の客室。ベッドと机"><figcaption>客室（ベッドと机）</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/floor-guide.jpg" alt="フロア案内板"><figcaption>フロア案内。トイレ・シャワーは客室の外</figcaption></figure>
+    <div class="gal">
       <figure><img loading="lazy" decoding="async" src="img/amenity.jpg" alt="共用の電子レンジ・ケトル"><figcaption>共用の電子レンジ・ケトル</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/desk.jpg" alt="共用のテレビとデスク"><figcaption>共用のテレビ（客室にはありません）</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/toilet.jpg" alt="各階の共用トイレ"><figcaption>各階の共用トイレ</figcaption></figure>
       <figure><img loading="lazy" decoding="async" src="img/hangers.jpg" alt="客室のハンガー"><figcaption>客室のハンガー</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/towel.jpg" alt="タオル・アメニティ"><figcaption>タオル・アメニティ</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/night2.jpg" alt="徳山駅前の夜"><figcaption>駅前1分の立地</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/hero.jpg" alt="徳山駅前の夜景"><figcaption>徳山駅前の夜</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/slippers.jpg" alt="宿泊者にお渡しするスリッパ"><figcaption>スリッパ（宿泊者へお渡し）</figcaption></figure>
     </div>
   </div>
 </section>
