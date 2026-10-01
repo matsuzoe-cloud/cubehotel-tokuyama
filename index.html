@@ -19,8 +19,8 @@
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>キューブホテル徳山｜JR徳山駅 徒歩1分・サウナ併設・全72室</title>
-<meta name="description" content="JR徳山駅 北口から徒歩1分、サウナ併設のキューブホテル徳山。全72室・全室Wi-Fi＆コンセント完備で、ビジネス・テレワーク・観光の拠点に。素泊まり4,800円（税込）から。ショートステイ・団体・マンスリーもご相談ください。">
+<title>キューブホテル徳山｜JR徳山駅 徒歩1分・宿泊・サウナ・リモートワーク</title>
+<meta name="description" content="JR徳山駅 北口から徒歩1分のキューブホテル徳山。カプセルホテルより少し広い、ひとり用の個室ホテルです。宿泊は素泊まり4,800円（税込）から。サウナは1時間1,000円、リモートワークは1時間1,000円。団体（10名以上）・マンスリーもご相談ください。">
 <meta name="keywords" content="キューブホテル徳山,徳山駅 ホテル,徳山 ビジネスホテル,周南市 ホテル,徳山駅 徒歩1分,周南 サウナ,徳山 サウナ,広島 宿泊 安い,福岡 山口 旅行,山口 穴場,テレワーク ホテル 周南,マンスリー 徳山,素泊まり 徳山">
 <meta name="author" content="キューブホテル徳山">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -38,15 +38,15 @@
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://solution-cube.jp/">
-<meta property="og:title" content="キューブホテル徳山｜JR徳山駅 徒歩1分・サウナ併設・全72室">
-<meta property="og:description" content="駅前1分の、自由自在な滞在拠点。全72室・サウナ併設。素泊まり4,800円（税込）から。ビジネス・テレワーク・観光・団体・マンスリーに。">
+<meta property="og:title" content="キューブホテル徳山｜JR徳山駅 徒歩1分・宿泊・サウナ・リモートワーク">
+<meta property="og:description" content="駅前1分の、ひとり用の個室ホテル。宿泊は素泊まり4,800円（税込）から。サウナ、1時間1,000円のリモートワークにも。">
 <meta property="og:image" content="https://solution-cube.jp/og.jpg">
 <meta property="og:image:alt" content="夜のJR徳山駅前とキューブホテル徳山">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="キューブホテル徳山｜JR徳山駅 徒歩1分・サウナ併設">
-<meta name="twitter:description" content="駅前1分の、自由自在な滞在拠点。全72室・サウナ併設。素泊まり4,800円から。">
+<meta name="twitter:title" content="キューブホテル徳山｜JR徳山駅 徒歩1分・宿泊・サウナ・リモートワーク">
+<meta name="twitter:description" content="駅前1分の、ひとり用の個室ホテル。素泊まり4,800円から。サウナとリモートワークにも。">
 <meta name="twitter:image" content="https://solution-cube.jp/og.jpg">
 
 <!-- Local SEO（座標は駅前おおよそ。本番前に正確な緯度経度へ調整推奨） -->
@@ -111,6 +111,17 @@ header.nav{position:sticky;top:0;z-index:20;background:rgba(243,237,225,.92);bac
 .btn-primary:hover{opacity:.65}
 .btn-ghost{color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.4)}
 .btn-ghost:hover{color:#fff}
+/* キューブホテルとは＋3本柱 */
+.hero .what{max-width:520px;font-size:14px;line-height:2;color:rgba(255,255,255,.88);margin:0}
+.hero .what b{display:block;font-family:"Shippori Mincho B1",serif;font-size:12px;letter-spacing:.2em;color:#f0b3a3;margin-bottom:2px}
+.trio{display:flex;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+.trio a{display:block;text-decoration:none;color:#fff;padding:2px 26px 2px 0;margin-right:26px;border-right:1px solid rgba(255,255,255,.3)}
+.trio li:last-child a{border-right:0;margin-right:0;padding-right:0}
+.trio .k{font-family:"Shippori Mincho B1",serif;font-size:clamp(19px,2.1vw,23px);font-weight:700;letter-spacing:.06em;display:block;line-height:1.4}
+.trio .v{font-family:"Shippori Mincho B1",serif;font-size:13px;display:block;margin-top:6px;white-space:nowrap}
+.trio .v b{font-size:clamp(21px,2.4vw,26px);margin:0 2px}
+.trio small{display:block;font-size:11px;color:rgba(255,255,255,.68);margin-top:1px;white-space:nowrap}
+.trio a:hover .k{color:#f0b3a3}
 
 /* sections */
 section{padding:clamp(72px,9vw,120px) 0}
@@ -121,14 +132,28 @@ section{padding:clamp(72px,9vw,120px) 0}
 .lead .mk{color:var(--accent)}
 .note{color:var(--ink-2);font-size:15px;line-height:2.15;max-width:36em;margin-top:26px}
 
-/* about */
-.about .st{font-family:"Shippori Mincho B1",serif;font-size:clamp(17px,2vw,21px);color:var(--ink);line-height:2.3;max-width:26em;margin-top:26px}
+/* まちごとホテル（3本柱の下） */
+.town{background:var(--paper-2);padding:clamp(44px,6vw,68px) 0;border-bottom:1px solid var(--line)}
+.town .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 48px;align-items:end}
+.town .fl{font-size:11px;letter-spacing:.3em;color:var(--accent);font-weight:700;margin:0 0 10px}
+.town h2{font-size:clamp(22px,3.2vw,32px)}
+.town p.d{margin:12px 0 0;color:var(--ink-2);font-size:14px;line-height:1.95;max-width:34em}
+.town .go{font-weight:700;font-size:15px;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:4px;white-space:nowrap}
+.town .go::after{content:" →";font-weight:400}
+.town .go:hover{color:var(--accent)}
 
 /* 2カラム（写真＋説明） */
 .two{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,4vw,60px);align-items:center}
 .two.rev{grid-template-columns:1fr 1.1fr}
 .two .ph img{width:100%;object-fit:cover}
 .two .ph .ph-a{aspect-ratio:4/3}
+.two .ph .ph-sq{aspect-ratio:1;object-position:50% 62%}
+.two .ph figure{margin:0}
+.two .ph figcaption{font-size:12px;color:var(--ink-2);margin-top:10px;line-height:1.7}
+.wc{margin-top:clamp(40px,5vw,60px);border-top:1px solid var(--line);padding-top:26px}
+.wc h3{font-size:clamp(18px,2.2vw,22px)}
+.wc p{font-size:14px;color:var(--ink-2);line-height:1.95;margin:10px 0 0;max-width:40em}
+.wc .gal{margin-top:24px}
 .spec{border-top:1px solid var(--line);margin-top:8px}
 .spec div{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:15px 0;border-bottom:1px solid var(--line);font-size:14px}
 .spec dt{font-family:"Shippori Mincho B1",serif;color:var(--ink);white-space:nowrap}
@@ -160,7 +185,7 @@ section{padding:clamp(72px,9vw,120px) 0}
 .access{background:var(--paper-2)}
 .acc-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,5vw,64px);align-items:start}
 .acc-grid .big{font-family:"Shippori Mincho B1",serif;font-size:clamp(24px,3.6vw,38px);line-height:1.4}
-.acc-grid .big .em{color:var(--accent)}
+.acc-grid .big .em{color:var(--accent);white-space:nowrap}
 .acc-grid .addr{margin-top:22px;color:var(--ink-2);font-size:13.5px;line-height:2.05}
 .acc-grid .near{margin-top:20px;font-size:13px;color:var(--ink);line-height:2}
 .acc-grid .near b{color:var(--accent);font-family:"Shippori Mincho B1",serif;margin-right:8px}
@@ -170,18 +195,8 @@ section{padding:clamp(72px,9vw,120px) 0}
 .acc-grid .links a:hover{color:var(--accent)}
 .acc-grid .map iframe{display:block;width:100%;height:400px;border:0}
 
-/* LP誘導バナー */
-.feat{position:relative;color:#fff;min-height:52vh;display:flex;align-items:center;
-  background:linear-gradient(90deg,rgba(8,7,5,.66),rgba(8,7,5,.2)),url("img/night2.jpg") center 45%/cover no-repeat}
-.feat .wrap{width:100%}
-.feat .fl{font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.75);margin-bottom:16px}
-.feat h3{font-size:clamp(26px,4.6vw,44px);color:#fff;line-height:1.4;max-width:16em}
-.feat p{margin-top:16px;max-width:30em;color:rgba(255,255,255,.85);font-size:14px;line-height:1.9}
-.feat .go{margin-top:26px;display:inline-block;font-weight:700;font-size:15px;color:#fff;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:4px}
-.feat .go::after{content:" →";font-weight:400}
-
 /* news */
-.news{background:var(--paper-2);border-bottom:1px solid var(--line);padding:clamp(40px,6vw,64px) 0}
+.news{background:var(--paper-2);border-top:1px solid var(--line);padding:clamp(40px,6vw,64px) 0}
 .news .wrap{display:grid;grid-template-columns:200px 1fr;gap:clamp(20px,4vw,56px);align-items:start}
 .news .nh{font-family:"Shippori Mincho B1",serif;font-size:20px;letter-spacing:.06em}
 .news .nh span{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:10px;letter-spacing:.3em;color:var(--accent);margin-top:6px}
@@ -241,7 +256,9 @@ footer .faddr{text-align:right;font-size:11.5px}
 footer a{color:rgba(243,237,225,.65)}
 
 /* イラストのキャラ配置 */
-.hero{overflow:hidden}
+.hero{overflow:hidden;padding:0}
+.hero .wrap{padding-bottom:44px}
+.hero h1{font-size:clamp(30px,min(7.4vw,10.5vh),80px)}
 .hero .couple{position:absolute;right:clamp(-12px,2vw,48px);bottom:0;height:min(68vw,560px);z-index:1;filter:drop-shadow(0 12px 26px rgba(0,0,0,.45));pointer-events:none}
 .hero .wrap{position:relative;z-index:2}
 section{position:relative;z-index:0}
@@ -257,6 +274,8 @@ section{position:relative;z-index:0}
   .hero-foot{flex-direction:column;align-items:flex-start}
   .two,.two.rev,.acc-grid{grid-template-columns:1fr}
   .two .ph{order:-1}
+  .hero-foot{max-width:100%}
+  .town .wrap{grid-template-columns:1fr}
   .news .wrap{grid-template-columns:1fr;gap:18px}
   .g2{columns:2}
   .biz .brow{grid-template-columns:1fr;gap:8px}
@@ -264,6 +283,13 @@ section{position:relative;z-index:0}
   footer .wrap{flex-direction:column;align-items:flex-start}footer .faddr{text-align:left}
 }
 @media(max-width:560px){ .gal{grid-template-columns:repeat(2,1fr)} .g2{columns:1} .news .ni{grid-template-columns:1fr;gap:4px} }
+@media(max-width:640px){
+  .trio{display:block;width:100%}
+  .trio a{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:0 14px;border-right:0;margin-right:0;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.25)}
+  .trio li:first-child a{border-top:1px solid rgba(255,255,255,.25)}
+  .trio .v{margin-top:0;text-align:right}
+  .trio small{grid-column:1/-1;text-align:right}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -272,11 +298,11 @@ section{position:relative;z-index:0}
  "@id": "https://solution-cube.jp/#hotel",
  "name": "キューブホテル徳山",
  "alternateName": "CUBE HOTEL TOKUYAMA",
- "description": "JR徳山駅 北口から徒歩1分、サウナ併設のキューブホテル徳山。全72室・全室Wi-Fi＆コンセント完備。ビジネス・テレワーク・観光・団体・マンスリーの拠点に。素泊まり4,800円（税込）から。",
+ "description": "JR徳山駅 北口から徒歩1分のキューブホテル徳山。カプセルホテルより少し広い、ひとり用の個室ホテル（全72室）。宿泊・サウナ・リモートワークに。素泊まり4,800円（税込）から。",
  "url": "https://solution-cube.jp/",
  "image": [
   "https://solution-cube.jp/img/hero.jpg",
-  "https://solution-cube.jp/img/room.jpg",
+  "https://solution-cube.jp/img/room-wide.jpg",
   "https://solution-cube.jp/img/night2.jpg"
  ],
  "logo": "https://solution-cube.jp/img/hero.jpg",
@@ -327,7 +353,12 @@ section{position:relative;z-index:0}
   },
   {
    "@type": "LocationFeatureSpecification",
-   "name": "共用シャワールーム",
+   "name": "共用シャワールーム・共用トイレ（各階）",
+   "value": true
+  },
+  {
+   "@type": "LocationFeatureSpecification",
+   "name": "共用テレビ",
    "value": true
   },
   {
@@ -350,7 +381,7 @@ section{position:relative;z-index:0}
   },
   {
    "@type": "Offer",
-   "name": "ショートステイ（1時間）",
+   "name": "リモートワーク・ショートステイ（1時間）",
    "price": "1000",
    "priceCurrency": "JPY"
   },
@@ -409,7 +440,31 @@ section{position:relative;z-index:0}
    "name": "駐車場はありますか？",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "専用駐車場はございません。お車の場合は、近隣のコインパーキングをご利用ください。"
+    "text": "専用駐車場はございません。お車の場合は、近隣のコインパーキングをご利用ください。トラックなど大きいお車でお越しの方には、止められる場所をご案内します。ご予約のときにお電話（0834-32-1270）でお知らせください。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "泊まらずに、仕事や打ち合わせだけで使えますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "はい。ひとり用の個室を1時間1,000円（税込）でお使いいただけます。Wi-Fi・コンセントつきで、オンライン会議にも使えます。フロントでお申し付けください。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "トイレやシャワーは部屋にありますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "客室にはありません。トイレとシャワー室は各階に共用で2か所ずつあります。洗面所も各階にあります。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "部屋にテレビはありますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "客室にはありません。館内の共用テレビを無料でご覧いただけます。"
    }
   },
   {
@@ -433,7 +488,7 @@ section{position:relative;z-index:0}
    "name": "連泊・団体・長期滞在はできますか？",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "マンスリー（長期）や団体（工場・プラント定期修繕など）でのご宿泊は特別価格をご用意しています。お電話（0834-32-1270）でご相談ください。"
+    "text": "10名以上の団体には団体割引があります。マンスリー（長期）も特別価格です。工場・プラントの定期修繕などのご利用も、お電話（0834-32-1270）でご相談ください。"
    }
   },
   {
@@ -465,7 +520,7 @@ section{position:relative;z-index:0}
    "name": "大浴場はありますか？",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "大浴場はございませんが、各階に共用シャワールームを完備しています。セルフロウリュのサウナ（水風呂・整いエリアあり）を併設しており、宿泊者は700円／1時間でご利用いただけます。"
+    "text": "大浴場はございません。各階に共用のシャワー室があります。セルフロウリュのサウナ（水風呂・整いエリアあり）を併設しており、宿泊者は700円／1時間でご利用いただけます。"
    }
   },
   {
@@ -494,7 +549,7 @@ section{position:relative;z-index:0}
    "@type": "ListItem",
    "position": 2,
    "name": "周南ノスタルジー（特集）",
-   "item": "https://solution-cube.jp//trip/"
+   "item": "https://solution-cube.jp/trip/"
   }
  ]
 }
@@ -510,9 +565,9 @@ section{position:relative;z-index:0}
     <div class="brand">キューブホテル徳山<small>CUBE HOTEL TOKUYAMA</small></div>
     <div class="right">
       <nav class="navlinks">
-        <a href="#room">客室</a>
-        <a href="#amenity">設備</a>
+        <a href="#room">宿泊</a>
         <a href="#sauna">サウナ</a>
+        <a href="#work">リモートワーク</a>
         <a href="#plan">料金</a>
         <a href="#access">アクセス</a>
         <a href="#faq">FAQ</a>
@@ -532,66 +587,59 @@ section{position:relative;z-index:0}
     <div class="hero-body">
       <h1>駅前1分の、<br>自由自在な滞在拠点。</h1>
       <div class="hero-foot">
-        <p class="sub">JR徳山駅 北口から徒歩1分、サウナ併設。ビジネスにもテレワークにも観光にも。全72室・全室Wi-Fi＆コンセント完備の、あたらしい定宿。</p>
-        <div>
-          <div class="price"><span class="from">素泊まり</span><b>4,800</b><span class="yen">円〜（税込）</span></div>
-          <div class="cta" style="margin-top:20px">
-            <a class="btn btn-primary" href="#book">空室・予約</a>
-            <a class="btn btn-ghost" href="#room">館内を見る</a>
-          </div>
+        <p class="what"><b>キューブホテルとは</b>カプセルホテルより少し広い、ひとり用の個室ホテルです。<br>JR徳山駅 北口から徒歩1分。</p>
+        <ul class="trio" aria-label="キューブホテル徳山の使い方と料金">
+          <li><a href="#room"><span class="k">宿泊</span><span class="v">1泊<b>4,800</b>円〜</span><small>素泊まり・税込</small></a></li>
+          <li><a href="#sauna"><span class="k">サウナ</span><span class="v">1時間<b>1,000</b>円</span><small>宿泊の方は700円</small></a></li>
+          <li><a href="#work"><span class="k">リモートワーク</span><span class="v">1時間<b>1,000</b>円</span><small>個室・Wi-Fi・電源つき</small></a></li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="#book">空室・予約</a>
+          <a class="btn btn-ghost" href="#gallery">館内を見る</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- お知らせ NEWS -->
-<section class="news" aria-label="お知らせ">
+<!-- まちごとホテル（3本柱の下） -->
+<section class="town" aria-label="まちごとホテル">
   <div class="wrap">
-    <div class="nh">お知らせ<span>NEWS</span></div>
-    <div class="nlist">
-      <div class="ni"><span class="date">2026.07.01</span><a class="t" href="trip/">「周南ノスタルジー」まちごとホテル特集を公開しました。</a></div>
-      <div class="ni"><span class="date">2026.04.01</span><span class="t">テレワーク・ショートステイのご利用が可能です（1,000円／1時間）。</span></div>
-      <div class="ni"><span class="date">2025.10.01</span><span class="t">サウナの貸し切り（6,000円／1時間）を承っています。宿泊されない方のご利用も可能です。</span></div>
-      <div class="ni"><span class="date">2024.09.13</span><span class="t">キューブホテル徳山、開業しました。</span></div>
+    <div>
+      <p class="fl">まちごとホテル</p>
+      <h2>町まるごとが、あなたの宿になる。</h2>
+      <p class="d">パスポート付きの宿泊プランで、駅前の提携店をめぐる企画です。</p>
     </div>
+    <a class="go" href="trip/">特集を見る</a>
   </div>
 </section>
 
-<!-- 01 ABOUT -->
-<section class="about">
-  <img loading="lazy" decoding="async" class="peek r" src="img/couple-photo.png" alt="">
-  <div class="wrap">
-    <header class="sh"><span class="sh-n">01</span><span class="sh-l">ABOUT</span></header>
-    <h2 class="lead">テレワークするもよし、<br><span class="mk">ゆったりするもよし。</span></h2>
-    <p class="st">JR徳山駅北口を出て、左手すぐ。仕事の合間にも、旅の夜にも寄り添う、自由自在な最適空間です。全室にネットワークとコンセントを備え、疲れた体はセルフロウリュのサウナで整える。飾らず、必要なものだけが、ちょうどよく揃っています。</p>
-  </div>
-</section>
-
-<!-- 02 ROOM -->
+<!-- 01 STAY -->
 <section id="room">
   <div class="wrap">
-    <header class="sh"><span class="sh-n">02</span><span class="sh-l">ROOM</span></header>
+    <header class="sh"><span class="sh-n">01</span><span class="sh-l">STAY</span></header>
     <div class="two">
-      <div class="ph"><img loading="lazy" decoding="async" class="ph-a" src="img/room.jpg" alt="キューブホテル徳山の客室"></div>
+      <div class="ph"><img loading="lazy" decoding="async" class="ph-sq" src="img/room-wide.jpg" alt="キューブホテル徳山の客室。ベッドと机"></div>
       <div>
         <h2 class="lead" style="font-size:clamp(23px,3.2vw,32px)">眠るためだけの、潔い一室。</h2>
         <dl class="spec">
-          <div><dt>客室数</dt><dd>全72室（約5㎡のキューブ個室）</dd></div>
-          <div><dt>設備</dt><dd>ベッド／机／椅子。全室 無料Wi-Fi・コンセント完備。リモート業務にも最適。</dd></div>
-          <div><dt>水回り</dt><dd>各階に共用シャワールーム・洗面所を完備。</dd></div>
+          <div><dt>客室数</dt><dd>全72室。すべてひとり用の個室（約5㎡）</dd></div>
+          <div><dt>設備</dt><dd>ベッド・机・椅子。無料Wi-Fi・コンセントつき。テレビは共用です（客室にはありません）。</dd></div>
+          <div><dt>トイレ・シャワー</dt><dd>客室の外にあります。各階に共用で2か所ずつ。洗面所も各階にあります。</dd></div>
           <div><dt>ご注意</dt><dd>簡易宿泊施設のため、客室に鍵はございません。貴重品は2・3階のロッカー、またはフロントでお預かりします。24:00〜翌6:00は入口を施錠（インターホン対応）。</dd></div>
         </dl>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- 03 AMENITY -->
-<section id="amenity">
-  <div class="wrap">
-    <header class="sh"><span class="sh-n">03</span><span class="sh-l">AMENITY</span></header>
-    <div class="two rev">
+    <div class="wc">
+      <h3>トイレ・シャワーは、部屋の外に。</h3>
+      <p>各階に共用のトイレとシャワー室が2か所ずつあります。場所は各階の案内板で確かめられます。</p>
+      <div class="gal">
+        <figure><img loading="lazy" decoding="async" src="img/floor-guide.jpg" alt="3階のフロア案内板。シャワー室・洗面所・トイレの位置"><figcaption>フロア案内（3階）。シャワー室・洗面所・トイレは客室の外</figcaption></figure>
+        <figure><img loading="lazy" decoding="async" src="img/toilet.jpg" alt="各階の共用トイレ"><figcaption>各階の共用トイレ</figcaption></figure>
+        <figure><img loading="lazy" decoding="async" src="img/corridor.jpg" alt="客室フロアの廊下"><figcaption>客室フロアの廊下</figcaption></figure>
+      </div>
+    </div>
+    <div class="two rev" id="amenity" style="margin-top:clamp(56px,7vw,88px)">
       <div>
         <h2 class="lead" style="font-size:clamp(23px,3.2vw,32px)">手ぶらでも、快適に。</h2>
         <dl class="spec">
@@ -601,12 +649,7 @@ section{position:relative;z-index:0}
           <div><dt>宿泊者へ</dt><dd>スリッパ・タオル・ナイトガウンをお渡しします。</dd></div>
         </dl>
       </div>
-      <div class="ph"><img loading="lazy" decoding="async" class="ph-a" src="img/desk.jpg" alt="客室のデスクとチェア"></div>
-    </div>
-    <div class="gal">
-      <figure><img loading="lazy" decoding="async" src="img/amenity.jpg" alt="電子レンジ・ケトル"><figcaption>共用の電子レンジ・ケトル</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/hangers.jpg" alt="ハンガー"><figcaption>客室の設え</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/towel.jpg" alt="タオル・アメニティ"><figcaption>タオル・アメニティ（宿泊者へお渡し）</figcaption></figure>
+      <div class="ph"><figure><img loading="lazy" decoding="async" class="ph-a" src="img/desk.jpg" alt="共用のテレビとデスク"><figcaption>共用のテレビとデスク。客室にテレビはありません。</figcaption></figure></div>
     </div>
   </div>
 </section>
@@ -616,14 +659,15 @@ section{position:relative;z-index:0}
   <div class="wrap">
     <header class="sh"><span class="sh-n" style="font-size:clamp(22px,2.8vw,30px)">館内</span><span class="sh-l">GALLERY</span></header>
     <div class="g2">
-      <figure><img loading="lazy" decoding="async" src="img/room.jpg" alt="キューブホテル徳山の客室"><figcaption>客室・ベッド</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/room-wide.jpg" alt="キューブホテル徳山の客室。ベッドと机"><figcaption>客室（ベッドと机）</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/floor-guide.jpg" alt="フロア案内板"><figcaption>フロア案内。トイレ・シャワーは客室の外</figcaption></figure>
       <figure><img loading="lazy" decoding="async" src="img/amenity.jpg" alt="共用の電子レンジ・ケトル"><figcaption>共用の電子レンジ・ケトル</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/desk.jpg" alt="客室のデスク"><figcaption>デスク・テレビ</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/hangers.jpg" alt="客室のハンガー"><figcaption>客室の設え</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/desk.jpg" alt="共用のテレビとデスク"><figcaption>共用のテレビ（客室にはありません）</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/toilet.jpg" alt="各階の共用トイレ"><figcaption>各階の共用トイレ</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/hangers.jpg" alt="客室のハンガー"><figcaption>客室のハンガー</figcaption></figure>
       <figure><img loading="lazy" decoding="async" src="img/towel.jpg" alt="タオル・アメニティ"><figcaption>タオル・アメニティ</figcaption></figure>
       <figure><img loading="lazy" decoding="async" src="img/night2.jpg" alt="徳山駅前の夜"><figcaption>駅前1分の立地</figcaption></figure>
       <figure><img loading="lazy" decoding="async" src="img/hero.jpg" alt="徳山駅前の夜景"><figcaption>徳山駅前の夜</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="img/bokeh.jpg" alt="まちの灯り"><figcaption>まちの灯り</figcaption></figure>
     </div>
   </div>
 </section>
@@ -640,7 +684,7 @@ section{position:relative;z-index:0}
 <section id="sauna">
   <img loading="lazy" decoding="async" class="peek r" src="img/couple-sauna.png" alt="">
   <div class="wrap">
-    <header class="sh"><span class="sh-n">04</span><span class="sh-l">SAUNA</span></header>
+    <header class="sh"><span class="sh-n">02</span><span class="sh-l">SAUNA</span></header>
     <h2 class="lead" style="margin-bottom:44px">宿泊なしでも、<span class="mk">ととのえる。</span></h2>
     <div class="rate">
       <div class="r"><div class="k">宿泊者利用<small>1時間</small></div><div class="v">700<small>円</small></div></div>
@@ -651,30 +695,49 @@ section{position:relative;z-index:0}
   </div>
 </section>
 
-<!-- 05 PLAN -->
-<section id="plan">
-  <img loading="lazy" decoding="async" class="peek r" src="img/couple-ticket.png" alt="">
+<!-- 03 REMOTE WORK -->
+<section id="work">
   <div class="wrap">
-    <header class="sh"><span class="sh-n">05</span><span class="sh-l">STAY &amp; RATE</span></header>
-    <h2 class="lead" style="margin-bottom:44px">使い方は、<span class="mk">自由自在。</span></h2>
+    <header class="sh"><span class="sh-n">03</span><span class="sh-l">REMOTE WORK</span></header>
+    <h2 class="lead" style="margin-bottom:44px">駅前の個室で、<br><span class="mk">1時間から仕事ができる。</span></h2>
     <div class="rate">
-      <div class="r"><div class="k">素泊まり<small>1泊・税込</small></div><div class="v">4,800<small>円〜</small></div></div>
-      <div class="r"><div class="k">ショートステイ<small>1時間・宿泊以外の休憩利用に</small></div><div class="v">1,000<small>円</small></div></div>
-      <div class="r"><div class="k">団体・マンスリー<small>工場・プラント定期修繕／長期滞在</small></div><div class="v">特別価格<small>お電話で</small></div></div>
+      <div class="r"><div class="k">リモートワーク<small>時間制・泊まらなくても使えます</small></div><div class="v">1,000<small>円／1時間</small></div></div>
     </div>
-    <p class="subnote">団体（工場・プラントの定期修繕など）や長期（マンスリー）のご利用は、特別価格をご用意しております。お電話（<b style="color:var(--accent)">0834-32-1270</b>）でお気軽にご相談ください。</p>
+    <dl class="spec" style="max-width:760px;margin-top:28px">
+      <div><dt>使い方</dt><dd>オンライン会議、資料づくり、移動の合間の作業に。</dd></div>
+      <div><dt>部屋</dt><dd>ひとり用の個室。机・椅子・無料Wi-Fi・コンセントつき。</dd></div>
+      <div><dt>申込み</dt><dd>フロントでお申し付けください。空き状況はお電話（0834-32-1270）で確かめられます。</dd></div>
+    </dl>
+    <p class="subnote">料金は税込です。</p>
   </div>
 </section>
 
-<!-- 06 BUSINESS -->
+<!-- 04 PLAN -->
+<section id="plan">
+  <img loading="lazy" decoding="async" class="peek r" src="img/couple-ticket.png" alt="">
+  <div class="wrap">
+    <header class="sh"><span class="sh-n">04</span><span class="sh-l">RATE</span></header>
+    <h2 class="lead" style="margin-bottom:44px">使い方は、<span class="mk">自由自在。</span></h2>
+    <div class="rate">
+      <div class="r"><div class="k">宿泊（素泊まり）<small>1泊・1名</small></div><div class="v">4,800<small>円〜</small></div></div>
+      <div class="r"><div class="k">リモートワーク・休憩<small>1時間・泊まらない方</small></div><div class="v">1,000<small>円</small></div></div>
+      <div class="r"><div class="k">サウナ<small>1時間・宿泊の方は700円</small></div><div class="v">1,000<small>円</small></div></div>
+      <div class="r"><div class="k">団体割引<small>10名以上</small></div><div class="v">特別価格<small>お電話で</small></div></div>
+      <div class="r"><div class="k">マンスリー<small>長期滞在</small></div><div class="v">特別価格<small>お見積り</small></div></div>
+    </div>
+    <p class="subnote">料金は税込です。団体割引は10名以上のご宿泊が対象です。団体・マンスリーはお電話（<b style="color:var(--accent)">0834-32-1270</b>）でご相談ください。</p>
+  </div>
+</section>
+
+<!-- 05 BUSINESS -->
 <section class="biz" id="business">
   <div class="wrap">
-    <header class="sh"><span class="sh-n">06</span><span class="sh-l">BUSINESS &amp; LONG STAY</span></header>
-    <h2 class="lead">仕事にも、長い滞在にも。<br><span class="mk">法人・団体・マンスリー。</span></h2>
+    <header class="sh"><span class="sh-n">05</span><span class="sh-l">GROUP &amp; LONG STAY</span></header>
+    <h2 class="lead">工事や出張の拠点に。<br><span class="mk">団体・マンスリー。</span></h2>
     <div class="blist">
-      <div class="brow"><h4>テレワーク・出張</h4><p>全室 無料Wi-Fi・コンセント完備。駅前1分で、移動の合間もそのまま個室で仕事に集中。ショートステイ（1,000円／1h）での休憩利用も可能です。</p></div>
-      <div class="brow"><h4>団体でのご宿泊</h4><p>工場・プラントの定期修繕など、まとまった人数でのご宿泊に。全72室、駅前立地で移動もスムーズ。特別価格をご用意しますので、お電話でご相談ください。</p></div>
-      <div class="brow"><h4>マンスリー・長期</h4><p>長期滞在（マンスリー）は特別価格をご用意。単身赴任・長期出張の拠点としても。期間・人数に応じてお見積りいたします。</p></div>
+      <div class="brow"><h4>団体（10名以上）</h4><p>工場・プラントの定期修繕など、まとまった人数でのご宿泊に。10名以上は団体割引があります。全72室、駅前1分で移動も楽です。</p></div>
+      <div class="brow"><h4>マンスリー・長期</h4><p>単身赴任・長期出張の拠点に。期間と人数に合わせてお見積りします。</p></div>
+      <div class="brow"><h4>大きい車でお越しの方</h4><p>専用駐車場はありません。トラックなど大きい車は、止められる場所をご案内します。ご予約のときにお電話でお知らせください。</p></div>
     </div>
     <p class="subnote" style="margin-top:26px">団体・長期のご相談・お見積りは <b style="color:var(--accent)">TEL 0834-32-1270</b>（受付 目安 9:00–22:00）まで。部活動・クラブチームの合宿・大会遠征は <a href="gasshuku/" style="color:var(--accent);border-bottom:1px solid var(--accent)">合宿・団体プラン「雑魚寝しない、合宿。」</a> もご覧ください。</p>
   </div>
@@ -683,16 +746,16 @@ section{position:relative;z-index:0}
 <!-- 07 ACCESS -->
 <section class="access" id="access">
   <div class="wrap">
-    <header class="sh"><span class="sh-n">07</span><span class="sh-l">ACCESS</span></header>
+    <header class="sh"><span class="sh-n">06</span><span class="sh-l">ACCESS</span></header>
     <div class="acc-grid">
       <div id="book">
         <h2 class="big">JR徳山駅 北口から、<span class="em">徒歩1分。</span></h2>
         <p class="addr">キューブホテル徳山<br>山口県周南市有楽町15-1<br>北口を出て左手すぐ・徒歩1分<br>チェックイン 15:00–23:00 ／ チェックアウト 10:00<br>TEL 0834-32-1270</p>
-        <p class="near"><b>電車</b>JR山陽本線・山陽新幹線 徳山駅 北口すぐ<br><b>お車</b>専用駐車場はございません。近隣コインパーキングをご利用ください<br><b>徒歩1分</b>スターバックス・蔦屋書店<br><b>徒歩3分</b>大型商業施設 TOKUYAMA DECK<br><b>隣接</b>吉野家・ローソン、ほか飲食店・居酒屋 徒歩圏内多数</p>
+        <p class="near"><b>電車</b>JR山陽本線・山陽新幹線 徳山駅 北口すぐ<br><b>お車</b>専用駐車場はございません。近隣コインパーキングをご利用ください<br><b>大きい車</b>トラックなどは止められる場所をご案内します。ご予約時にお電話で<br><b>徒歩1分</b>スターバックス・蔦屋書店<br><b>徒歩3分</b>大型商業施設 TOKUYAMA DECK<br><b>隣接</b>吉野家・ローソン、ほか飲食店・居酒屋 徒歩圏内多数</p>
         <p class="near" style="margin-top:14px"><b>広島・福岡から</b>新幹線で広島から約30分・博多（福岡）から約45分。週末の途中下車、安く泊まれる山口の穴場としても。</p>
         <div class="links">
-          <a href="https://www.jalan.net/yad343195/" target="_blank" rel="noopener">じゃらんで予約</a>
-          <a href="https://travel.yahoo.co.jp/00919706/" target="_blank" rel="noopener">Yahoo!トラベル</a>
+          <a href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらんで予約</a>
+          <a href="https://travel.yahoo.co.jp/00919706/?ppc=1" target="_blank" rel="noopener">Yahoo!トラベル</a>
           <a href="tel:0834321270">電話 0834-32-1270</a>
           <a href="https://www.instagram.com/cubehotel.tokuyama/" target="_blank" rel="noopener">Instagram</a>
         </div>
@@ -708,7 +771,7 @@ section{position:relative;z-index:0}
 <!-- 08 AROUND -->
 <section class="around" id="around">
   <div class="wrap">
-    <header class="sh"><span class="sh-n">08</span><span class="sh-l">AROUND</span></header>
+    <header class="sh"><span class="sh-n">07</span><span class="sh-l">AROUND</span></header>
     <h2 class="lead" style="margin-bottom:44px">駅前に、<span class="mk">たのしみが集まっている。</span></h2>
     <div class="list">
       <div class="a"><span class="d">徒歩1分</span><div><b>蔦屋書店・周南市立徳山駅前図書館</b><small>本とスターバックスが同居する、駅前のランドマーク。夜まで灯りがともる。</small></div></div>
@@ -723,16 +786,19 @@ section{position:relative;z-index:0}
 <!-- 09 FAQ -->
 <section class="faq" id="faq">
   <div class="wrap">
-    <header class="sh"><span class="sh-n">09</span><span class="sh-l">FAQ</span></header>
+    <header class="sh"><span class="sh-n">08</span><span class="sh-l">FAQ</span></header>
     <h2 class="lead" style="margin-bottom:44px">よくある、<span class="mk">ご質問。</span></h2>
     <dl class="list">
       <div class="q"><dt>客室に鍵はありますか？</dt><dd>簡易宿泊施設のため、客室に鍵はございません。貴重品は2・3階のロッカー、またはフロントでお預かりします。24:00〜翌6:00は入口を施錠し、インターホンで対応いたします。</dd></div>
       <div class="q"><dt>サウナは宿泊しなくても利用できますか？</dt><dd>はい。一般利用 1,000円／1時間、宿泊者 700円／1時間、貸し切り 6,000円／1時間でご利用いただけます。営業は11:00〜23:00（最終受付22:00）。フロントにてお申し付けください。</dd></div>
-      <div class="q"><dt>駐車場はありますか？</dt><dd>専用駐車場はございません。お車の場合は、近隣のコインパーキングをご利用ください。</dd></div>
+      <div class="q"><dt>駐車場はありますか？</dt><dd>専用駐車場はございません。お車の場合は、近隣のコインパーキングをご利用ください。トラックなど大きいお車でお越しの方には、止められる場所をご案内します。ご予約のときにお電話（0834-32-1270）でお知らせください。</dd></div>
+      <div class="q"><dt>泊まらずに、仕事や打ち合わせだけで使えますか？</dt><dd>はい。ひとり用の個室を1時間1,000円（税込）でお使いいただけます。Wi-Fi・コンセントつきで、オンライン会議にも使えます。フロントでお申し付けください。</dd></div>
+      <div class="q"><dt>トイレやシャワーは部屋にありますか？</dt><dd>客室にはありません。トイレとシャワー室は各階に共用で2か所ずつあります。洗面所も各階にあります。</dd></div>
+      <div class="q"><dt>部屋にテレビはありますか？</dt><dd>客室にはありません。館内の共用テレビを無料でご覧いただけます。</dd></div>
       <div class="q"><dt>Wi-Fiやコンセントはありますか？</dt><dd>全室に無料Wi-Fi・コンセントを完備しています。テレワークや長期滞在にもご利用いただけます。</dd></div>
       <div class="q"><dt>チェックイン・チェックアウトの時間は？</dt><dd>チェックイン 15:00〜23:00、チェックアウト 10:00 です。</dd></div>
-      <div class="q"><dt>連泊・団体・長期滞在はできますか？</dt><dd>マンスリー（長期）や団体（工場・プラント定期修繕など）でのご宿泊は特別価格をご用意しています。お電話（0834-32-1270）でご相談ください。</dd></div>
-      <div class="q"><dt>徳山駅から近い格安ホテルを探しています。</dt><dd>はい。JR徳山駅 北口から徒歩1分、素泊まり4,800円（税込）からご利用いただけます。全72室すべてが個室のキューブルームで、ビジネス・観光・合宿の拠点に便利です。</dd></div><div class="q"><dt>広島・福岡からのアクセスは？</dt><dd>新幹線で広島から約30分、博多（福岡）から約45分です。徳山駅の北口を出て左手すぐ・徒歩1分。週末旅や出張の途中下車にもご利用いただけます。</dd></div><div class="q"><dt>コインランドリーはありますか？</dt><dd>はい。洗濯機500円／乾燥機100円（10分）／洗濯洗剤100円でご利用いただけます。連泊・長期滞在・合宿にも便利です。</dd></div><div class="q"><dt>大浴場はありますか？</dt><dd>大浴場はございませんが、各階に共用シャワールームを完備しています。セルフロウリュのサウナ（水風呂・整いエリアあり）を併設しており、宿泊者は700円／1時間でご利用いただけます。</dd></div><div class="q"><dt>予約方法を教えてください。</dt><dd>じゃらん・Yahoo!トラベル・JTBの各予約サイト、またはお電話（0834-32-1270）で承っています。空室状況は各予約サイトでご確認ください。</dd></div>
+      <div class="q"><dt>連泊・団体・長期滞在はできますか？</dt><dd>10名以上の団体には団体割引があります。マンスリー（長期）も特別価格です。工場・プラントの定期修繕などのご利用も、お電話（0834-32-1270）でご相談ください。</dd></div>
+      <div class="q"><dt>徳山駅から近い格安ホテルを探しています。</dt><dd>はい。JR徳山駅 北口から徒歩1分、素泊まり4,800円（税込）からご利用いただけます。全72室すべてが個室のキューブルームで、ビジネス・観光・合宿の拠点に便利です。</dd></div><div class="q"><dt>広島・福岡からのアクセスは？</dt><dd>新幹線で広島から約30分、博多（福岡）から約45分です。徳山駅の北口を出て左手すぐ・徒歩1分。週末旅や出張の途中下車にもご利用いただけます。</dd></div><div class="q"><dt>コインランドリーはありますか？</dt><dd>はい。洗濯機500円／乾燥機100円（10分）／洗濯洗剤100円でご利用いただけます。連泊・長期滞在・合宿にも便利です。</dd></div><div class="q"><dt>大浴場はありますか？</dt><dd>大浴場はございません。各階に共用のシャワー室があります。セルフロウリュのサウナ（水風呂・整いエリアあり）を併設しており、宿泊者は700円／1時間でご利用いただけます。</dd></div><div class="q"><dt>予約方法を教えてください。</dt><dd>じゃらん・Yahoo!トラベル・JTBの各予約サイト、またはお電話（0834-32-1270）で承っています。空室状況は各予約サイトでご確認ください。</dd></div>
     </dl>
   </div>
 </section>
@@ -740,26 +806,28 @@ section{position:relative;z-index:0}
 <!-- 10 RESERVATION -->
 <section class="booking" id="reserve">
   <div class="wrap">
-    <header class="sh"><span class="sh-n">10</span><span class="sh-l">RESERVATION</span></header>
+    <header class="sh"><span class="sh-n">09</span><span class="sh-l">RESERVATION</span></header>
     <h2 class="lead">この駅前を、<span class="mk">あなたの定宿に。</span></h2>
     <div class="blinks">
-      <a href="https://www.jalan.net/yad343195/" target="_blank" rel="noopener">じゃらん</a>
-      <a href="https://travel.yahoo.co.jp/00919706/" target="_blank" rel="noopener">Yahoo!トラベル</a>
-      <a href="https://www.jtb.co.jp/kokunai-hotel/htl/7220A16/" target="_blank" rel="noopener">JTB</a>
+      <a href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらん</a>
+      <a href="https://travel.yahoo.co.jp/00919706/?ppc=1" target="_blank" rel="noopener">Yahoo!トラベル</a>
+      <a href="https://www.jtb.co.jp/kokunai-hotel/htl/7220A16/plan/?room=1&amp;dateunspecified=1&amp;staynight=1&amp;roomassign=m1" target="_blank" rel="noopener">JTB</a>
       <a href="https://www.instagram.com/cubehotel.tokuyama/" target="_blank" rel="noopener">Instagram</a>
     </div>
     <p class="btel">お電話でのご予約・お問い合わせ　TEL 0834-32-1270<small>受付目安 9:00〜22:00</small></p>
   </div>
 </section>
 
-<!-- LP誘導 -->
-<section class="feat" aria-label="周南ノスタルジー特集">
-  <img loading="lazy" decoding="async" class="peek r on-dark" src="img/couple-wave.png" alt="">
+<!-- お知らせ NEWS -->
+<section class="news" aria-label="お知らせ">
   <div class="wrap">
-    <p class="fl">FEATURE · 周南ノスタルジー</p>
-    <h3>町まるごとが、あなたの宿になる。</h3>
-    <p>提携の純喫茶や大衆酒場をチケットでめぐる「まちごとホテル」企画。作られていない昭和を歩く、周南ノスタルジー旅の特集ページ。</p>
-    <a class="go" href="trip/">特集を見る</a>
+    <div class="nh">お知らせ<span>NEWS</span></div>
+    <div class="nlist">
+      <div class="ni"><span class="date">2026.07.01</span><a class="t" href="trip/">「周南ノスタルジー」まちごとホテル特集を公開しました。</a></div>
+      <div class="ni"><span class="date">2026.04.01</span><span class="t">リモートワーク・ショートステイのご利用が可能です（1,000円／1時間）。</span></div>
+      <div class="ni"><span class="date">2025.10.01</span><span class="t">サウナの貸し切り（6,000円／1時間）を承っています。宿泊されない方のご利用も可能です。</span></div>
+      <div class="ni"><span class="date">2024.09.13</span><span class="t">キューブホテル徳山、開業しました。</span></div>
+    </div>
   </div>
 </section>
 
