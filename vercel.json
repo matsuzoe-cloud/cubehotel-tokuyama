@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "cubehotel-tokuyama.vercel.app" }], "destination": "https://solution-cube.jp/:path*", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "cubehotel-tokuyama.vercel.app" }], "destination": "https://solution-cube.jp/$1", "permanent": true },
     { "source": "/HP", "destination": "/", "permanent": true },
     { "source": "/HP/", "destination": "/", "permanent": true },
     { "source": "/LP", "destination": "/trip/", "permanent": true },
