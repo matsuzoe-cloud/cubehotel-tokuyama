@@ -47,9 +47,10 @@
 <meta name="geo.placename" content="山口県周南市">
 <meta name="geo.position" content="34.0526;131.8060">
 <meta name="ICBM" content="34.0526, 131.8060">
+<link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#ffffff;--soft:#f6f1e6;--soft2:#efe9da;
@@ -63,7 +64,7 @@ body{margin:0;color:var(--ink);background:var(--bg);
   font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-weight:400;line-height:1.95;letter-spacing:.03em;
   -webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,44px)}
 .maru{font-family:"Zen Maru Gothic",sans-serif}
 .en{letter-spacing:.28em;text-transform:uppercase}
@@ -110,7 +111,7 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 /* ===== セクション共通 ===== */
 .sec{padding:clamp(60px,8vw,104px) 0;position:relative;z-index:0}
 /* 各所に登場するふたり（文字の背面） */
-.peek{position:absolute;bottom:0;z-index:-1;pointer-events:none;filter:drop-shadow(0 12px 16px rgba(30,20,8,.18))}
+.peek{position:absolute;bottom:0;width:auto;z-index:-1;pointer-events:none;filter:drop-shadow(0 12px 16px rgba(30,20,8,.18))}
 .peek.r{right:clamp(4px,2vw,28px)}
 .peek.l{left:clamp(4px,2vw,28px)}
 .peek.top{top:clamp(64px,9vw,116px);bottom:auto}
@@ -342,7 +343,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="top">
-  <img class="couple" src="img/couple-cut.png" alt="夜の町を歩くふたり">
+  <img class="couple" src="img/couple-cut.webp" width="783" height="1150" fetchpriority="high" alt="夜の町を歩くふたり">
   <div class="in">
     <p class="ey" data-en="Shunan Nostalgia Trip">周南ノスタルジー旅</p>
     <h1 data-en="Stay in a nostalgic town,<br>a whole-town hotel.">なつかしい町に、<br>泊まることにした。</h1>
@@ -377,16 +378,16 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== ふたりの一日 ===== -->
 <section class="sec soft" id="day">
-  <img class="peek r top" src="img/couple-photo.png" alt="" style="height:clamp(180px,20vw,250px)">
+  <img class="peek r top" src="img/couple-photo.webp" width="441" height="620" loading="lazy" decoding="async" alt="" style="height:clamp(180px,20vw,250px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="A DAY IN SHUNAN">A DAY IN SHUNAN</span>
       <h2 data-en="From check-in<br>to tomorrow's coffee.">チェックインから、<br>翌朝の珈琲まで。</h2>
     </div>
-    <div class="dayil"><img src="img/couple.jpg" alt="夜の町を歩くふたり" loading="lazy"></div>
+    <div class="dayil"><img src="img/couple.jpg" width="1500" height="1000" alt="夜の町を歩くふたり" loading="lazy" decoding="async"></div>
     <div class="cards">
-      <div class="card"><div class="ph"><img src="img/corridor.jpg" alt="客室フロアの廊下"><span class="tag" data-en="Inn">宿</span></div><div class="bd"><b data-en="First, drop your bags.">まず、荷物を置いて。</b><p data-en="Leave your bags in your room by the station, then head for the Ginnangai arcade.">駅前の個室に荷物を置いたら、銀南街のアーケードへ。</p></div></div>
-      <div class="card"><div class="ph"><img src="img/sauna.jpg" alt="キューブホテル徳山のサウナ"><span class="tag" data-en="Night">夜</span></div><div class="bd"><b data-en="End the night in the sauna.">締めは、サウナで。</b><p data-en="A drink under the red lanterns, then back to the inn for a self-löyly sauna.">赤提灯で一杯。宿に戻って、セルフロウリュでととのう。</p></div></div>
+      <div class="card"><div class="ph"><img src="img/corridor.jpg" width="1200" height="1500" loading="lazy" decoding="async" alt="客室フロアの廊下"><span class="tag" data-en="Inn">宿</span></div><div class="bd"><b data-en="First, drop your bags.">まず、荷物を置いて。</b><p data-en="Leave your bags in your room by the station, then head for the Ginnangai arcade.">駅前の個室に荷物を置いたら、銀南街のアーケードへ。</p></div></div>
+      <div class="card"><div class="ph"><img src="img/sauna.jpg" width="376" height="318" loading="lazy" decoding="async" alt="キューブホテル徳山のサウナ"><span class="tag" data-en="Night">夜</span></div><div class="bd"><b data-en="End the night in the sauna.">締めは、サウナで。</b><p data-en="A drink under the red lanterns, then back to the inn for a self-löyly sauna.">赤提灯で一杯。宿に戻って、セルフロウリュでととのう。</p></div></div>
     </div>
     <div class="tl">
       <div class="tl-row"><span class="t">15:00</span><div><b data-en="Check-in">チェックイン</b><p data-en="Drop the bags, get the nostalgic map.">駅前の宿に荷物を置いて、ノスタルジック・マップを受け取る。</p></div></div>
@@ -400,7 +401,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== パスポート ===== -->
 <section class="sec" id="plan">
-  <img class="peek l" src="img/couple-ticket.png" alt="" style="height:clamp(190px,22vw,270px)">
+  <img class="peek l" src="img/couple-ticket.webp" width="595" height="600" loading="lazy" decoding="async" alt="" style="height:clamp(190px,22vw,270px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="STAY PLAN">STAY PLAN</span>
@@ -422,7 +423,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 提携店 ===== -->
 <section class="sec soft" id="partners">
-  <img class="peek l top" src="img/couple-cheers.png" alt="" style="height:clamp(150px,18vw,210px)">
+  <img class="peek l top" src="img/couple-cheers.webp" width="513" height="560" loading="lazy" decoding="async" alt="" style="height:clamp(150px,18vw,210px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="PARTNER SHOPS">PARTNER SHOPS</span>
@@ -441,14 +442,14 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 部屋 ===== -->
 <section class="sec" id="hotel">
-  <img class="peek r" src="img/couple-sauna.png" alt="" style="height:clamp(190px,22vw,270px)">
+  <img class="peek r" src="img/couple-sauna.webp" width="558" height="600" loading="lazy" decoding="async" alt="" style="height:clamp(190px,22vw,270px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="ROOMS">ROOMS</span>
       <h2 data-en="A clean little room,<br>made for sleeping.">眠るためだけの、潔い一室。</h2>
     </div>
     <div class="rgrid">
-      <div class="ph"><img src="img/room-wide.jpg" alt="客室。ベッドと机" style="aspect-ratio:1;object-fit:cover;object-position:50% 62%"></div>
+      <div class="ph"><img src="img/room-wide.jpg" width="1200" height="1500" loading="lazy" decoding="async" alt="客室。ベッドと机" style="aspect-ratio:1;object-fit:cover;object-position:50% 62%"></div>
       <div class="facts">
         <div class="fact"><b data-en="72 single rooms · free Wi-Fi &amp; outlets">全72室・ひとり用の個室・Wi-Fi＆コンセント</b><small data-en="A bit roomier than a capsule hotel. Good for remote work too.">カプセルホテルより少し広い個室。リモートワークにも。</small></div>
         <div class="fact"><b data-en="Toilets &amp; showers are outside the room">トイレ・シャワーは部屋の外</b><small data-en="Shared toilets and showers, two of each on every floor. No room key; valuables in the 2F/3F lockers or at the front.">各階に共用で2か所ずつ。客室に鍵はなし。貴重品は2・3階ロッカーかフロントへ。</small></div>
@@ -504,7 +505,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 最終CTA ===== -->
 <section class="sec final">
-  <img class="peek r on-dark" src="img/couple-wave.png" alt="" style="height:clamp(210px,25vw,300px)">
+  <img class="peek r on-dark" src="img/couple-wave.webp" width="488" height="620" loading="lazy" decoding="async" alt="" style="height:clamp(210px,25vw,300px)">
   <div class="wrap">
     <h2 data-en="See you in this town.">またこの町で、会いましょう。</h2>
     <p data-en="From ¥4,800 a night. This weekend, come soak in a little Shōwa at the station front.">一泊4,800円から。この週末、駅前で少しだけ昭和にひたりに。</p>
