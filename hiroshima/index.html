@@ -149,8 +149,8 @@ footer .addr{margin-top:12px}
 </main>
 <section class="book" id="book"><div class="wrap">
 <h2><small>RESERVATION</small>空室・ご予約</h2>
-<p>空室と料金は、じゃらんでご確認いただけます。団体・長期のご相談はお電話で。</p>
-<div class="cta"><a class="btn" href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらんで空室を見る</a><a class="btn sub" href="/">ホテルのトップへ</a></div>
+<p>空室と料金は、じゃらん・楽天トラベル・Booking.comでご確認いただけます。団体・長期のご相談はお電話で。</p>
+<div class="cta"><a class="btn" href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらんで空室を見る</a><a class="btn" href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/193341?f_otona_su=1&amp;f_heya_su=1" target="_blank" rel="noopener">楽天トラベルで見る</a><a class="btn" href="https://www.booking.com/hotel/jp/soriyusiyonkiyubutokuyama.ja.html?group_adults=1&amp;no_rooms=1&amp;group_children=0" target="_blank" rel="noopener">Booking.comで見る</a><a class="btn sub" href="/">ホテルのトップへ</a></div>
 <p class="tel"><a href="tel:0834321270">TEL 0834-32-1270</a><small>受付目安 9:00〜22:00</small></p>
 </div></section>
 <footer><div class="wrap">
@@ -159,5 +159,5 @@ footer .addr{margin-top:12px}
 </div></footer>
 <div id="cookie-consent" style="display:none;position:fixed;left:16px;right:16px;bottom:16px;max-width:640px;margin:0 auto;background:#1c1a15;color:#f3ede1;padding:14px 18px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.35);z-index:9999;font-size:12.5px;line-height:1.7">当サイトは、利用状況の把握・改善のためCookie（Googleアナリティクス／Microsoft Clarity）を使用します。詳しくは<a href="/privacy/" style="color:#ffe6a6;text-decoration:underline">プライバシーポリシー</a>をご覧ください。<div style="margin-top:10px;text-align:right"><button id="cookie-ok" style="background:#d8b74c;color:#1c1a15;border:0;font-weight:700;padding:8px 20px;border-radius:999px;cursor:pointer;font-family:inherit;font-size:12.5px">同意する</button></div></div>
 <script>(function(){try{var k='cube_cookie_ok';if(!localStorage.getItem(k)){document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('cookie-consent');if(!el)return;el.style.display='block';var b=document.getElementById('cookie-ok');if(b)b.onclick=function(){try{localStorage.setItem(k,'1')}catch(e){}el.style.display='none';};});}}catch(e){}})();</script>
-<script>document.addEventListener('click',function(e){try{var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/^tel:/i.test(h)){gtag('event','tel_click',{link_url:h});}else if(/jalan\.net|travel\.yahoo|jtb\.co\.jp/i.test(h)){var d=(h.match(/https?:\/\/([^\/]+)/)||[])[1]||'';gtag('event','reserve_click',{link_url:h,link_domain:d});}}catch(err){}},true);</script>
+<script>document.addEventListener('click',function(e){try{var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/^tel:/i.test(h)){gtag('event','tel_click',{link_url:h});}else if(/jalan\.net|travel\.yahoo|jtb\.co\.jp|travel\.rakuten|booking\.com/i.test(h)){var d=(h.match(/https?:\/\/([^\/]+)/)||[])[1]||'';gtag('event','reserve_click',{link_url:h,link_domain:d});}}catch(err){}},true);</script>
 </body></html>

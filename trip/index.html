@@ -282,7 +282,9 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
  },
  "sameAs": [
   "https://www.instagram.com/cubehotel.tokuyama/",
-  "https://www.jalan.net/yad343195/"
+  "https://www.jalan.net/yad343195/",
+  "https://travel.rakuten.co.jp/HOTEL/193341/193341.html",
+  "https://www.booking.com/hotel/jp/soriyusiyonkiyubutokuyama.html"
  ]
 }
 </script>
@@ -482,6 +484,8 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
         <p class="addr" style="margin-top:10px" data-en="Shinkansen: about 30 min from Hiroshima, about 45 min from Hakata (Fukuoka). A hidden-gem stop for a cheap weekend trip.">新幹線なら<b style="color:var(--teal-d)">広島から約30分・博多（福岡）から約45分</b>。広島・福岡からの週末旅、安く泊まれる山口の穴場に。</p>
         <div class="links">
           <a href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener" data-en="Book on Jalan">じゃらんで予約</a>
+          <a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/193341?f_otona_su=1&amp;f_heya_su=1" target="_blank" rel="noopener" data-en="Book on Rakuten Travel">楽天トラベルで予約</a>
+          <a href="https://www.booking.com/hotel/jp/soriyusiyonkiyubutokuyama.ja.html?group_adults=1&amp;no_rooms=1&amp;group_children=0" target="_blank" rel="noopener" data-en="Book on Booking.com">Booking.comで予約</a>
           <a class="alt" href="tel:0834321270" data-en="Call">電話 0834-32-1270</a>
           <a class="alt" href="https://www.instagram.com/cubehotel.tokuyama/" target="_blank" rel="noopener" data-en="Instagram">Instagram</a>
         </div>
@@ -572,6 +576,6 @@ document.querySelectorAll('.mchip').forEach(function(a){
 <div id="cookie-consent" style="display:none;position:fixed;left:16px;right:16px;bottom:16px;max-width:640px;margin:0 auto;background:#1c1a15;color:#f3ede1;padding:14px 18px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.35);z-index:9999;font-size:12.5px;line-height:1.7">当サイトは、利用状況の把握・改善のためCookie（Googleアナリティクス／Microsoft Clarity）を使用します。詳しくは<a href="/privacy/" style="color:#ffe6a6;text-decoration:underline">プライバシーポリシー</a>をご覧ください。<div style="margin-top:10px;text-align:right"><button id="cookie-ok" style="background:#d8b74c;color:#1c1a15;border:0;font-weight:700;padding:8px 20px;border-radius:999px;cursor:pointer;font-family:inherit;font-size:12.5px">同意する</button></div></div>
 <script>(function(){try{var k='cube_cookie_ok';if(!localStorage.getItem(k)){document.addEventListener('DOMContentLoaded',function(){var el=document.getElementById('cookie-consent');if(!el)return;el.style.display='block';var b=document.getElementById('cookie-ok');if(b)b.onclick=function(){try{localStorage.setItem(k,'1')}catch(e){}el.style.display='none';};});}}catch(e){}})();</script>
 <script>/* CVイベント計測：予約リンク/電話タップ */
-document.addEventListener('click',function(e){try{var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/^tel:/i.test(h)){gtag('event','tel_click',{link_url:h});}else if(/jalan\.net|travel\.yahoo|jtb\.co\.jp/i.test(h)){var d=(h.match(/https?:\/\/([^\/]+)/)||[])[1]||'';gtag('event','reserve_click',{link_url:h,link_domain:d});}}catch(err){}},true);</script>
+document.addEventListener('click',function(e){try{var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/^tel:/i.test(h)){gtag('event','tel_click',{link_url:h});}else if(/jalan\.net|travel\.yahoo|jtb\.co\.jp|travel\.rakuten|booking\.com/i.test(h)){var d=(h.match(/https?:\/\/([^\/]+)/)||[])[1]||'';gtag('event','reserve_click',{link_url:h,link_domain:d});}}catch(err){}},true);</script>
 </body>
 </html>
