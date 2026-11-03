@@ -54,6 +54,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet"></noscript>
 <style>
+/* 字が届く前の代わりの字（半角の英数字と句読点だけ）。BIZ UDゴシックは幅がWeb字に近く、届いたときに折り返しが変わりにくい。どれもWeb字に入っている字なので、届いた後の見た目は変わらない */
+@font-face{font-family:"Kaku Fallback";src:local("BIZ UDGothic"),local("BIZ-UDGothicR");unicode-range:U+0020-007E,U+3001-3002,U+300C-3011,U+30FB,U+FF08-FF09}
+@font-face{font-family:"Kaku Fallback";font-weight:700;src:local("BIZ UDGothic Bold"),local("BIZ-UDGothicB");unicode-range:U+0020-007E,U+3001-3002,U+300C-3011,U+30FB,U+FF08-FF09}
+
 :root{
   --bg:#ffffff;--soft:#f6f1e6;--soft2:#efe9da;
   --ink:#241a15;--ink2:#736a5d;
@@ -63,7 +67,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--ink);background:var(--bg);
-  font-family:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;font-weight:400;line-height:1.95;letter-spacing:.03em;
+  font-family:"Zen Kaku Gothic New","Kaku Fallback","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;font-weight:400;line-height:1.95;letter-spacing:.03em;
   -webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit}
 img{max-width:100%;height:auto;display:block}
