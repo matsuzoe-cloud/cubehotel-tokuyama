@@ -48,7 +48,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+<!-- 字のCSSは描画を止めないよう後から当てる（字は display=swap なので、届くまでは端末の字で出る） -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet"></noscript>
 <style>
 /* 字が届く前の代わりの字（半角の英数字と句読点だけ）。BIZ UDゴシックは幅がWeb字に近く、届いたときに折り返しが変わりにくい。どれもWeb字に入っている字なので、届いた後の見た目は変わらない */
 @font-face{font-family:"Kaku Fallback";src:local("BIZ UDGothic"),local("BIZ-UDGothicR");unicode-range:U+0020-007E,U+3001-3002,U+300C-3011,U+30FB,U+FF08-FF09}

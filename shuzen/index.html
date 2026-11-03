@@ -14,7 +14,10 @@
 <meta property="og:url" content="https://solution-cube.jp/shuzen/"><meta property="og:title" content="周南コンビナートの定期修繕・工事の宿｜出光・トクヤマ・東ソー・日本ゼオン近く 素泊まり4,800円〜｜キューブホテル徳山"><meta property="og:description" content="出光興産 徳山事業所、トクヤマ 徳山製造所、日本ゼオン 徳山工場、日本製鉄 山口製鉄所（周南）、東ソー 南陽事業所まで車で約5〜11分。JR徳山駅前のひとり用個室ホテル。定期修繕（定修・SDM）や工事の長期・団体はお見積りします。素泊まり4,800円（税込）から。">
 <meta property="og:image" content="https://solution-cube.jp/og.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- 字のCSSは描画を止めないよう後から当てる（字は display=swap なので、届くまでは端末の字で出る） -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 /* 字が届く前の代わりの字（半角の英数字と句読点だけ）。BIZ UDゴシックは幅がWeb字に近く、届いたときに折り返しが変わりにくい。どれもWeb字に入っている字なので、届いた後の見た目は変わらない */
 @font-face{font-family:"Kaku Fallback";src:local("BIZ UDGothic"),local("BIZ-UDGothicR");unicode-range:U+0020-007E,U+3001-3002,U+300C-3011,U+30FB,U+FF08-FF09}
@@ -117,7 +120,7 @@ footer .addr{margin-top:12px}
 <div class="facts"><div><span class="k">各事業所まで<wbr>車で</span><span class="v">約5〜11分</span></div><div><span class="k">ひとり1室の<wbr>個室</span><span class="v">全72室</span></div><div><span class="k">素泊まり<wbr>（税込）</span><span class="v">4,800円〜</span></div></div>
 <div class="cta"><a class="btn" href="tel:0834321270">電話で<wbr>見積もりを<wbr>相談 0834-32-1270</a><a class="btn sub" href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらんで<wbr>空室を<wbr>見る</a></div>
 </div>
-<figure><img src="/img/corridor.jpg" alt="客室フロアの廊下。個室が並ぶ" decoding="async"><figcaption>客室フロアの<wbr>廊下。<wbr>すべて<wbr>個室です</figcaption></figure>
+<figure><img src="/img/corridor.jpg" alt="客室フロアの廊下。個室が並ぶ" decoding="async" fetchpriority="high"><figcaption>客室フロアの<wbr>廊下。<wbr>すべて<wbr>個室です</figcaption></figure>
 </div>
 
 <section><h2><small>ACCESS</small>主な<wbr>事業所までの<wbr>時間</h2>

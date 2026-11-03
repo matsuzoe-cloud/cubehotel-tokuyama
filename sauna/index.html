@@ -14,7 +14,10 @@
 <meta property="og:url" content="https://solution-cube.jp/sauna/"><meta property="og:title" content="周南市のサウナ｜徳山駅前のセルフロウリュ・水風呂 1時間1,000円・貸し切りも｜キューブホテル徳山"><meta property="og:description" content="山口県周南市、JR徳山駅 北口から徒歩1分のサウナ。セルフロウリュ・水風呂・整いエリアがあり、泊まらなくても1時間1,000円（税込・男性専用）で使えます。宿泊の方は700円。貸し切りは1時間6,000円で、男女どなたでも使えます。営業は10:00〜23:00（最終受付22:00）。">
 <meta property="og:image" content="https://solution-cube.jp/og.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- 字のCSSは描画を止めないよう後から当てる（字は display=swap なので、届くまでは端末の字で出る） -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 /* 字が届く前の代わりの字（半角の英数字と句読点だけ）。BIZ UDゴシックは幅がWeb字に近く、届いたときに折り返しが変わりにくい。どれもWeb字に入っている字なので、届いた後の見た目は変わらない */
 @font-face{font-family:"Kaku Fallback";src:local("BIZ UDGothic"),local("BIZ-UDGothicR");unicode-range:U+0020-007E,U+3001-3002,U+300C-3011,U+30FB,U+FF08-FF09}
@@ -117,7 +120,7 @@ footer .addr{margin-top:12px}
 <div class="facts"><div><span class="k">男性・泊まらない<wbr>方<wbr>（1時間）</span><span class="v">1,000円</span></div><div><span class="k">貸し切り・<wbr>男女とも<wbr>（1時間）</span><span class="v">6,000円</span></div><div><span class="k">営業時間</span><span class="v">10:00〜23:00</span></div></div>
 <div class="cta"><a class="btn" href="tel:0834321270">電話で<wbr>問い合わせる<wbr> 0834-32-1270</a><a class="btn sub" href="/#access">地図と<wbr>行き方を<wbr>見る</a></div>
 </div>
-<figure><img src="/img/sauna.jpg" alt="キューブホテル徳山のサウナ室。木のベンチ" decoding="async" style="aspect-ratio:376/318"></figure>
+<figure><img src="/img/sauna.jpg" alt="キューブホテル徳山のサウナ室。木のベンチ" decoding="async" fetchpriority="high" style="aspect-ratio:376/318"></figure>
 </div>
 
 <section><h2><small>RATE</small>料金</h2>

@@ -14,7 +14,10 @@
 <meta property="og:url" content="https://solution-cube.jp/hiroshima/"><meta property="og:title" content="広島のホテルが取れない・高い日に｜新幹線で約25〜30分の徳山駅前 素泊まり4,800円〜｜キューブホテル徳山"><meta property="og:description" content="広島でのライブ・カープ観戦・出張で、ホテルが取れない、高いときに。広島駅から新幹線で約25〜30分、JR徳山駅北口から徒歩1分。ひとり用の個室で、素泊まり4,800円（税込）から泊まれます。">
 <meta property="og:image" content="https://solution-cube.jp/og.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- 字のCSSは描画を止めないよう後から当てる（字は display=swap なので、届くまでは端末の字で出る） -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 /* 字が届く前の代わりの字（半角の英数字と句読点だけ）。BIZ UDゴシックは幅がWeb字に近く、届いたときに折り返しが変わりにくい。どれもWeb字に入っている字なので、届いた後の見た目は変わらない */
 @font-face{font-family:"Kaku Fallback";src:local("BIZ UDGothic"),local("BIZ-UDGothicR");unicode-range:U+0020-007E,U+3001-3002,U+300C-3011,U+30FB,U+FF08-FF09}
@@ -117,7 +120,7 @@ footer .addr{margin-top:12px}
 <div class="facts"><div><span class="k">広島駅から<wbr>新幹線</span><span class="v">約25〜30分</span></div><div><span class="k">徳山駅北口から</span><span class="v">徒歩約1分</span></div><div><span class="k">素泊まり<wbr>（税込）</span><span class="v">4,800円〜</span></div></div>
 <div class="cta"><a class="btn" href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらんで<wbr>空室を<wbr>見る</a><a class="btn sub" href="tel:0834321270">電話で<wbr>予約 0834-32-1270</a></div>
 </div>
-<figure><img src="/img/room-wide.jpg" alt="キューブホテル徳山の客室。ベッドと机" decoding="async"><figcaption>客室は<wbr>ひとり用の<wbr>個室<wbr>（約5㎡）。<wbr>ベッド・机・<wbr>椅子つき</figcaption></figure>
+<figure><img src="/img/room-wide.jpg" alt="キューブホテル徳山の客室。ベッドと机" decoding="async" fetchpriority="high"><figcaption>客室は<wbr>ひとり用の<wbr>個室<wbr>（約5㎡）。<wbr>ベッド・机・<wbr>椅子つき</figcaption></figure>
 </div>
 
 <section><h2><small>FOR</small>こんな<wbr>ときに</h2>

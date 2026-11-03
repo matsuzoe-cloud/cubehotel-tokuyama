@@ -14,7 +14,10 @@
 <meta property="og:url" content="https://solution-cube.jp/kankou/"><meta property="og:title" content="徳山駅から行ける山口・広島の観光地｜錦帯橋・瑠璃光寺・秋芳洞・宮島へ｜キューブホテル徳山"><meta property="og:description" content="JR徳山駅前のキューブホテル徳山を拠点に、錦帯橋、瑠璃光寺五重塔と湯田温泉、秋吉台・秋芳洞、宮島、大津島の回天記念館、徳山動物園へ。ホテルからの車の時間と、電車での行き方をまとめました。素泊まり4,800円（税込）から。">
 <meta property="og:image" content="https://solution-cube.jp/og.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- 字のCSSは描画を止めないよう後から当てる（字は display=swap なので、届くまでは端末の字で出る） -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <style>
 /* 字が届く前の代わりの字（半角の英数字と句読点だけ）。BIZ UDゴシックは幅がWeb字に近く、届いたときに折り返しが変わりにくい。どれもWeb字に入っている字なので、届いた後の見た目は変わらない */
 @font-face{font-family:"Kaku Fallback";src:local("BIZ UDGothic"),local("BIZ-UDGothicR");unicode-range:U+0020-007E,U+3001-3002,U+300C-3011,U+30FB,U+FF08-FF09}
@@ -117,7 +120,7 @@ footer .addr{margin-top:12px}
 <div class="facts"><div><span class="k">錦帯橋まで<wbr>車で</span><span class="v">約48分</span></div><div><span class="k">瑠璃光寺まで<wbr>車で</span><span class="v">約53分</span></div><div><span class="k">広島駅まで<wbr>新幹線</span><span class="v">約25〜30分</span></div></div>
 <div class="cta"><a class="btn" href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらんで<wbr>空室を<wbr>見る</a><a class="btn sub" href="tel:0834321270">電話で<wbr>予約 0834-32-1270</a></div>
 </div>
-<figure><img src="/img/night2.jpg" alt="夜の徳山駅前" decoding="async"><figcaption>徳山駅前の<wbr>夜。<wbr>駅前に<wbr>図書館・飲食店が<wbr>集まっています</figcaption></figure>
+<figure><img src="/img/night2.jpg" alt="夜の徳山駅前" decoding="async" fetchpriority="high"><figcaption>徳山駅前の<wbr>夜。<wbr>駅前に<wbr>図書館・飲食店が<wbr>集まっています</figcaption></figure>
 </div>
 
 <section><h2><small>SHUNAN</small>周南市内の<wbr>観光</h2>
