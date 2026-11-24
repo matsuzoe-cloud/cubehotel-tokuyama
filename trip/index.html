@@ -46,7 +46,7 @@
 <meta name="geo.placename" content="山口県周南市">
 <meta name="geo.position" content="34.0526;131.8060">
 <meta name="ICBM" content="34.0526, 131.8060">
-<link rel="preload" as="image" href="img/hero.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="img/trip-hero.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- 字のCSSは描画を止めないよう後から当てる（字は display=swap なので、届くまでは端末の字で出る） -->
@@ -91,7 +91,7 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 
 /* ===== ヒーロー：実写背景＋人物切り抜き ===== */
 .hero{position:relative;overflow:hidden;min-height:clamp(600px,94vh,880px);text-align:center;color:#fff;background:#1a120c;isolation:isolate}
-.hero::before{content:"";position:absolute;inset:-2%;z-index:0;background:url("img/hero.jpg") center/cover;will-change:transform}
+.hero::before{content:"";position:absolute;inset:-2%;z-index:0;background:linear-gradient(180deg,rgba(20,14,8,.55),rgba(20,14,8,.25) 45%,rgba(20,14,8,.6)),url("img/trip-hero.jpg") center/cover;will-change:transform}
 .hero::after{content:"";position:absolute;inset:0;z-index:1;
   background:linear-gradient(180deg,rgba(15,10,6,.74) 0%,rgba(15,10,6,.34) 24%,rgba(15,10,6,.12) 44%,rgba(15,10,6,.16) 70%,rgba(15,10,6,.6) 100%)}
 .hero .couple{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:min(55%,580px);width:auto;z-index:2;filter:drop-shadow(0 18px 24px rgba(0,0,0,.5))}
@@ -155,6 +155,7 @@ header.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);bac
 .card .bd p{margin:0;color:var(--ink2);font-size:13px;line-height:1.85}
 /* 一日タイムライン（カードの下） */
 .tl{max-width:720px;margin:40px auto 0}
+.tgal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:940px;margin:48px auto 0}.tgal figure{margin:0}.tgal img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:14px;display:block}@media(max-width:560px){.tgal{grid-template-columns:repeat(2,1fr)}}
 .tl-row{display:grid;grid-template-columns:76px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .tl-row .t{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;color:var(--teal);font-size:16px}
 .tl-row b{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:16px;display:block;margin-bottom:3px}
@@ -304,7 +305,7 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
   "@type": "Brand",
   "name": "キューブホテル徳山"
  },
- "image": "https://solution-cube.jp/trip/img/couple.jpg",
+ "image": "https://solution-cube.jp/trip/img/trip-hero.jpg",
  "offers": {
   "@type": "Offer",
   "priceCurrency": "JPY",
@@ -353,7 +354,6 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="top">
-  <img class="couple" src="img/couple-cut.webp" width="783" height="1150" fetchpriority="high" alt="夜の町を歩くふたり">
   <div class="in">
     <p class="ey" data-en="Shunan Nostalgia Trip">周南ノスタルジー旅</p>
     <h1 data-en="Stay in a nostalgic town,<br>a whole-town hotel.">な<wbr>つかしい<wbr>町に、<br>泊まる<wbr>ことにした。</h1>
@@ -388,13 +388,12 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== ふたりの一日 ===== -->
 <section class="sec soft" id="day">
-  <img class="peek r top" src="img/couple-photo.webp" width="441" height="620" loading="lazy" decoding="async" alt="" style="height:clamp(180px,20vw,250px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="A DAY IN SHUNAN">A DAY IN SHUNAN</span>
       <h2 data-en="From check-in<br>to tomorrow's coffee.">チェックインから、<br>翌朝の<wbr>珈琲まで。</h2>
     </div>
-    <div class="dayil"><img src="img/couple.jpg" width="1500" height="1000" alt="夜の町を歩くふたり" loading="lazy" decoding="async"></div>
+    <div class="dayil"><img src="img/walk-night.jpg" width="1500" height="1000" alt="夜の徳山駅前。大きな屋根の下を歩く人" loading="lazy" decoding="async"></div>
     <div class="cards">
       <div class="card"><div class="ph"><img src="img/gaikan.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="夜のキューブホテル徳山の外観"><span class="tag" data-en="Inn">宿</span></div><div class="bd"><b data-en="First, drop your bags.">まず、<wbr>荷物を<wbr>置いて。</b><p data-en="Leave your bags in your room by the station, then head for the Ginnangai arcade.">駅前の<wbr>個室に<wbr>荷物を<wbr>置いたら、<wbr>銀南街の<wbr>アーケードへ。</p></div></div>
       <div class="card"><div class="ph"><img src="img/sauna.jpg" width="376" height="318" loading="lazy" decoding="async" alt="キューブホテル徳山のサウナ"><span class="tag" data-en="Night">夜</span></div><div class="bd"><b data-en="End the night in the sauna.">締めは、<wbr>サウナで。</b><p data-en="A drink under the red lanterns, then back to the inn for a self-löyly sauna.">赤提灯で<wbr>一杯。<wbr>宿に<wbr>戻って、<wbr>セルフロウリュでととのう。</p></div></div>
@@ -406,12 +405,16 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
       <div class="tl-row"><span class="t">21:30</span><div><b data-en="Sauna">サウナでととのう</b><p data-en="Back at the inn, soothe your tired legs in the self-löyly sauna.">宿に<wbr>戻って、<wbr>セルフロウリュの<wbr>サウナで<wbr>整える。</p></div></div>
       <div class="tl-row"><span class="t">翌8:30</span><div><b data-en="Café morning">純喫茶で<wbr>目覚める</b><p data-en="The master's coffee, a morning set, and a melon soda.">マスターの<wbr>コーヒーと<wbr>モーニング、<wbr>メロンソーダも<wbr>一杯。</p></div></div>
     </div>
+    <div class="tgal">
+      <figure><img src="img/chuogai.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="提灯の並ぶ銀座中央街のアーケード"></figure>
+      <figure><img src="img/ginza.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="徳山駅前の銀座通りの夜"></figure>
+      <figure><img src="img/alley.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="シャッターの並ぶ駅前の路地（夜）"></figure>
+    </div>
   </div>
 </section>
 
 <!-- ===== パスポート ===== -->
 <section class="sec" id="plan">
-  <img class="peek l" src="img/couple-ticket.webp" width="595" height="600" loading="lazy" decoding="async" alt="" style="height:clamp(190px,22vw,270px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="STAY PLAN">STAY PLAN</span>
@@ -433,7 +436,6 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 提携店 ===== -->
 <section class="sec soft" id="partners">
-  <img class="peek l top" src="img/couple-cheers.webp" width="513" height="560" loading="lazy" decoding="async" alt="" style="height:clamp(150px,18vw,210px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="PARTNER SHOPS">PARTNER SHOPS</span>
@@ -452,7 +454,6 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 部屋 ===== -->
 <section class="sec" id="hotel">
-  <img class="peek r" src="img/couple-sauna.webp" width="558" height="600" loading="lazy" decoding="async" alt="" style="height:clamp(190px,22vw,270px)">
   <div class="wrap">
     <div class="slabel">
       <span class="en" data-en="ROOMS">ROOMS</span>
@@ -518,7 +519,6 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 
 <!-- ===== 最終CTA ===== -->
 <section class="sec final">
-  <img class="peek r on-dark" src="img/couple-wave.webp" width="488" height="620" loading="lazy" decoding="async" alt="" style="height:clamp(210px,25vw,300px)">
   <div class="wrap">
     <h2 data-en="See you in this town.">また<wbr>この<wbr>町で、<wbr>会いましょう。</h2>
     <p data-en="From ¥4,800 a night. This weekend, come soak in a little Shōwa at the station front.">一泊4,800円から。<wbr>この<wbr>週末、<wbr>駅前で<wbr>少しだけ昭和に<wbr>ひたりに。</p>
