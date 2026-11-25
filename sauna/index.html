@@ -132,13 +132,13 @@ iframe{filter:brightness(.86) saturate(.85)}
  .cta .btn::after{flex:none}
 }
 </style>
-<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 <style id="sp-space-css">
 /* 仮案：スマホの間延びをなくす（このかたまりを外せば元に戻る） */
 @media (max-width:640px){
  .book{margin-top:20px;padding:30px 0}
 }
 </style>
+<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head><body>
 <header class="nav" style="--gm-top:63px"><div class="wrap"><a class="b" href="/">キューブホテル徳山<small>CUBE HOTEL TOKUYAMA</small></a><div style="display:flex;align-items:center;gap:18px"><a class="go" href="#book">空室・予約</a><details class="gm"><summary aria-label="メニュー"><span class="gm-ic"></span><span class="gm-t">メニュー</span></summary><nav class="gm-p" aria-label="サイトの案内"><a href="/">トップ</a><a href="/room/">客室と<wbr>設備</a><a href="/sauna/">サウナ</a><a href="/#work">リモートワーク</a><a href="/#plan">料金</a><p class="gm-h">目的で<wbr>選ぶ</p><a href="/gasshuku/">合宿・部<wbr>活動</a><a href="/shuzen/">定期修繕・工事の<wbr>ご宿泊</a><a href="/hiroshima/">広島で<wbr>泊まれない<wbr>とき</a><a href="/kankou/">周辺の<wbr>観光</a><a href="/trip/">まちごとホテル<wbr>（町歩きの<wbr>特集）</a><p class="gm-h">ご案内</p><a href="/#access">アクセス</a><a href="/faq/">よく<wbr>ある<wbr>質問</a><a href="/#reserve">空室・予約</a></nav></details></div></div></header>
 <main class="wrap">
@@ -146,18 +146,25 @@ iframe{filter:brightness(.86) saturate(.85)}
 <div class="hero">
 <div>
 <h1>周南市・<wbr>徳山駅前の<br>サウナ</h1>
-<p class="lead">キューブホテル徳山の<wbr>サウナは、<wbr>泊まらなくても<wbr>1時間1,000円で<wbr>使えます。<wbr>男性専用です。<wbr>貸し切りなら、<wbr>男女どなたでも<wbr>お使いいただけます。<wbr>セルフロウリュ・<wbr>水風呂・整い<wbr>エリアが<wbr>あり、<wbr>徳山駅の<wbr>北口から<wbr>徒歩1分です。</p>
-<div class="facts"><div><span class="k">男性・泊まらない<wbr>方<wbr>（1時間）</span><span class="v">1,000円</span></div><div><span class="k">貸し切り・<wbr>男女とも<wbr>（1時間）</span><span class="v">6,000円</span></div><div><span class="k">営業時間</span><span class="v">10:00〜23:00</span></div></div>
+<p class="lead">キューブホテル徳山の<wbr>サウナには、<wbr>セルフロウリュ・<wbr>水風呂・整い<wbr>エリアが<wbr>あります。<wbr>男性専用で、<wbr>貸し切りなら<wbr>男女どなたでも<wbr>使えます。<wbr>徳山駅の<wbr>北口から<wbr>歩いて<wbr>1分です。</p>
+<div class="facts"><div><span class="k">一般<wbr>（1時間）</span><span class="v">1,000円</span></div><div><span class="k">貸し切り<wbr>（1時間）</span><span class="v">6,000円</span></div><div><span class="k">営業時間</span><span class="v">10:00〜23:00</span></div></div>
 <div class="cta"><a class="btn" href="tel:0834321270">電話で<wbr>問い合わせる<wbr> 0834-32-1270</a><a class="btn sub" href="/#access">地図と<wbr>行き方を<wbr>見る</a></div>
 </div>
 <figure><img src="/img/sauna.jpg" alt="キューブホテル徳山のサウナ室。木のベンチ" decoding="async" fetchpriority="high" style="aspect-ratio:376/318"></figure>
 </div>
 
+<section><h2>設備</h2>
+<ul class="ls">
+<li><b>セルフロウリュが<wbr>できます。</b>自分で<wbr>水を<wbr>かけて、<wbr>蒸気を<wbr>出せます。</li>
+<li><b>水風呂が<wbr>あります。</b></li>
+<li><b>整い<wbr>エリアが<wbr>あります。</b>サウナと<wbr>水風呂の<wbr>あとに、<wbr>休めます。</li>
+<li><b>大浴場は<wbr>ありません。</b>シャワーは<wbr>各階に<wbr>共用で<wbr>2か所ずつあります。</li>
+</ul></section>
 <section><h2>料金</h2>
 <div class="tbl"><table><thead><tr><th>使い方</th><th>1時間</th></tr></thead><tbody>
-<tr><td><b>一般利用</b><small>男性専用・<wbr>泊まらない<wbr>方</small></td><td class="num">1,000円</td></tr>
-<tr><td><b>宿泊の<wbr>方</b><small>男性専用・<wbr>キューブホテル徳山に<wbr>お泊まりの<wbr>方</small></td><td class="num">700円</td></tr>
-<tr><td><b>貸し切り</b><small>男女どなたでも<wbr>・泊まらない<wbr>方も<wbr>使えます</small></td><td class="num">6,000円</td></tr>
+<tr><td><b>一般利用</b><small>男性専用</small></td><td class="num">1,000円</td></tr>
+<tr><td><b>宿泊の<wbr>方</b><small>男性専用・<wbr>お泊まりの<wbr>方</small></td><td class="num">700円</td></tr>
+<tr><td><b>貸し切り</b><small>男女どなたでも</small></td><td class="num">6,000円</td></tr>
 </tbody></table></div>
 <p class="note">料金は<wbr>税込です。<wbr>タオルなどの<wbr>アメニティは<wbr>別料金です。</p>
 </section>
@@ -166,21 +173,14 @@ iframe{filter:brightness(.86) saturate(.85)}
 <li><b>男性専用です。</b>貸し切りは、<wbr>男女どなたでも<wbr>お使いいただけます。</li>
 <li><b>営業時間は<wbr>10:00〜23:00です。</b>最終受付は<wbr>22:00です。</li>
 <li><b>フロントで<wbr>お申し付けください。</b></li>
-<li><b>貸し切りの<wbr>ご相談は、<wbr>お電話で。</b>TEL 0834-32-1270<wbr>（受付目安 9:00〜22:00）</li>
+<li><b>貸し切りは、<wbr>お電話で<wbr>ご相談ください。</b>TEL 0834-32-1270<wbr>（受付目安 9:00〜22:00）</li>
 <li><b>タオルは<wbr>館内で<wbr>販売しています<wbr>（200円・<wbr>税込）。</b>お泊まりの<wbr>方には、<wbr>タオルを<wbr>お渡しします。</li>
-</ul></section>
-<section><h2>設備</h2>
-<ul class="ls">
-<li><b>セルフロウリュが<wbr>できます。</b>自分で<wbr>水を<wbr>かけて、<wbr>蒸気を<wbr>出せます。</li>
-<li><b>水風呂が<wbr>あります。</b></li>
-<li><b>整い<wbr>エリアが<wbr>あります。</b>サウナと<wbr>水風呂の<wbr>あとに、<wbr>休めます。</li>
-<li><b>大浴場は<wbr>ありません。</b>シャワーは<wbr>各階に<wbr>共用で<wbr>2か所ずつあります。</li>
 </ul></section>
 <section><h2>使う<wbr>場面</h2>
 <ul class="ls">
-<li>仕事帰りに、<wbr>駅前で<wbr>1時間だけ。</li>
-<li>出張や<wbr>観光で<wbr>泊まる<wbr>夜に。<wbr>宿泊の<wbr>方は<wbr>1時間700円です。</li>
-<li>女性の<wbr>方や、<wbr>男女いっしょの<wbr>仲間・チームは、<wbr>貸し切りで。<wbr>1時間6,000円です。</li>
+<li>仕事帰りに、<wbr>駅前で<wbr>1時間だけ<wbr>入れます。</li>
+<li>出張や<wbr>観光で<wbr>泊まる<wbr>夜にも<wbr>使えます。<wbr>宿泊の<wbr>方は<wbr>1時間700円です。</li>
+<li>女性の<wbr>方や、<wbr>男女いっしょの<wbr>仲間・チームは、<wbr>貸し切りで<wbr>使えます。<wbr>1時間6,000円です。</li>
 </ul>
 <p class="more"><a class="btn sub" href="/">泊まる<wbr>部屋と<wbr>料金を<wbr>見る</a></p>
 </section>
