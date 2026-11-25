@@ -138,6 +138,15 @@ iframe{filter:brightness(.86) saturate(.85)}
  .book{margin-top:20px;padding:30px 0}
 }
 </style>
+<style id="photo-css">
+/* 仮案：写真の並び（2枚・3枚）。スマホでは3枚の1枚目を横いっぱいに */
+.pgal{display:grid;gap:12px;margin-top:20px}
+.pgal figure{margin:0}
+.pgal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.pgal.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pgal.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:640px){.pgal.three{grid-template-columns:repeat(2,minmax(0,1fr))}.pgal.three>:first-child{grid-column:1/-1}.pgal.three>:first-child img{aspect-ratio:16/10}}
+</style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head><body>
 <header class="nav" style="--gm-top:63px"><div class="wrap"><a class="b" href="/">キューブホテル徳山<small>CUBE HOTEL TOKUYAMA</small></a><div style="display:flex;align-items:center;gap:18px"><a class="go" href="#book">空室・予約</a><details class="gm"><summary aria-label="メニュー"><span class="gm-ic"></span><span class="gm-t">メニュー</span></summary><nav class="gm-p" aria-label="サイトの案内"><a href="/">トップ</a><a href="/room/">客室と<wbr>設備</a><a href="/sauna/">サウナ</a><a href="/#work">リモートワーク</a><a href="/#plan">料金</a><p class="gm-h">目的で<wbr>選ぶ</p><a href="/gasshuku/">合宿・部<wbr>活動</a><a href="/shuzen/">定期修繕・工事の<wbr>ご宿泊</a><a href="/hiroshima/">広島で<wbr>泊まれない<wbr>とき</a><a href="/kankou/">周辺の<wbr>観光</a><a href="/trip/">まちごとホテル<wbr>（町歩きの<wbr>特集）</a><p class="gm-h">ご案内</p><a href="/#access">アクセス</a><a href="/faq/">よく<wbr>ある<wbr>質問</a><a href="/#reserve">空室・予約</a></nav></details></div></div></header>
@@ -161,6 +170,7 @@ iframe{filter:brightness(.86) saturate(.85)}
 <div class="spot"><h3>周南の<wbr>工場夜<wbr>景</h3><p class="how">海側に<wbr>広がる<wbr>コンビナートの<wbr>夜景です。</p></div>
 </div>
 <p class="more"><a class="btn sub" href="/trip/">駅前の<wbr>純喫茶や<wbr>酒場を<wbr>めぐる<wbr>「まちごとホテル」</a></p>
+<div class="pgal three"><figure><img src="/img/chuogai.jpg" alt="提灯の並ぶ銀座中央街のアーケード" loading="lazy" decoding="async"></figure><figure><img src="/img/ginnangai.jpg" alt="銀南街アーケードの入口（夜）" loading="lazy" decoding="async"></figure><figure><img src="/img/ginza.jpg" alt="徳山駅前の銀座通りの夜" loading="lazy" decoding="async"></figure></div>
 </section>
 <section><h2>山口県の<wbr>観光地</h2>
 <div class="tbl"><table><thead><tr><th>行き先</th><th>車で</th><th>電車・バスでの<wbr>行き方</th></tr></thead><tbody>
@@ -182,7 +192,8 @@ iframe{filter:brightness(.86) saturate(.85)}
 <li><b>宿代を<wbr>おさえられます。</b>ひとり用の<wbr>個室で、<wbr>素泊まり<wbr>4,800円<wbr>（税込）からです。</li>
 <li><b>歩き疲れたら<a href="/sauna/">サウナ</a>に<wbr>入れます。</b>セルフロウリュと<wbr>水風呂が<wbr>あります。<wbr>男性専用で、<wbr>宿泊の<wbr>方は<wbr>1時間700円です。<wbr>貸し切りは<wbr>男女どなたでも<wbr>使えます。</li>
 <li><b>夜も<wbr>駅前で<wbr>食事が<wbr>できます。</b>隣に<wbr>吉野家と<wbr>ローソンが<wbr>あります。<wbr>徒歩圏に<wbr>飲食店・居酒屋が<wbr>多く<wbr>あります。</li>
-</ul></section>
+</ul><div class="pgal two"><figure><img src="/img/gaikan.jpg" alt="夜のキューブホテル徳山の外観（緑の壁が光るビル）" loading="lazy" decoding="async"></figure><figure><img src="/img/sauna.jpg" alt="キューブホテル徳山のサウナ" loading="lazy" decoding="async"></figure></div>
+</section>
 
 <section><h2>よく<wbr>ある<wbr>質問</h2><dl class="faq"><div><dt>錦帯橋へは<wbr>どう<wbr>行けますか？</dt><dd>ホテルから<wbr>車で<wbr>約48分です。<wbr>電車なら、<wbr>新幹線で<wbr>新岩国駅へ<wbr>行き、<wbr>駅前から<wbr>バスで<wbr>約15分です。</dd></div><div><dt>宮島へ<wbr>日帰りできますか？</dt><dd>できます。<wbr>新幹線で<wbr>広島駅へ<wbr>出て、<wbr>JR山陽本線で<wbr>宮島口駅まで<wbr>行きます。<wbr>そこから<wbr>フェリーで<wbr>約10分です。</dd></div><div><dt>秋芳洞への<wbr>行き方は？</dt><dd>ホテルから<wbr>車で<wbr>約1時間です。<wbr>電車なら、<wbr>新幹線で<wbr>新山口駅へ<wbr>行き、<wbr>駅から<wbr>バスで<wbr>約40分です。</dd></div><div><dt>大津島の<wbr>回天記念館へは<wbr>どう<wbr>行きますか？</dt><dd>徳山駅から<wbr>徒歩約3分の<wbr>徳山港から<wbr>船に<wbr>乗り、<wbr>馬島港で<wbr>降りて<wbr>徒歩約10分です。<wbr>船の<wbr>時間は<wbr>便によって<wbr>変わります。</dd></div><div><dt>車で<wbr>来ても<wbr>泊まれますか？</dt><dd>はい。<wbr>ただし専用駐車場は<wbr>ありません。<wbr>近くの<wbr>コインパーキングを<wbr>ご利用ください。</dd></div></dl></section>
 </main>

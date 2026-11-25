@@ -138,6 +138,15 @@ iframe{filter:brightness(.86) saturate(.85)}
  .book{margin-top:20px;padding:30px 0}
 }
 </style>
+<style id="photo-css">
+/* 仮案：写真の並び（2枚・3枚）。スマホでは3枚の1枚目を横いっぱいに */
+.pgal{display:grid;gap:12px;margin-top:20px}
+.pgal figure{margin:0}
+.pgal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.pgal.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pgal.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:640px){.pgal.three{grid-template-columns:repeat(2,minmax(0,1fr))}.pgal.three>:first-child{grid-column:1/-1}.pgal.three>:first-child img{aspect-ratio:16/10}}
+</style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head><body>
 <header class="nav" style="--gm-top:63px"><div class="wrap"><a class="b" href="/">キューブホテル徳山<small>CUBE HOTEL TOKUYAMA</small></a><div style="display:flex;align-items:center;gap:18px"><a class="go" href="#book">空室・予約</a><details class="gm"><summary aria-label="メニュー"><span class="gm-ic"></span><span class="gm-t">メニュー</span></summary><nav class="gm-p" aria-label="サイトの案内"><a href="/">トップ</a><a href="/room/">客室と<wbr>設備</a><a href="/sauna/">サウナ</a><a href="/#work">リモートワーク</a><a href="/#plan">料金</a><p class="gm-h">目的で<wbr>選ぶ</p><a href="/gasshuku/">合宿・部<wbr>活動</a><a href="/shuzen/">定期修繕・工事の<wbr>ご宿泊</a><a href="/hiroshima/">広島で<wbr>泊まれない<wbr>とき</a><a href="/kankou/">周辺の<wbr>観光</a><a href="/trip/">まちごとホテル<wbr>（町歩きの<wbr>特集）</a><p class="gm-h">ご案内</p><a href="/#access">アクセス</a><a href="/faq/">よく<wbr>ある<wbr>質問</a><a href="/#reserve">空室・予約</a></nav></details></div></div></header>
@@ -166,6 +175,7 @@ iframe{filter:brightness(.86) saturate(.85)}
 <tr><td>徳山駅 北口 → ホテル</td><td>徒歩<wbr>（北口を<wbr>出て<wbr>左手すぐ）</td><td class="num">約1分</td></tr>
 </tbody></table></div>
 <p class="note">徳山駅に<wbr>停まらない<wbr>新幹線も<wbr>あります。<wbr>乗る<wbr>前に<wbr>停車駅を<wbr>ご確認ください。<wbr>時間は<wbr>列車によって<wbr>変わります。</p>
+<div class="pgal two"><figure><img src="/img/station-front.jpg" alt="夜の徳山駅前。図書館の入口" loading="lazy" decoding="async"></figure><figure><img src="/img/plaza-view.jpg" alt="徳山駅前の広場から見た、夜のキューブホテル徳山" loading="lazy" decoding="async"></figure></div>
 </section>
 <section><h2>泊まる<wbr>部屋と<wbr>館内</h2>
 <ul class="ls">
@@ -175,6 +185,7 @@ iframe{filter:brightness(.86) saturate(.85)}
 <li><b>駅前で<wbr>食事に<wbr>困りません。</b>隣に<wbr>吉野家と<wbr>ローソンが<wbr>あります。<wbr>徒歩圏に<wbr>飲食店・居酒屋が<wbr>多く<wbr>あります。</li>
 </ul>
 <p class="more"><a class="btn sub" href="/">部屋と<wbr>料金を<wbr>くわしく<wbr>見る</a></p>
+<div class="pgal three"><figure><img src="/img/rooms-two.jpg" alt="並んだ2つの個室。机と椅子、タオルが置いてある" loading="lazy" decoding="async"></figure><figure><img src="/img/powder.jpg" alt="各階の共用の洗面所" loading="lazy" decoding="async"></figure><figure><img src="/img/sauna.jpg" alt="キューブホテル徳山のサウナ" loading="lazy" decoding="async"></figure></div>
 </section>
 <section><h2>ご利用の<wbr>注意</h2>
 <ul class="ls">

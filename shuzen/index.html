@@ -161,6 +161,15 @@ iframe{filter:brightness(.86) saturate(.85)}
  .book{margin-top:20px;padding:30px 0}
 }
 </style>
+<style id="photo-css">
+/* 仮案：写真の並び（2枚・3枚）。スマホでは3枚の1枚目を横いっぱいに */
+.pgal{display:grid;gap:12px;margin-top:20px}
+.pgal figure{margin:0}
+.pgal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.pgal.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pgal.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:640px){.pgal.three{grid-template-columns:repeat(2,minmax(0,1fr))}.pgal.three>:first-child{grid-column:1/-1}.pgal.three>:first-child img{aspect-ratio:16/10}}
+</style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head><body>
 <header class="nav" style="--gm-top:63px"><div class="wrap"><a class="b" href="/">キューブホテル徳山<small>CUBE HOTEL TOKUYAMA</small></a><div style="display:flex;align-items:center;gap:18px"><a class="go" href="#book">空室・予約</a><details class="gm"><summary aria-label="メニュー"><span class="gm-ic"></span><span class="gm-t">メニュー</span></summary><nav class="gm-p" aria-label="サイトの案内"><a href="/">トップ</a><a href="/room/">客室と<wbr>設備</a><a href="/sauna/">サウナ</a><a href="/#work">リモートワーク</a><a href="/#plan">料金</a><p class="gm-h">目的で<wbr>選ぶ</p><a href="/gasshuku/">合宿・部<wbr>活動</a><a href="/shuzen/">定期修繕・工事の<wbr>ご宿泊</a><a href="/hiroshima/">広島で<wbr>泊まれない<wbr>とき</a><a href="/kankou/">周辺の<wbr>観光</a><a href="/trip/">まちごとホテル<wbr>（町歩きの<wbr>特集）</a><p class="gm-h">ご案内</p><a href="/#access">アクセス</a><a href="/faq/">よく<wbr>ある<wbr>質問</a><a href="/#reserve">空室・予約</a></nav></details></div></div></header>
@@ -213,7 +222,8 @@ iframe{filter:brightness(.86) saturate(.85)}
 <li><b>共用の<wbr>電子レンジ・<wbr>電気ケトルは<wbr>無料です。</b></li>
 <li><b><a href="/sauna/">サウナ</a>で<wbr>疲れを<wbr>とれます。</b>男性専用で、<wbr>宿泊の<wbr>方は<wbr>1時間700円です。<wbr>貸し切りは<wbr>男女どなたでも<wbr>使えます。</li>
 <li><b>食事は<wbr>駅前でとれます。</b>隣に<wbr>吉野家と<wbr>ローソンが<wbr>あります。<wbr>徒歩圏に<wbr>飲食店・居酒屋が<wbr>多く<wbr>あります。</li>
-</ul></section>
+</ul><div class="pgal three"><figure><img src="/img/front.jpg" alt="キューブホテル徳山のフロント" loading="lazy" decoding="async"></figure><figure><img src="/img/amenity.jpg" alt="共用の電子レンジ・ケトル" loading="lazy" decoding="async"></figure><figure><img src="/img/lounge.jpg" alt="共用の小さな机" loading="lazy" decoding="async"></figure></div>
+</section>
 <section><h2>ご利用の<wbr>注意</h2>
 <ul class="ls">
 <li><b>専用駐車場は<wbr>ありません。</b>近くの<wbr>コインパーキングを<wbr>ご利用ください。<wbr>トラックなど<wbr>大きい車は、<wbr>止められる<wbr>場所を<wbr>ご案内します。<wbr>ご予約の<wbr>ときに<wbr>お電話ください。</li>
@@ -221,7 +231,8 @@ iframe{filter:brightness(.86) saturate(.85)}
 <li><b>客室に<wbr>鍵は<wbr>ありません。</b>貴重品は<wbr>2・3階の<wbr>ロッカー、<wbr>または<wbr>フロントで<wbr>お預かりします。</li>
 <li><b>お支払い</b>は、<wbr>現金・<wbr>クレジットカード・<wbr>QRコード決済に<wbr>対応しています。</li>
 <li><b>全館禁煙です。</b></li>
-</ul></section>
+</ul><div class="pgal two"><figure><img src="/img/entrance-sign.jpg" alt="キューブホテルの入口の看板。サウナ完備" loading="lazy" decoding="async"></figure><figure><img src="/img/gaikan-wide.jpg" alt="夜のキューブホテル徳山の外観" loading="lazy" decoding="async"></figure></div>
+</section>
 
 <section><h2>よく<wbr>ある<wbr>質問</h2><dl class="faq"><div><dt>フロアごと<wbr>貸し切れますか？</dt><dd>はい。<wbr>1フロア18室を、<wbr>1泊77,760円<wbr>（税込）で<wbr>貸し切れます。<wbr>通常の<wbr>4,800円×18室から<wbr>10%引きです。</dd></div><div><dt>ほかの<wbr>会社の<wbr>人と<wbr>同じ<wbr>フロアに<wbr>なりますか？</dt><dd>フロアの<wbr>貸し切りなら、<wbr>1社だけで<wbr>お使いいただけます。</dd></div><div><dt>何人まで<wbr>泊まれますか？</dt><dd>客室は<wbr>全72室です。<wbr>1棟の<wbr>貸し切りは<wbr>1泊311,040円<wbr>（税込）です。<wbr>空き状況は、<wbr>日程と<wbr>あわせてお電話で<wbr>お問い合わせ<wbr>ください。</dd></div><div><dt>長期の<wbr>料金は<wbr>いくらですか？</dt><dd>期間・<wbr>人数に<wbr>合わせてお見積りします。<wbr>お電話<wbr>（0834-32-1270）で<wbr>ご相談ください。</dd></div><div><dt>作業着を<wbr>洗えますか？</dt><dd>はい。<wbr>館内の<wbr>コインランドリーを<wbr>お使いいただけます。<wbr>洗濯機500円、<wbr>乾燥機100円<wbr>（10分）です。</dd></div><div><dt>車で<wbr>来られますか？</dt><dd>専用駐車場は<wbr>ありません。<wbr>近くの<wbr>コインパーキングを<wbr>ご利用ください。<wbr>トラックなど<wbr>大きい車は、<wbr>止められる<wbr>場所を<wbr>ご案内します。</dd></div><div><dt>事業所まで<wbr>歩けますか？</dt><dd>地図アプリの<wbr>目安で、<wbr>出光興産 徳山<wbr>事業所は<wbr>徒歩約15分、<wbr>トクヤマ 徳山製造所は<wbr>約21分、<wbr>日本ゼオン 徳山工場は<wbr>約22分です。</dd></div></dl></section>
 </main>

@@ -531,7 +531,6 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
 @media(max-width:820px){.wp.pc-only{display:none}}
 @media(max-width:640px){.hub .more a{display:flex;justify-content:space-between;padding:12px 0 10px}}
 </style>
-<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 <style id="sp-space-css">
 /* 仮案：スマホの間延びをなくす（このかたまりを外せば元に戻る） */
 @media (max-width:640px){
@@ -546,6 +545,18 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
  footer{padding:36px 0 48px}
 }
 </style>
+<style id="purpose-photo-css">
+/* 仮案：目的別のご案内は、写真＋題＋1行の行。行ぜんたいが押せる */
+.pl{border-top:2px solid var(--ink);max-width:980px}
+.pr{display:grid;grid-template-columns:240px minmax(0,1fr);gap:28px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.pr img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.pr b{font-family:"Shippori Mincho B1",serif;font-size:clamp(18px,2.2vw,22px);font-weight:700;border-bottom:1px solid var(--accent);padding-bottom:2px}
+.pr b::after{content:"\00a0→";color:var(--accent);font-weight:400}
+.pr small{display:block;color:var(--ink-2);font-size:13.5px;line-height:1.85;margin-top:10px}
+.pr:hover b{color:var(--accent)}
+@media(max-width:640px){.pr{grid-template-columns:120px minmax(0,1fr);gap:14px;padding:14px 0}.pr b{font-size:16px}.pr small{font-size:12.5px;margin-top:6px}}
+</style>
+<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head>
 <body>
 
@@ -635,20 +646,19 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
 </section>
 
 <!-- 目的別のご案内 -->
-<section class="around purpose" id="purpose">
+<section class="hub purpose" id="purpose">
   <div class="wrap">
     <header class="sh"></header>
-    <h2 class="lead" style="margin-bottom:44px">目的別の<wbr>ご案内</h2>
-    <div class="list">
-      <div class="a"><span class="d">部<wbr>活動・合宿</span><div><b><a href="gasshuku/">合宿・部<wbr>活動の<wbr>団体<wbr>プラン</a></b><small>全72室が<wbr>個室です。<wbr>大会遠征や合宿の<wbr>ご相談を<wbr>承ります。</small></div></div>
-      <div class="a"><span class="d">工事・出張</span><div><b><a href="shuzen/">定期修繕・工事の<wbr>ご宿泊</a></b><small>周南コンビナートの<wbr>定期修繕や<wbr>工事での<wbr>ご宿泊を<wbr>ご案内します。<wbr>1フロア18室の<wbr>貸し切りは<wbr>1泊77,760円、<wbr>1棟は<wbr>311,040円<wbr>（税込）です。<wbr>長期は<wbr>お見積りします。</small></div></div>
-      <div class="a"><span class="d">広島から</span><div><b><a href="hiroshima/">広島で<wbr>泊まれない<wbr>とき</a></b><small>広島の<wbr>ホテルが<wbr>取れない<wbr>日や<wbr>高い日は、<wbr>新幹線で<wbr>徳山駅まで<wbr>お越しください。</small></div></div>
-      <div class="a"><span class="d">観光</span><div><b><a href="kankou/">徳山駅から<wbr>行ける<wbr>観光地</a></b><small>錦帯橋・<wbr>瑠璃光寺・<wbr>秋芳洞・<wbr>宮島への<wbr>行き方を<wbr>まとめています。</small></div></div>
-      <div class="a"><span class="d">町歩き</span><div><b><a href="trip/">まちごとホテル<wbr>（周南ノスタルジー特集）</a></b><small>パスポート付きの<wbr>宿泊プランで、<wbr>駅前の<wbr>提携店を<wbr>めぐる<wbr>企画です。</small></div></div>
+    <h2 class="lead" style="margin-bottom:28px">目的別の<wbr>ご案内</h2>
+    <div class="pl">
+      <a class="pr" href="shuzen/"><img loading="lazy" decoding="async" src="img/hallway.jpg" alt="客室フロアの廊下。両側に個室が並ぶ"><span class="pt"><b>定期修繕・工事の<wbr>ご宿泊</b><small>周南コンビナートの<wbr>定期修繕や<wbr>工事での<wbr>ご宿泊を<wbr>ご案内します。<wbr>1フロア18室の<wbr>貸し切りは<wbr>1泊77,760円、<wbr>1棟は<wbr>311,040円<wbr>（税込）です。<wbr>長期は<wbr>お見積りします。</small></span></a>
+      <a class="pr" href="gasshuku/"><img loading="lazy" decoding="async" src="img/rooms-two.jpg" alt="並んだ2つの個室。机と椅子、タオルが置いてある"><span class="pt"><b>合宿・部<wbr>活動の<wbr>団体<wbr>プラン</b><small>全72室が<wbr>個室です。<wbr>大会遠征や合宿の<wbr>ご相談を<wbr>承ります。</small></span></a>
+      <a class="pr" href="hiroshima/"><img loading="lazy" decoding="async" src="img/plaza-view.jpg" alt="徳山駅前の広場から見た、夜のキューブホテル徳山"><span class="pt"><b>広島で<wbr>泊まれない<wbr>とき</b><small>広島の<wbr>ホテルが<wbr>取れない<wbr>日や<wbr>高い日は、<wbr>新幹線で<wbr>徳山駅まで<wbr>お越しください。</small></span></a>
+      <a class="pr" href="kankou/"><img loading="lazy" decoding="async" src="img/station-front.jpg" alt="夜の徳山駅前。図書館の入口"><span class="pt"><b>徳山駅から<wbr>行ける<wbr>観光地</b><small>錦帯橋・<wbr>瑠璃光寺・<wbr>秋芳洞・<wbr>宮島への<wbr>行き方を<wbr>まとめています。</small></span></a>
+      <a class="pr" href="trip/"><img loading="lazy" decoding="async" src="img/ginnangai.jpg" alt="銀南街アーケードの入口（夜）"><span class="pt"><b>まちごとホテル<wbr>（周南ノスタルジー特集）</b><small>パスポート付きの<wbr>宿泊プランで、<wbr>駅前の<wbr>提携店を<wbr>めぐる<wbr>企画です。</small></span></a>
     </div>
   </div>
 </section>
-<style id="purpose-css">.purpose .a b a{color:inherit;text-decoration:none;border-bottom:1px solid var(--accent)}.purpose .a b a::after{content:"\00a0→";color:var(--accent);font-weight:400}.purpose .a b a:hover{color:var(--accent)}</style>
 
 <!-- 料金 -->
 <section id="plan" class="hub">
@@ -666,7 +676,7 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
     </div>
     <p class="subnote">料金は<wbr>税込です。<wbr>団体<wbr>割引は<wbr>10名以上の<wbr>ご宿泊が<wbr>対象です。<wbr>団体・長期は、<a href="shuzen/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">定期修繕・工事</a>と<a href="gasshuku/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">合宿・部<wbr>活動</a>の<wbr>ページも<wbr>ご覧ください。</p>
       </div>
-      <figure class="wp pc-only"><img loading="lazy" decoding="async" src="img/rooms-two.jpg" width="1200" height="900" alt="並んだ客室。どれもひとり用の個室"></figure>
+      <figure class="wp pc-only"><img loading="lazy" decoding="async" src="img/lobby.jpg" width="1200" height="900" alt="入口を入ってすぐのベンチ"></figure>
     </div>
   </div>
 </section>

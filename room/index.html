@@ -147,6 +147,10 @@ iframe{filter:brightness(.86) saturate(.85)}
  .book{margin-top:20px;padding:30px 0}
 }
 </style>
+<style id="photo-css">
+.pgal.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pgal.two img{aspect-ratio:4/3}
+</style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head><body>
 <header class="nav" style="--gm-top:63px"><div class="wrap"><a class="b" href="/">キューブホテル徳山<small>CUBE HOTEL TOKUYAMA</small></a><div style="display:flex;align-items:center;gap:18px"><a class="go" href="#book">空室・予約</a><details class="gm"><summary aria-label="メニュー"><span class="gm-ic"></span><span class="gm-t">メニュー</span></summary><nav class="gm-p" aria-label="サイトの案内"><a href="/">トップ</a><a href="/room/">客室と<wbr>設備</a><a href="/sauna/">サウナ</a><a href="/#work">リモートワーク</a><a href="/#plan">料金</a><p class="gm-h">目的で<wbr>選ぶ</p><a href="/gasshuku/">合宿・部<wbr>活動</a><a href="/shuzen/">定期修繕・工事の<wbr>ご宿泊</a><a href="/hiroshima/">広島で<wbr>泊まれない<wbr>とき</a><a href="/kankou/">周辺の<wbr>観光</a><a href="/trip/">まちごとホテル<wbr>（町歩きの<wbr>特集）</a><p class="gm-h">ご案内</p><a href="/#access">アクセス</a><a href="/faq/">よく<wbr>ある<wbr>質問</a><a href="/#reserve">空室・予約</a></nav></details></div></div></header>
@@ -169,7 +173,8 @@ iframe{filter:brightness(.86) saturate(.85)}
 <li><b>テレビは<wbr>共用です。</b>客室には<wbr>ありません。</li>
 <li><b>客室に<wbr>鍵は<wbr>ありません。</b>簡易宿泊施設の<wbr>ためです。<wbr>貴重品は<wbr>2・3階の<wbr>ロッカー、<wbr>または<wbr>フロントで<wbr>お預かりします。</li>
 <li><b>24:00〜翌6:00は<wbr>入口を<wbr>施錠します。</b>インターホンで<wbr>対応します。</li>
-</ul></section>
+</ul><div class="pgal two"><figure><img src="/img/rooms-two.jpg" alt="並んだ2つの個室。机と椅子、タオルが置いてある" loading="lazy" decoding="async"></figure><figure><img src="/img/towel.jpg" alt="客室の机に置いたタオル" loading="lazy" decoding="async"></figure></div>
+</section>
 <section><h2>トイレ・シャワー</h2>
 <p>客室の<wbr>外に<wbr>あります。<wbr>各階に<wbr>共用の<wbr>トイレと<wbr>シャワー室が<wbr>2か所ずつ<wbr>あり、<wbr>洗面所も<wbr>各階に<wbr>あります。<wbr>場所は<wbr>各階の<wbr>案内板で<wbr>確かめられます。</p>
 <div class="pgal"><figure><img src="/img/floor-guide.jpg" alt="3階のフロア案内板。シャワー室・洗面所・トイレの位置" loading="lazy" decoding="async"></figure><figure><img src="/img/powder.jpg" alt="各階の共用の洗面所" loading="lazy" decoding="async"></figure><figure><img src="/img/shower.jpg" alt="共用のシャワー室の扉。空室の表示つき" loading="lazy" decoding="async"></figure><figure><img src="/img/toilet.jpg" alt="各階の共用トイレ" loading="lazy" decoding="async"></figure></div>
@@ -181,7 +186,7 @@ iframe{filter:brightness(.86) saturate(.85)}
 <li><b>宿泊の<wbr>方には、<wbr>スリッパ・<wbr>タオル・<wbr>ナイトガウンを<wbr>お渡しします。</b></li>
 <li><b>館内で<wbr>販売している<wbr>ものも<wbr>あります。</b>タオル200円、<wbr>スリッパ100円、<wbr>歯ブラシ50円、<wbr>髭剃り50円です<wbr>（税込）。</li>
 </ul>
-<div class="pgal three"><figure><img src="/img/desk.jpg" alt="共用のテレビとデスク" loading="lazy" decoding="async"></figure><figure><img src="/img/amenity.jpg" alt="共用の電子レンジ・ケトル" loading="lazy" decoding="async"></figure><figure><img src="/img/hangers.jpg" alt="客室のハンガー" loading="lazy" decoding="async"></figure></div>
+<div class="pgal"><figure><img src="/img/desk.jpg" alt="共用のテレビとデスク" loading="lazy" decoding="async"></figure><figure><img src="/img/amenity.jpg" alt="共用の電子レンジ・ケトル" loading="lazy" decoding="async"></figure><figure><img src="/img/hangers.jpg" alt="客室のハンガー" loading="lazy" decoding="async"></figure><figure><img src="/img/lounge.jpg" alt="共用の小さな机" loading="lazy" decoding="async"></figure></div>
 </section>
 <section id="work"><h2>リモートワーク</h2>
 <p>ひとり用の<wbr>個室を、<wbr>1時間1,000円<wbr>（税込）で<wbr>仕事に<wbr>使えます。<wbr>机・椅子・<wbr>無料Wi-Fi・<wbr>コンセントが<wbr>あり、<wbr>オンライン会議も<wbr>できます。<wbr>フロントで<wbr>お申し込みください。<wbr>空き状況は<wbr>お電話<wbr>（0834-32-1270）で<wbr>確かめられます。</p>

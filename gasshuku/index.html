@@ -255,12 +255,13 @@ iframe{filter:brightness(.86) saturate(.85)}
 <style id="plain-css">
 /* 仮案：チップの並びを文にした */
 .who{font-size:15px;line-height:2;color:var(--ink);max-width:46em}
+/* 写真6枚：スマホは2列（1列に積むと長くなる） */
+@media(max-width:860px){.prow{grid-template-columns:1fr 1fr !important}}
 /* 番号をやめたので、理由の並びは1列に */
 .merit{grid-template-columns:1fr !important}
 /* スマホでは丸いボタンを横いっぱいに並べる（左から折り返さないように） */
 @media(max-width:640px){.links{display:grid !important;grid-template-columns:1fr;gap:10px}.links a{display:block;text-align:center}}
 </style>
-<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 <style id="sp-space-css">
 /* 仮案：スマホの間延びをなくす（このかたまりを外せば元に戻る） */
 @media (max-width:640px){
@@ -272,6 +273,7 @@ iframe{filter:brightness(.86) saturate(.85)}
  footer{padding-top:32px}
 }
 </style>
+<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head>
 <body>
 
@@ -324,7 +326,7 @@ iframe{filter:brightness(.86) saturate(.85)}
       <figure><img src="img/room-wide.jpg" alt="キューブホテル徳山の個室。ベッドと机" loading="lazy"><figcaption>1人1部屋の<wbr>個室</figcaption></figure>
       <figure><img src="img/desk.jpg" alt="共用のテレビとデスク" loading="lazy"><figcaption>共用の<wbr>テレビと<wbr>机</figcaption></figure>
       <figure><img src="img/sauna.jpg" alt="キューブホテル徳山のサウナ" loading="lazy"><figcaption>サウナ</figcaption></figure>
-    </div>
+    <figure><img src="/img/plaza-view.jpg" alt="徳山駅前の広場から見た、夜のキューブホテル徳山" loading="lazy"><figcaption>徳山駅前の<wbr>広場から<wbr>見た<wbr>当館</figcaption></figure><figure><img src="/img/amenity.jpg" alt="共用の電子レンジ・ケトル" loading="lazy"><figcaption>共用の<wbr>電子レンジ・<wbr>ケトル</figcaption></figure><figure><img src="/img/hallway.jpg" alt="客室フロアの廊下。両側に個室が並ぶ" loading="lazy"><figcaption>客室フロアの<wbr>廊下</figcaption></figure></div>
   </div>
 </section>
 
