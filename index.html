@@ -572,6 +572,21 @@ footer{background:#0a0908}
 #cookie-consent{border:1px solid rgba(236,230,218,.16)}
 </style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
+<style id="sp-balance-css">
+/* 仮案：スマホで左に寄らないように（このかたまりを外せば元に戻る） */
+@media (max-width:640px){
+ .hero-foot .cta{align-self:stretch;flex-direction:column;gap:0}
+ .hero-foot .cta .btn{display:flex;justify-content:space-between;align-items:center;padding:13px 0 11px}
+ .acc-grid .links{flex-direction:column;gap:0}
+ .acc-grid .links a{display:flex;justify-content:space-between;align-items:center;font-size:14px;padding:12px 0 10px}
+ .booking .blinks{flex-direction:column;gap:0}
+ .booking .blinks a{display:flex;justify-content:space-between;align-items:center;padding:13px 0 11px}
+}
+@media (max-width:560px){
+ .gal:not(.g4)>:first-child:nth-last-child(3){grid-column:1/-1}
+ .gal:not(.g4)>:first-child:nth-last-child(3) img{aspect-ratio:16/10}
+}
+</style>
 </head>
 <body>
 
