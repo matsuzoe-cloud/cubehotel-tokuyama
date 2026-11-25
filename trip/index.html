@@ -338,7 +338,6 @@ footer .fen{color:var(--mustard);font-size:10px;letter-spacing:.24em;margin-top:
 }
 </script>
 <style id="gm-css">.gm{position:relative}.gm>summary{list-style:none;display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:700;letter-spacing:.06em;color:#1c1a15;padding:8px 2px}.gm>summary::-webkit-details-marker{display:none}.gm-ic,.gm-ic::before,.gm-ic::after{display:block;width:18px;height:2px;background:#1c1a15;position:relative;content:"";transition:transform .2s}.gm-ic::before,.gm-ic::after{position:absolute;left:0}.gm-ic::before{top:-6px}.gm-ic::after{top:6px}.gm[open] .gm-ic{background:transparent}.gm[open] .gm-ic::before{top:0;transform:rotate(45deg)}.gm[open] .gm-ic::after{top:0;transform:rotate(-45deg)}.gm-p{position:fixed;left:0;right:0;top:var(--gm-top,66px);max-height:calc(100vh - var(--gm-top,66px));overflow:auto;background:#f3ede1;border-top:1px solid rgba(28,26,21,.18);border-bottom:1px solid rgba(28,26,21,.18);padding:6px 0 22px;z-index:60}.gm-p a,.gm-p .gm-h{display:block;max-width:720px;margin:0 auto;padding:13px 24px}.gm-p a{font-size:15px;color:#1c1a15;text-decoration:none;border-bottom:1px solid rgba(28,26,21,.12)}.gm-p a:hover{color:#b8402a}.gm-p .gm-h{font-size:11.5px;letter-spacing:.14em;color:#b8402a;padding-top:22px;padding-bottom:4px}@media(max-width:820px){.gm-t{display:none}}@media(min-width:821px){.gm.sp-only{display:none}}@media(max-width:480px){header.nav:has(.gm.lp) .right{gap:10px}header.nav:has(.gm.lp) .brand{font-size:13px;white-space:nowrap;gap:6px;letter-spacing:.04em}header.nav:has(.gm.lp) .brand small{display:none}header.nav:has(.gm.lp) .brand .dot{width:8px;height:8px}header.nav:has(.gm.lp) .wrap{padding-left:14px;padding-right:14px}header.nav:has(.gm.lp) .tel{display:none}header.nav:has(.gm.lp) .langsw button{padding-left:6px;padding-right:6px}.gm.lp>summary{padding:8px 0}}</style>
-<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 <style id="dark-css">
 /* 仮案：黒基調＋ぼかした写真の背景（このかたまりを外せば元の白地に戻る） */
 :root{--bg:#0f0e0c;--soft:#171512;--soft2:#1d1a16;--ink:#ece6da;--ink2:#b3ab9d;--teal:#4cc9bc;--teal-d:#7fded4;--line:rgba(236,230,218,.15)}
@@ -362,6 +361,7 @@ footer{background:#0a0908}
 .acc-grid .map iframe{filter:brightness(.86) saturate(.85)}
 #cookie-consent{border:1px solid rgba(236,230,218,.16)}
 </style>
+<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head>
 <body>
 
@@ -378,55 +378,40 @@ footer{background:#0a0908}
 <!-- ===== HERO ===== -->
 <section class="hero" id="top">
   <div class="in">
-    <p class="ey" data-en="Shunan Nostalgia Trip">周南ノスタルジー旅</p>
-    <h1 data-en="Stay in a nostalgic town,<br>a whole-town hotel.">な<wbr>つかしい<wbr>町に、<br>泊まる<wbr>ことにした。</h1>
-    <p class="sub" data-en="One minute from Tokuyama Station, with a sauna. Make the whole town your inn.">徳山駅から<wbr>徒歩1分、<wbr>サウナ併設。<wbr>町まる<wbr>ごとを、<wbr>あなたの<wbr>宿に<wbr>する旅。</p>
+    <h1 data-en="Shunan Nostalgia<br>whole-town hotel">まちごとホテル<br>周南ノスタルジー</h1>
+    <p class="sub" data-en="Stay at the hotel by the station and visit partner shops nearby. 1 min walk from Tokuyama Station, with a sauna.">駅前の<wbr>ホテルに<wbr>泊まって、<wbr>近くの<wbr>提携店を<wbr>めぐる<wbr>宿泊プランです。<wbr>徳山駅から<wbr>歩いて<wbr>1分で、<wbr>サウナも<wbr>あります。</p>
     <div class="cta">
-      <a class="btn btn-p" href="#book" data-en="Book now">この<wbr>町に<wbr>泊まる</a>
+      <a class="btn btn-p" href="#book" data-en="Check availability">空室を<wbr>見る</a>
       <a class="btn btn-g" href="#day" data-en="A day here">一日の<wbr>過ごし方</a>
     </div>
   </div>
-  <div class="dots"><i></i><i class="on"></i><i></i><i></i></div>
 </section>
 
 <!-- ===== ミッション帯 ===== -->
 <section class="mission">
   <div class="wrap">
-    <p class="ey" data-en="whole-town hotel">まちごとホテル</p>
-    <p data-en="The whole town is your inn.<br>Old cafés, factory night views, red lanterns—<br>walk an unstaged Shōwa, the town of Shunan.">町まる<wbr>ごとが、<wbr>あなたの宿。<br>純喫茶、<wbr>工場夜景、<wbr>赤提灯——<br>作られていない<wbr>昭和を<wbr>歩く、<wbr>周南の<wbr>まち。</p>
+    <p data-en="Sleep at the hotel, and eat and drink at shops in town.<br>Old cafés, izakayas and the factory night view are within reach.">泊まるのは<wbr>ホテルで、<wbr>食事や<wbr>お酒は<wbr>町の<wbr>お店で。<br>駅前の<wbr>純喫茶や<wbr>酒場、<wbr>工場夜<wbr>景を<wbr>めぐれます。</p>
   </div>
 </section>
 
-<!-- ===== 特徴アイコン ===== -->
-<section class="sec">
-  <div class="wrap">
-    <div class="feats">
-      <div class="feat"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="27" cy="10" r="4"/><path d="M25 16l-6 8 6 4 2 10M25 16l7 5M19 24l-5 9M31 28l4 8"/></svg><b data-en="1 min walk">徒歩1分</b><small data-en="from JR Tokuyama Sta.">JR徳山駅から</small></div>
-      <div class="feat"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 42V24l10-8 10 8v18"/><path d="M10 42h28M20 42v-8h8v8"/><path d="M18 12c0-3 3-3 3-6M27 12c0-3 3-3 3-6"/></svg><b data-en="Sauna">サウナ併設</b><small data-en="10:00–23:00">10:00–23:00</small></div>
-      <div class="feat"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="10" width="12" height="12" rx="1.5"/><rect x="26" y="10" width="12" height="12" rx="1.5"/><rect x="10" y="26" width="12" height="12" rx="1.5"/><rect x="26" y="26" width="12" height="12" rx="1.5"/></svg><b data-en="72 rooms">全72室</b><small data-en="cube rooms">キューブ個室</small></div>
-      <div class="feat"><svg class="ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 20h28l-2-8H12z"/><path d="M12 20v18h24V20M20 38V28h8v10"/></svg><b data-en="Partner shops">提携店</b><small data-en="growing">まちごと<wbr>楽しむ</small></div>
-    </div>
-  </div>
-</section>
 
 <!-- ===== ふたりの一日 ===== -->
 <section class="sec soft" id="day">
   <div class="wrap">
     <div class="slabel">
-      <span class="en" data-en="A DAY IN SHUNAN">A DAY IN SHUNAN</span>
-      <h2 data-en="From check-in<br>to tomorrow's coffee.">チェックインから、<br>翌朝の<wbr>珈琲まで。</h2>
+      <h2 data-en="A day in Shunan">一日の<wbr>過ごし方</h2>
     </div>
     <div class="dayil"><img src="img/walk-night.jpg" width="1500" height="1000" alt="夜の徳山駅前。大きな屋根の下を歩く人" loading="lazy" decoding="async"></div>
     <div class="cards">
-      <div class="card"><div class="ph"><img src="img/gaikan.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="夜のキューブホテル徳山の外観"><span class="tag" data-en="Inn">宿</span></div><div class="bd"><b data-en="First, drop your bags.">まず、<wbr>荷物を<wbr>置いて。</b><p data-en="Leave your bags in your room by the station, then head for the Ginnangai arcade.">駅前の<wbr>個室に<wbr>荷物を<wbr>置いたら、<wbr>銀南街の<wbr>アーケードへ。</p></div></div>
-      <div class="card"><div class="ph"><img src="img/sauna.jpg" width="376" height="318" loading="lazy" decoding="async" alt="キューブホテル徳山のサウナ"><span class="tag" data-en="Night">夜</span></div><div class="bd"><b data-en="End the night in the sauna.">締めは、<wbr>サウナで。</b><p data-en="A drink under the red lanterns, then back to the inn for a self-löyly sauna.">赤提灯で<wbr>一杯。<wbr>宿に<wbr>戻って、<wbr>セルフロウリュでととのう。</p></div></div>
+      <div class="card"><div class="ph"><img src="img/gaikan.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="夜のキューブホテル徳山の外観"></div><div class="bd"><b data-en="Check-in">チェックイン</b><p data-en="Leave your bags in your room by the station. The Ginnangai arcade is a short walk away.">駅前の<wbr>個室に<wbr>荷物を<wbr>置いて、<wbr>銀南街の<wbr>アーケードへ<wbr>歩いて行けます。</p></div></div>
+      <div class="card"><div class="ph"><img src="img/sauna.jpg" width="376" height="318" loading="lazy" decoding="async" alt="キューブホテル徳山のサウナ"></div><div class="bd"><b data-en="Sauna">サウナ</b><p data-en="After a drink in town, come back for the self-löyly sauna.">町の<wbr>酒場で<wbr>飲んだ<wbr>あと、<wbr>宿に<wbr>戻って<wbr>セルフロウリュの<wbr>サウナに<wbr>入れます。</p></div></div>
     </div>
     <div class="tl">
-      <div class="tl-row"><span class="t">15:00</span><div><b data-en="Check-in">チェックイン</b><p data-en="Drop the bags, get the nostalgic map.">駅前の<wbr>宿に<wbr>荷物を<wbr>置いて、<wbr>ノスタルジック・<wbr>マップを<wbr>受け取る。</p></div></div>
-      <div class="tl-row"><span class="t">17:30</span><div><b data-en="Factory night view">工場夜<wbr>景</b><p data-en="Head to the sea and watch the industrial lights glow in the dusk.">海側へ。<wbr>夕闇に<wbr>浮かぶコンビナートの<wbr>光を<wbr>眺める。</p></div></div>
-      <div class="tl-row"><span class="t">19:00</span><div><b data-en="Red lanterns">赤提灯の<wbr>夜</b><p data-en="Cheers with the ticket at an old izakaya, mixed in with the locals.">大衆酒場で<wbr>チケット乾杯。<wbr>地元の<wbr>人に<wbr>まじって。</p></div></div>
-      <div class="tl-row"><span class="t">21:30</span><div><b data-en="Sauna">サウナでととのう</b><p data-en="Back at the inn, soothe your tired legs in the self-löyly sauna.">宿に<wbr>戻って、<wbr>セルフロウリュの<wbr>サウナで<wbr>整える。</p></div></div>
-      <div class="tl-row"><span class="t">翌8:30</span><div><b data-en="Café morning">純喫茶で<wbr>目覚める</b><p data-en="The master's coffee, a morning set, and a melon soda.">マスターの<wbr>コーヒーと<wbr>モーニング、<wbr>メロンソーダも<wbr>一杯。</p></div></div>
+      <div class="tl-row"><span class="t">15:00</span><div><b data-en="Check-in">チェックイン</b><p data-en="Drop your bags and get the Nostalgic Map.">駅前の<wbr>宿に<wbr>荷物を<wbr>置いて、<wbr>ノスタルジック・<wbr>マップを<wbr>受け取ります。</p></div></div>
+      <div class="tl-row"><span class="t">17:30</span><div><b data-en="Factory night view">工場夜<wbr>景</b><p data-en="Head toward the sea and see the industrial complex at night.">海側へ<wbr>行き、<wbr>コンビナートの<wbr>夜景を<wbr>見ます。</p></div></div>
+      <div class="tl-row"><span class="t">19:00</span><div><b data-en="Izakaya">大衆酒場</b><p data-en="Use your ticket for a drink at a partner izakaya.">提携の<wbr>酒場で、<wbr>チケットを<wbr>使って<wbr>一杯<wbr>飲みます。</p></div></div>
+      <div class="tl-row"><span class="t">21:30</span><div><b data-en="Sauna">サウナ</b><p data-en="Back at the hotel, use the self-löyly sauna.">宿に<wbr>戻って、<wbr>セルフロウリュの<wbr>サウナに<wbr>入ります。</p></div></div>
+      <div class="tl-row"><span class="t">翌8:30</span><div><b data-en="Café morning">純喫茶の<wbr>モーニング</b><p data-en="Coffee and a morning set at an old café.">純喫茶で、<wbr>コーヒーと<wbr>モーニングを<wbr>食べます。</p></div></div>
     </div>
     <div class="tgal">
       <figure><img src="img/chuogai.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="提灯の並ぶ銀座中央街のアーケード"></figure>
@@ -440,8 +425,7 @@ footer{background:#0a0908}
 <section class="sec" id="plan">
   <div class="wrap">
     <div class="slabel">
-      <span class="en" data-en="STAY PLAN">STAY PLAN</span>
-      <h2 data-en="Travel light,<br><span class='mk'>blend into the town.</span>">手ぶらで、<br><span class="mk">町に<wbr>溶け込む。</span></h2>
+      <h2 data-en="Stay plan">宿泊プラン</h2>
     </div>
     <div class="pass">
       <span class="ribbon" data-en="NOSTALGIC PASSPORT">周南ノスタルジック・<wbr>パスポート</span>
@@ -453,7 +437,7 @@ footer{background:#0a0908}
         <li data-en="One-drink / discount tickets for partner shops">提携店で<wbr>使える<wbr>ワンドリンク／割引チケット</li>
       </ul>
     </div>
-    <p class="center" style="color:var(--ink2);font-size:14px;margin-top:24px" data-en="A room-only plan (from ¥4,800) is also available.">素泊まり<wbr>プラン（4,800円〜）も<wbr>ご用意。<wbr>まずは<wbr>気軽に、<wbr>この<wbr>町の<wbr>夜を。</p>
+    <p class="center" style="color:var(--ink2);font-size:14px;margin-top:24px" data-en="A room-only plan (from ¥4,800) is also available.">素泊まり<wbr>プラン（4,800円〜）も<wbr>あります。</p>
   </div>
 </section>
 
@@ -461,17 +445,16 @@ footer{background:#0a0908}
 <section class="sec soft" id="partners">
   <div class="wrap">
     <div class="slabel">
-      <span class="en" data-en="PARTNER SHOPS">PARTNER SHOPS</span>
-      <h2 data-en="Chit in hand,<br>a regular in this town.">チケット一枚で、<br>この<wbr>町の<wbr>常連に。</h2>
-      <p data-en="Partner shops where your passport tickets work. Mix with the locals and find your own spot.">パスポートの<wbr>チケットが<wbr>使える<wbr>提携店。<wbr>地元の<wbr>人に<wbr>まじって、<wbr>あなただけの<wbr>一軒を。</p>
+      <h2 data-en="Partner shops">提携店</h2>
+      <p data-en="Shops where your passport tickets work.">パスポートの<wbr>チケットが<wbr>使える<wbr>お店です。</p>
     </div>
     <div class="shopgrid">
-      <div class="shop"><span class="tag" data-en="Guest perk">宿泊者特典</span><b>いっとく</b><div class="gen" data-en="Izakaya">居酒屋</div><div class="perk" data-en="Free chicken skin">鶏皮サービス</div></div>
-      <div class="shop"><span class="tag" data-en="Guest perk">宿泊者特典</span><b>小惑星</b><div class="yomi" data-en="Shōwakusei">しょうわく<wbr>せい</div><div class="gen" data-en="Ramen">ラーメン</div><div class="perk" data-en="Large at regular price">普通料金で<wbr>大盛り</div></div>
-      <div class="shop"><span class="tag" data-en="Guest perk">宿泊者特典</span><b>38</b><div class="yomi" data-en="Sabā">サバー</div><div class="gen" data-en="Izakaya">居酒屋</div><div class="perk" data-en="Extra mackerel sashimi">鯖の<wbr>お刺身 増量</div></div>
-      <div class="shop soon"><span class="tag" data-en="Guest perk">宿泊者特典</span><b>イチバンチョウバル</b><div class="gen" data-en="Bar">バル</div><div class="perk" data-en="Coming soon">準備中</div></div>
+      <div class="shop"><b>いっとく</b><div class="gen" data-en="Izakaya">居酒屋</div><div class="perk" data-en="Free chicken skin">鶏皮サービス</div></div>
+      <div class="shop"><b>小惑星</b><div class="yomi" data-en="Shōwakusei">しょうわく<wbr>せい</div><div class="gen" data-en="Ramen">ラーメン</div><div class="perk" data-en="Large at regular price">普通料金で<wbr>大盛り</div></div>
+      <div class="shop"><b>38</b><div class="yomi" data-en="Sabā">サバー</div><div class="gen" data-en="Izakaya">居酒屋</div><div class="perk" data-en="Extra mackerel sashimi">鯖の<wbr>お刺身 増量</div></div>
+      <div class="shop soon"><b>イチバンチョウバル</b><div class="gen" data-en="Bar">バル</div><div class="perk" data-en="Coming soon">準備中</div></div>
     </div>
-    <p class="pmore" data-en="Bathhouses, retro shops… more partner spots coming soon.">銭湯・<wbr>レトロ雑貨店…<wbr>提携店は<wbr>順次拡大中。</p>
+    <p class="pmore" data-en="More partner shops, such as a bathhouse and retro shops, will be added.">銭湯や<wbr>レトロ雑貨店など、<wbr>提携店は<wbr>順に<wbr>増やしていきます。</p>
   </div>
 </section>
 
@@ -479,19 +462,18 @@ footer{background:#0a0908}
 <section class="sec" id="hotel">
   <div class="wrap">
     <div class="slabel">
-      <span class="en" data-en="ROOMS">ROOMS</span>
-      <h2 data-en="A clean little room,<br>made for sleeping.">眠る<wbr>ためだけの、<wbr>潔い<wbr>一室。</h2>
+      <h2 data-en="Rooms">客室</h2>
     </div>
     <div class="rgrid">
       <div class="ph"><img src="img/room-wide.jpg" width="1200" height="1500" loading="lazy" decoding="async" alt="客室。ベッドと机" style="aspect-ratio:1;object-fit:cover;object-position:50% 62%"></div>
       <div class="facts">
-        <div class="fact"><b data-en="72 single rooms · free Wi-Fi &amp; outlets">全72室・<wbr>ひとり用の<wbr>個室・<wbr>Wi-Fi＆コンセント</b><small data-en="A bit roomier than a capsule hotel. Good for remote work too.">カプセルホテルより<wbr>少し<wbr>広い<wbr>個室。<wbr>リモートワークにも。</small></div>
-        <div class="fact"><b data-en="Toilets &amp; showers are outside the room">トイレ・<wbr>シャワーは<wbr>部屋の<wbr>外</b><small data-en="Shared toilets and showers, two of each on every floor. No room key; valuables in the 2F/3F lockers or at the front.">各階に<wbr>共用で<wbr>2か<wbr>所ずつ。<wbr>客室に<wbr>鍵はなし。<wbr>貴重品は<wbr>2・3階ロッカーか<wbr>フロントへ。</small></div>
-        <div class="fact"><b data-en="Shared microwave · kettle · TV · coin laundry">共用の<wbr>電子レンジ・<wbr>ケトル・<wbr>テレビ・<wbr>ランドリー</b><small data-en="No TV in the rooms. Shared amenities are free (washer ¥500 / dryer ¥100 per 10 min).">テレビは<wbr>客室に<wbr>なく<wbr>共用です。<wbr>共用設備は<wbr>無料<wbr>（洗濯500円／乾燥100円・<wbr>10分）。</small></div>
+        <div class="fact"><b data-en="72 single rooms · free Wi-Fi &amp; outlets">全72室・<wbr>ひとり用の<wbr>個室・<wbr>Wi-Fi＆コンセント</b><small data-en="A bit roomier than a capsule hotel. You can also use it for remote work.">カプセルホテルより<wbr>少し<wbr>広い<wbr>個室です。<wbr>リモートワークにも<wbr>使えます。</small></div>
+        <div class="fact"><b data-en="Toilets &amp; showers are outside the room">トイレ・<wbr>シャワーは<wbr>部屋の<wbr>外</b><small data-en="Shared toilets and showers, two of each on every floor. Rooms have no key; we keep valuables in the 2F/3F lockers or at the front.">各階に<wbr>共用で<wbr>2か所ずつあります。<wbr>客室に<wbr>鍵は<wbr>ありません。<wbr>貴重品は<wbr>2・3階の<wbr>ロッカーか、<wbr>フロントで<wbr>お預かりします。</small></div>
+        <div class="fact"><b data-en="Shared microwave · kettle · TV · coin laundry">共用の<wbr>電子レンジ・<wbr>ケトル・<wbr>テレビ・<wbr>ランドリー</b><small data-en="No TV in the rooms. The microwave, kettle and TV are free. Laundry: washer ¥500, dryer ¥100 per 10 min.">テレビは<wbr>客室に<wbr>なく、<wbr>共用です。<wbr>電子レンジ・<wbr>ケトル・<wbr>テレビは<wbr>無料です。<wbr>ランドリーは<wbr>洗濯500円、<wbr>乾燥100円<wbr>（10分）です。</small></div>
       </div>
     </div>
     <div class="sauna">
-      <h3 data-en="Tired legs? A self-löyly sauna waits.">歩き疲れた<wbr>夜に。<wbr>セルフロウリュの<wbr>サウナ。</h3>
+      <h3 data-en="Sauna">サウナ</h3>
       <div class="row">
         <span data-en="Open <b>10:00–23:00</b> (last 22:00)">営業 <b>10:00–23:00</b>（最終受付22:00）</span>
         <span data-en="Guests <b>¥700</b>/1h">宿泊者 <b>700円</b>/1h</span>
@@ -507,14 +489,13 @@ footer{background:#0a0908}
 <section class="sec soft" id="book">
   <div class="wrap">
     <div class="slabel">
-      <span class="en" data-en="ACCESS &amp; BOOKING">ACCESS &amp; BOOKING</span>
-      <h2 data-en="Right at the station.">駅を<wbr>出たら、<wbr>もう<wbr>そこ。</h2>
+      <h2 data-en="Access and booking">アクセスと<wbr>ご予約</h2>
     </div>
     <div class="acc-grid">
       <div>
-        <p class="big" data-en="Just <em>1 min</em> from JR Tokuyama Sta., North Exit.">JR徳山駅 北口から、<em>徒歩1分。</em></p>
-        <p class="addr" data-en="Cube Hotel Tokuyama · 15-1 Yūrakuchō, Shunan, Yamaguchi<br>North Exit, turn left — 1 min. Starbucks &amp; Tsutaya 1 min / TOKUYAMA DECK 3 min<br>Check-in 15:00–23:00 / Check-out 10:00 · TEL 0834-32-1270">キューブホテル徳山／山口県周南市有楽町15-1<br>北口を<wbr>出て<wbr>左手・<wbr>徒歩1分。<wbr>スタバ・<wbr>蔦屋書店 徒歩1分／TOKUYAMA DECK 徒歩3分<br>チェックイン 15:00–23:00 ／ チェックアウト 10:00 ／ TEL 0834-32-1270</p>
-        <p class="addr" style="margin-top:10px" data-en="Shinkansen: about 30 min from Hiroshima, about 45 min from Hakata (Fukuoka). A hidden-gem stop for a cheap weekend trip.">新幹線なら<b style="color:var(--teal-d)">広島から<wbr>約30分・博多<wbr>（福岡）から<wbr>約45分</b>。<wbr>広島・福岡からの<wbr>週末旅、<wbr>安く<wbr>泊まれる<wbr>山口の<wbr>穴場に。</p>
+        <p class="big" data-en="<em>1 min walk</em> from JR Tokuyama Sta., North Exit.">JR徳山駅の<wbr>北口から、<em>歩いて<wbr>1分</em>です。</p>
+        <p class="addr" data-en="Cube Hotel Tokuyama · 15-1 Yūrakuchō, Shunan, Yamaguchi<br>North Exit, turn left — 1 min. Starbucks &amp; Tsutaya 1 min / TOKUYAMA DECK 3 min<br>Check-in 15:00–23:00 / Check-out 10:00 · TEL 0834-32-1270">キューブホテル徳山／山口県周南市有楽町15-1<br>北口を<wbr>出て<wbr>左手、<wbr>歩いて<wbr>1分です。<wbr>スタバ・<wbr>蔦屋書店まで<wbr>徒歩1分、<wbr>TOKUYAMA DECKまで<wbr>徒歩3分です。<br>チェックイン 15:00–23:00 ／ チェックアウト 10:00 ／ TEL 0834-32-1270</p>
+        <p class="addr" style="margin-top:10px" data-en="By Shinkansen: about 30 min from Hiroshima, about 45 min from Hakata (Fukuoka).">新幹線で<b style="color:var(--teal-d)">広島から<wbr>約30分、<wbr>博多<wbr>（福岡）から<wbr>約45分</b>です。</p>
         <div class="links">
           <a href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener" data-en="Book on Jalan">じゃらんで<wbr>予約</a>
           <a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/193341?f_otona_su=1&amp;f_heya_su=1" target="_blank" rel="noopener" data-en="Book on Rakuten Travel">楽天トラベルで<wbr>予約</a>
@@ -523,7 +504,7 @@ footer{background:#0a0908}
           <a class="alt" href="https://www.instagram.com/cubehotel.tokuyama/" target="_blank" rel="noopener" data-en="Instagram">Instagram</a>
         </div>
         <div class="mch">
-          <p class="h" data-en="partner shops on the map">提携店を<wbr>Googleマップで</p>
+          <p class="h" data-en="Partner shops on the map">提携店の<wbr>地図</p>
           <div class="row">
             <a class="mchip" data-q="いっとく 周南市 徳山" data-en="Ittoku">いっとく</a>
             <a class="mchip" data-q="小惑星 ラーメン 周南市 徳山" data-en="Shōwakusei">小惑星</a>
@@ -540,17 +521,6 @@ footer{background:#0a0908}
   </div>
 </section>
 
-<!-- ===== 最終CTA ===== -->
-<section class="sec final">
-  <div class="wrap">
-    <h2 data-en="See you in this town.">また<wbr>この<wbr>町で、<wbr>会いましょう。</h2>
-    <p data-en="From ¥4,800 a night. This weekend, come soak in a little Shōwa at the station front.">一泊4,800円から。<wbr>この<wbr>週末、<wbr>駅前で<wbr>少しだけ昭和に<wbr>ひたりに。</p>
-    <div class="cta">
-      <a class="btn btn-p" href="#book" data-en="Check availability">空室を<wbr>みる</a>
-      <a class="btn btn-g" href="#day" data-en="A day here">一日の<wbr>過ごし方</a>
-    </div>
-  </div>
-</section>
 
 <footer>
   <div class="fb">キューブホテル徳山</div>

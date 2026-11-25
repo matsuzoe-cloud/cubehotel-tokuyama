@@ -234,7 +234,6 @@ footer a{color:rgba(255,255,255,.6)}
 @media(max-width:520px){.prow{grid-template-columns:1fr}.tl-row{grid-template-columns:70px 1fr;gap:14px}.sticky small{display:none}}
 </style>
 <style id="gm-css">.gm{position:relative}.gm>summary{list-style:none;display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:700;letter-spacing:.06em;color:#1c1a15;padding:8px 2px}.gm>summary::-webkit-details-marker{display:none}.gm-ic,.gm-ic::before,.gm-ic::after{display:block;width:18px;height:2px;background:#1c1a15;position:relative;content:"";transition:transform .2s}.gm-ic::before,.gm-ic::after{position:absolute;left:0}.gm-ic::before{top:-6px}.gm-ic::after{top:6px}.gm[open] .gm-ic{background:transparent}.gm[open] .gm-ic::before{top:0;transform:rotate(45deg)}.gm[open] .gm-ic::after{top:0;transform:rotate(-45deg)}.gm-p{position:fixed;left:0;right:0;top:var(--gm-top,66px);max-height:calc(100vh - var(--gm-top,66px));overflow:auto;background:#f3ede1;border-top:1px solid rgba(28,26,21,.18);border-bottom:1px solid rgba(28,26,21,.18);padding:6px 0 22px;z-index:60}.gm-p a,.gm-p .gm-h{display:block;max-width:720px;margin:0 auto;padding:13px 24px}.gm-p a{font-size:15px;color:#1c1a15;text-decoration:none;border-bottom:1px solid rgba(28,26,21,.12)}.gm-p a:hover{color:#b8402a}.gm-p .gm-h{font-size:11.5px;letter-spacing:.14em;color:#b8402a;padding-top:22px;padding-bottom:4px}@media(max-width:820px){.gm-t{display:none}}@media(min-width:821px){.gm.sp-only{display:none}}@media(max-width:480px){header.nav:has(.gm.lp) .right{gap:10px}header.nav:has(.gm.lp) .brand{font-size:13px;white-space:nowrap;gap:6px;letter-spacing:.04em}header.nav:has(.gm.lp) .brand small{display:none}header.nav:has(.gm.lp) .brand .dot{width:8px;height:8px}header.nav:has(.gm.lp) .wrap{padding-left:14px;padding-right:14px}header.nav:has(.gm.lp) .tel{display:none}header.nav:has(.gm.lp) .langsw button{padding-left:6px;padding-right:6px}.gm.lp>summary{padding:8px 0}}</style>
-<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 <style id="dark-css">
 /* 仮案：黒基調（このかたまりを外せば元に戻る） */
 :root{--bg:#0f0e0c;--soft:#171512;--soft2:#1d1a16;--ink:#ece6da;--ink2:#b3ab9d;--teal:#4cc9bc;--teal-d:#7fded4;--teal-l:#4cc9bc;--line:rgba(236,230,218,.15)}
@@ -253,6 +252,11 @@ footer{background:#0a0908}
 .sticky{background:#1a1815;border-color:rgba(236,230,218,.16)}
 iframe{filter:brightness(.86) saturate(.85)}
 </style>
+<style id="plain-css">
+/* 仮案：チップの並びを文にした */
+.who{font-size:15px;line-height:2;color:var(--ink);max-width:46em}
+</style>
+<style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head>
 <body>
 
@@ -270,10 +274,8 @@ iframe{filter:brightness(.86) saturate(.85)}
 <section class="hero" id="top">
   <div class="wrap">
     <div class="in">
-      <p class="ey">山口・<wbr>広島で<wbr>合宿・遠征予定の<wbr>チームへ<wbr>｜部<wbr>活動・<wbr>クラブチーム</p>
-      <h1>雑魚寝<span class="mk">しない</span>、<br>合宿。</h1>
-      <p class="sub">山口・<wbr>広島エリアで<wbr>合宿や<wbr>大会遠征を<wbr>予定している<wbr>チームへ。<wbr>JR徳山駅 徒歩1分・<wbr>全72室すべて<wbr>個室。<wbr>素泊まり<wbr>4,800円〜、<b>団体割引あり</b>。<wbr>人数・日程から<wbr>その<wbr>場で<wbr>お見積り・<wbr>ご相談を<wbr>承ります。</p>
-      <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap"><span style="background:var(--mustard);color:var(--ink);font-family:'Zen Maru Gothic',sans-serif;font-weight:900;font-size:13px;padding:8px 16px;border-radius:999px">団体割引あり</span><span style="background:rgba(255,255,255,.14);color:#fff;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px">合宿・遠征の<wbr>ご相談 受付中</span></div>
+      <h1>合宿・部<wbr>活動の<br>団体宿泊</h1>
+      <p class="sub">JR徳山駅から<wbr>歩いて<wbr>1分の<wbr>ホテルです。<wbr>全72室が<wbr>すべて<wbr>個室なので、<wbr>チーム全員が<wbr>1人1部屋で<wbr>泊まれます。<wbr>素泊まりは<wbr>4,800円からで、<b>団体<wbr>割引が<wbr>あります</b>。<wbr>人数と<wbr>日程を<wbr>お知らせいただければ、<wbr>お見積りします。</p>
       <div class="cta">
         <a class="btn btn-p" href="#contact">団体<wbr>割引の<wbr>見積り・相談を<wbr>する</a>
         <a class="btn btn-g" href="tel:0834321270">お電話 0834-32-1270</a>
@@ -282,31 +284,20 @@ iframe{filter:brightness(.86) saturate(.85)}
   </div>
 </section>
 
-<!-- NUMBERS -->
-<section class="nums" aria-label="数字で見る">
-  <div class="wrap">
-    <div class="num"><b data-count="72">72<span class="u">室</span></b><small>全室が<wbr>個室</small></div>
-    <div class="num"><b data-count="1">1<span class="u">分</span></b><small>JR徳山駅から<wbr>徒歩</small></div>
-    <div class="num"><b data-count="4800" data-comma="1">4,800<span class="u">円〜</span></b><small>素泊まり・税込</small></div>
-    <div class="num"><b>広島<span class="u">30分</span></b><small>新幹線／博多45分</small></div>
-  </div>
-</section>
 
 <!-- なぜ合宿に -->
 <section class="sec">
   <div class="wrap">
     <div class="slabel">
-      <span class="en">WHY CUBE FOR TRAINING CAMPS</span>
-      <h2>合宿の<wbr>「困った」を、<br><span class="mk">駅前の<wbr>一棟で<wbr>解決する。</span></h2>
-      <p>雑魚寝、<wbr>移動、<wbr>洗濯、<wbr>疲労、<wbr>ミーティング。<wbr>合宿の<wbr>面倒を、<wbr>駅前1分・<wbr>全72室の<wbr>キューブホテル徳山が<wbr>まとめて<wbr>引き<wbr>受けます。</p>
+      <h2>合宿で<wbr>使いやすい<wbr>ところ</h2>
     </div>
     <div class="merits">
-      <div class="merit"><div class="no">01</div><div><h3>全員が<span class="mk">個室</span>で<wbr>休める</h3><p><b>雑魚寝なし。</b>1人1部屋だから、<wbr>体調管理も<wbr>プライバシーも<wbr>守れて、<wbr>翌日の<wbr>パフォーマンスが<wbr>違う。<b>男子・<wbr>女子・<wbr>混合、<wbr>どの<wbr>チームでも<wbr>OK。</b>全室個室なので<wbr>男女比を<wbr>問わず<wbr>対応でき、<wbr>フロア分けの<wbr>ご相談も<wbr>可能です。</p></div></div>
-      <div class="merit"><div class="no">02</div><div><h3>駅前1分。<wbr>移動がとにかく<wbr>楽</h3><p>JR徳山駅 北口から<wbr>徒歩1分。<wbr>大会会場・<wbr>体育館・<wbr>グラウンドへの<wbr>移動も、<wbr>重い<wbr>遠征荷物も、<wbr>駅前立地で<wbr>スムーズ。</p></div></div>
-      <div class="merit"><div class="no">03</div><div><h3>サウナで、<wbr>疲れを<wbr>リセット</h3><p>セルフロウリュの<wbr>サウナ併設。<wbr>練習後の<wbr>体を<wbr>整える。<b>宿泊者700円/1時間</b>、<wbr>チームでの<wbr>貸切6,000円/1時間も。<wbr>サウナは<wbr>男性専用です。<wbr>貸切なら<wbr>女子チームも<wbr>使えます。</p></div></div>
-      <div class="merit"><div class="no">04</div><div><h3>ユニフォームも、<wbr>洗える</h3><p>コインランドリー完備<wbr>（洗濯500円／乾燥100円・<wbr>10分）。<wbr>連泊・長期の<wbr>合宿でも、<wbr>毎日<wbr>清潔な<wbr>ウェアで。</p></div></div>
-      <div class="merit"><div class="no">05</div><div><h3>補食も<wbr>ミーティングも、<wbr>個室で</h3><p>電子レンジ・<wbr>電気ケトル、<wbr>全室Wi-Fi＆コンセント完備。<wbr>補食も、<wbr>映像を<wbr>見ながらの<wbr>作戦会議も、<wbr>自分の<wbr>部屋で。</p></div></div>
-      <div class="merit"><div class="no">06</div><div><h3>まと<wbr>まった<wbr>人数、<wbr>特別価格で</h3><p>全72室・<wbr>駅前立地。<wbr>連泊・団体は<wbr>規模に<wbr>応じて<wbr>特別価格を<wbr>ご用意。<wbr>まずは<wbr>人数と<wbr>日程を<wbr>お電話で<wbr>お聞かせ<wbr>ください。</p></div></div>
+      <div class="merit"><div><h3>全員が<wbr>個室</h3><p>1人1部屋なので、<wbr>雑魚寝は<wbr>ありません。<wbr>体調の<wbr>管理が<wbr>しやすく、<wbr>着替えや<wbr>荷物にも<wbr>気を<wbr>つかいません。<wbr>全室が<wbr>個室なので、<b>男子・<wbr>女子・<wbr>混合の<wbr>どの<wbr>チームも<wbr>泊まれます。</b>フロアを<wbr>分ける<wbr>ご相談も<wbr>できます。</p></div></div>
+      <div class="merit"><div><h3>駅から<wbr>1分</h3><p>JR徳山駅の<wbr>北口から<wbr>歩いて<wbr>1分です。<wbr>大会の<wbr>会場や<wbr>体育館へ<wbr>電車で<wbr>動く<wbr>ときも、<wbr>重い<wbr>荷物を<wbr>運ぶ<wbr>距離が<wbr>短くてすみます。</p></div></div>
+      <div class="merit"><div><h3>サウナ</h3><p>セルフロウリュの<wbr>サウナが<wbr>あります。<wbr>宿泊の<wbr>方は<b>1時間700円</b>、<wbr>チームでの<wbr>貸し切りは<wbr>1時間6,000円です。<wbr>サウナは<wbr>男性専用ですが、<wbr>貸し切りなら<wbr>女子チームも<wbr>使えます。</p></div></div>
+      <div class="merit"><div><h3>洗濯</h3><p>コインランドリーが<wbr>あります<wbr>（洗濯500円、<wbr>乾燥100円・<wbr>10分）。<wbr>連泊の<wbr>合宿でも、<wbr>ユニフォームを<wbr>毎日<wbr>洗えます。</p></div></div>
+      <div class="merit"><div><h3>補食と<wbr>ミーティング</h3><p>共用の<wbr>電子レンジと<wbr>電気ケトルが<wbr>使えます。<wbr>全室に<wbr>無料Wi-Fiと<wbr>コンセントが<wbr>あり、<wbr>部屋で<wbr>映像を<wbr>見ながら<wbr>ミーティングも<wbr>できます。</p></div></div>
+      <div class="merit"><div><h3>団体の<wbr>料金</h3><p>連泊や団体の<wbr>ご利用は、<wbr>人数に<wbr>合わせた<wbr>特別価格を<wbr>ご用意します。<wbr>人数と<wbr>日程を<wbr>お電話で<wbr>お知らせ<wbr>ください。</p></div></div>
     </div>
   </div>
 </section>
@@ -314,34 +305,10 @@ iframe{filter:brightness(.86) saturate(.85)}
 <!-- 個室 vs 雑魚寝（signature） -->
 <section class="sec soft">
   <div class="wrap">
-    <div class="slabel c">
-      <span class="en">PRIVATE ROOM, NOT A FLOOR</span>
-      <h2>合宿の<wbr>質は、<span class="mk">夜の<wbr>休み方</span>で<wbr>決まる。</h2>
-    </div>
-    <div class="vs">
-      <div class="col bad">
-        <div class="k">よく<wbr>ある<wbr>雑魚寝合宿</div>
-        <ul>
-          <li>物音・いびきで<wbr>眠れない</li>
-          <li>1人が<wbr>体調を<wbr>崩すと<wbr>広がる</li>
-          <li>着替えも<wbr>荷物も<wbr>気を<wbr>つかう</li>
-          <li>疲れが<wbr>翌日に<wbr>残る</li>
-        </ul>
-      </div>
-      <div class="col good">
-        <div class="k">キューブの<wbr>個室合宿</div>
-        <ul>
-          <li>自分の<wbr>部屋でしっかり<wbr>眠れる</li>
-          <li>個室だから<wbr>体調管理が<wbr>しやすい</li>
-          <li>着替え・貴重品も<wbr>自分の<wbr>空間で</li>
-          <li>サウナで<wbr>整えて、<wbr>翌日に<wbr>備える</li>
-        </ul>
-      </div>
-    </div>
     <div class="prow">
-      <figure><img src="img/room-wide.jpg" alt="キューブホテル徳山の個室。ベッドと机" loading="lazy"><figcaption>1人1部屋の<wbr>キューブ個室</figcaption></figure>
-      <figure><img src="img/desk.jpg" alt="共用のテレビとデスク" loading="lazy"><figcaption>Wi-Fi＆コンセントで<wbr>ミーティング</figcaption></figure>
-      <figure><img src="img/sauna.jpg" alt="キューブホテル徳山のサウナ" loading="lazy"><figcaption>サウナで<wbr>疲労回復</figcaption></figure>
+      <figure><img src="img/room-wide.jpg" alt="キューブホテル徳山の個室。ベッドと机" loading="lazy"><figcaption>1人1部屋の<wbr>個室</figcaption></figure>
+      <figure><img src="img/desk.jpg" alt="共用のテレビとデスク" loading="lazy"><figcaption>共用の<wbr>テレビと<wbr>机</figcaption></figure>
+      <figure><img src="img/sauna.jpg" alt="キューブホテル徳山のサウナ" loading="lazy"><figcaption>サウナ</figcaption></figure>
     </div>
   </div>
 </section>
@@ -350,17 +317,16 @@ iframe{filter:brightness(.86) saturate(.85)}
 <section class="sec">
   <div class="wrap">
     <div class="slabel c">
-      <span class="en">A DAY AT CAMP</span>
-      <h2>合宿の<wbr>一日を、<span class="mk">駅前で。</span></h2>
+      <h2>合宿の<wbr>一日</h2>
     </div>
     <div class="tl">
-      <div class="tl-row"><span class="t">6:30</span><div><b>起床・朝練</b><p>個室でしっかり<wbr>眠って、<wbr>コンディションを<wbr>整えて<wbr>スタート。</p></div></div>
-      <div class="tl-row"><span class="t">8:00</span><div><b>補食して、<wbr>会場へ</b><p>電子レンジで<wbr>補食。<wbr>駅前1分だから、<wbr>会場・<wbr>グラウンドへの<wbr>移動も<wbr>楽。</p></div></div>
-      <div class="tl-row"><span class="t">日中</span><div><b>練習・試合</b><p>大会遠征も、<wbr>強化合宿も。<wbr>拠点は<wbr>駅前に<wbr>置いて<wbr>身軽に<wbr>動く。</p></div></div>
-      <div class="tl-row"><span class="t">18:00</span><div><b>洗濯＆補食</b><p>コインランドリーで<wbr>ユニフォームを<wbr>洗って、<wbr>翌日も<wbr>清潔に。</p></div></div>
-      <div class="tl-row"><span class="t">20:00</span><div><b>サウナで<wbr>回復</b><p>セルフロウリュで<wbr>一日の<wbr>疲れを<wbr>リセット。<wbr>チーム貸切も。</p></div></div>
-      <div class="tl-row"><span class="t">21:00</span><div><b>個室で<wbr>ミーティング</b><p>Wi-Fiで<wbr>映像を<wbr>見ながら<wbr>作戦会議。<wbr>集中できる<wbr>自分の<wbr>部屋で。</p></div></div>
-      <div class="tl-row"><span class="t">22:30</span><div><b>個室で<wbr>就寝</b><p>雑魚寝じゃないから、<wbr>ぐっすり。<wbr>明日の<wbr>一本の<wbr>ために<wbr>休む。</p></div></div>
+      <div class="tl-row"><span class="t">6:30</span><div><b>起床・朝練</b><p>個室でしっかり<wbr>眠って、<wbr>朝練に<wbr>出られます。</p></div></div>
+      <div class="tl-row"><span class="t">8:00</span><div><b>補食・<wbr>移動</b><p>共用の<wbr>電子レンジで<wbr>補食を<wbr>温められます。<wbr>駅から<wbr>1分なので、<wbr>会場への<wbr>移動も<wbr>楽です。</p></div></div>
+      <div class="tl-row"><span class="t">日中</span><div><b>練習・試合</b><p>荷物は<wbr>部屋に<wbr>置いたまま、<wbr>身軽に<wbr>動けます。</p></div></div>
+      <div class="tl-row"><span class="t">18:00</span><div><b>洗濯・補食</b><p>コインランドリーで<wbr>ユニフォームを<wbr>洗えます。</p></div></div>
+      <div class="tl-row"><span class="t">20:00</span><div><b>サウナ</b><p>セルフロウリュの<wbr>サウナに<wbr>入れます。<wbr>チームで<wbr>貸し切る<wbr>こともできます。</p></div></div>
+      <div class="tl-row"><span class="t">21:00</span><div><b>ミーティング</b><p>Wi-Fiで<wbr>映像を<wbr>見ながら、<wbr>自分の<wbr>部屋で<wbr>ミーティングが<wbr>できます。</p></div></div>
+      <div class="tl-row"><span class="t">22:30</span><div><b>就寝</b><p>1人1部屋なので、<wbr>静かに<wbr>休めます。</p></div></div>
     </div>
   </div>
 </section>
@@ -369,24 +335,15 @@ iframe{filter:brightness(.86) saturate(.85)}
 <section class="sec soft">
   <div class="wrap">
     <div class="slabel">
-      <span class="en">FOR &amp; RATE</span>
-      <h2>こんな<wbr>チームに、<span class="mk">選ばれています。</span></h2>
+      <h2>対象と<wbr>料金</h2>
     </div>
-    <div class="chips">
-      <span class="chip">中学・高校・<wbr>大学の<wbr>部活動</span>
-      <span class="chip">クラブチーム・<wbr>スポーツ少年団</span>
-      <span class="chip">大会遠征・<wbr>強化合宿</span>
-      <span class="chip">社会人サークル</span>
-      <span class="chip">吹奏楽・文化部の<wbr>合宿</span>
-      <span class="chip">男子・<wbr>女子・<wbr>混合どの<wbr>チームも</span>
-      <span class="chip">保護者・引率者の<wbr>ご宿泊</span>
-    </div>
+    <p class="who">中学・高校・<wbr>大学の<wbr>部活動、<wbr>クラブチーム、<wbr>スポーツ少年団、<wbr>社会人サークル、<wbr>吹奏楽・文化部の<wbr>合宿、<wbr>保護者・引率者の<wbr>ご宿泊に<wbr>使えます。<wbr>男子・<wbr>女子・<wbr>混合の<wbr>どの<wbr>チームも<wbr>泊まれます。</p>
     <div class="rate" style="margin-top:44px">
       <div class="r"><div class="k">素泊まり<small>1名・1泊・税込</small></div><div class="v">4,800<small>円〜</small></div></div>
       <div class="r"><div class="k">団体割引<small>人数・日程に<wbr>応じて</small></div><div class="v">割引価格<small>お見積り・ご相談</small></div></div>
       <div class="r"><div class="k">サウナ<small>宿泊者<wbr>（男性専用）<wbr>／チーム貸切<wbr>（男女とも）</small></div><div class="v">700<small>円〜/1h</small></div></div>
     </div>
-    <p class="rnote"><b>団体割引あり。</b>人数・<wbr>日程・<wbr>男女比を<wbr>お電話で<wbr>お伝えいただければ、<wbr>割引後の<wbr>目安を<wbr>その<wbr>場で<wbr>お出しします。<b>山口・<wbr>広島エリアの<wbr>合宿・<wbr>大会遠征の<wbr>ご相談、<wbr>受付中</b>です。<wbr>朝食・補食の<wbr>ご相談も<wbr>承ります。<br><b>TEL 0834-32-1270</b>（受付 9:00–22:00）</p>
+    <p class="rnote"><b>団体<wbr>割引が<wbr>あります。</b>人数・<wbr>日程・<wbr>男女比を<wbr>お電話で<wbr>お知らせいただければ、<wbr>割引後の<wbr>目安を<wbr>その<wbr>場で<wbr>お出しします。<wbr>朝食・補食の<wbr>ご相談も<wbr>承ります。<br><b>TEL 0834-32-1270</b>（受付 9:00–22:00）</p>
     <div class="cta" style="justify-content:flex-start;margin-top:22px"><a class="btn btn-p" href="tel:0834321270">団体<wbr>割引の<wbr>相談・<wbr>見積りを<wbr>する</a></div>
   </div>
 </section>
@@ -395,14 +352,13 @@ iframe{filter:brightness(.86) saturate(.85)}
 <section class="sec" id="access">
   <div class="wrap">
     <div class="slabel">
-      <span class="en">ACCESS</span>
-      <h2>広島・<wbr>福岡・<wbr>山口から、<span class="mk">駅前に<wbr>集合。</span></h2>
+      <h2>アクセス</h2>
     </div>
     <div class="acc">
       <div>
-        <p class="big">JR徳山駅 北口から、<em>徒歩1分。</em></p>
-        <p class="addr">キューブホテル徳山／山口県周南市有楽町15-1<br>北口を<wbr>出て<wbr>左手・<wbr>徒歩1分。<br>チェックイン 15:00–23:00 ／ チェックアウト 10:00 ／ TEL 0834-32-1270</p>
-        <p class="addr" style="margin-top:10px"><b>広島から<wbr>新幹線で<wbr>約30分・博多<wbr>（福岡）から<wbr>約45分</b>。<wbr>山口県内一円からも<wbr>アクセス良好。<wbr>大会会場・<wbr>体育館・<wbr>グラウンドへの<wbr>拠点に。</p>
+        <p class="big">JR徳山駅の<wbr>北口から、<em>歩いて<wbr>1分</em>です。</p>
+        <p class="addr">キューブホテル徳山／山口県周南市有楽町15-1<br>北口を<wbr>出て<wbr>左手、<wbr>歩いて<wbr>1分です。<br>チェックイン 15:00–23:00 ／ チェックアウト 10:00 ／ TEL 0834-32-1270</p>
+        <p class="addr" style="margin-top:10px">新幹線で<b>広島から<wbr>約30分、<wbr>博多<wbr>（福岡）から<wbr>約45分</b>です。</p>
         <div class="links">
           <a href="tel:0834321270">電話で<wbr>相談・<wbr>見積り</a>
           <a class="alt" href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらんで<wbr>見る</a>
@@ -422,8 +378,8 @@ iframe{filter:brightness(.86) saturate(.85)}
 <!-- 最終CTA -->
 <section class="sec final" id="contact">
   <div class="wrap">
-    <h2>その合宿、<wbr>駅前で。</h2>
-    <p>山口・<wbr>広島で<wbr>合宿・遠征を<wbr>お考えの<wbr>チームへ。<wbr>人数と<wbr>日程が<wbr>未定でも<wbr>大丈夫。<b>団体割引</b>の<wbr>お見積りと<wbr>ご相談を<wbr>受け付けています。<wbr>まずは<wbr>「こんな<wbr>合宿を<wbr>考えている」から、<wbr>お気軽に。</p>
+    <h2>お見積り・ご相談</h2>
+    <p>人数と<wbr>日程が<wbr>決まっていなくても、<wbr>ご相談いただけます。<b>団体割引</b>の<wbr>お見積りも<wbr>お出しします。</p>
     <a class="tel" href="tel:0834321270">TEL 0834-32-1270<small>合宿・団体の<wbr>ご相談 受付 9:00–22:00</small></a>
     <div class="cta">
       <a class="btn btn-p" href="tel:0834321270">電話で<wbr>見積りを<wbr>依頼</a>
@@ -442,7 +398,7 @@ iframe{filter:brightness(.86) saturate(.85)}
 </footer>
 
 <div class="sticky" id="sticky">
-  <div><b>団体割引・合宿の<wbr>ご相談</b><small>山口・<wbr>広島の<wbr>遠征に<wbr>／全室個室</small></div>
+  <div><b>団体割引・合宿の<wbr>ご相談</b><small>全室個室・駅から<wbr>1分</small></div>
   <a href="tel:0834321270">電話する</a>
 </div>
 
