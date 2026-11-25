@@ -261,6 +261,17 @@ iframe{filter:brightness(.86) saturate(.85)}
 @media(max-width:640px){.links{display:grid !important;grid-template-columns:1fr;gap:10px}.links a{display:block;text-align:center}}
 </style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
+<style id="sp-space-css">
+/* 仮案：スマホの間延びをなくす（このかたまりを外せば元に戻る） */
+@media (max-width:640px){
+ .hero{min-height:0}
+ .hero .in{padding:36px 0 40px}
+ .sec{padding:44px 0}
+ .slabel{margin-bottom:24px}
+ .prow{margin-top:24px}
+ footer{padding-top:32px}
+}
+</style>
 </head>
 <body>
 

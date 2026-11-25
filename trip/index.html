@@ -368,6 +368,19 @@ footer{background:#0a0908}
 /* 写真3枚の並びは、2列だと3枚目が左に1枚だけ残るので、1枚目を横いっぱいに */
 @media(max-width:640px){.tgal>:first-child:nth-last-child(3){grid-column:1/-1}.tgal>:first-child:nth-last-child(3) img{aspect-ratio:16/10}}
 </style>
+<style id="sp-space-css">
+/* 仮案：スマホの間延びをなくす（このかたまりを外せば元に戻る） */
+@media (max-width:640px){
+ .hero{min-height:0}
+ .hero .in{padding:32px 22px 40px}
+ .mission .wrap{padding:36px 22px}
+ .sec{padding:44px 0}
+ .slabel{margin-bottom:24px}
+ .dayil{margin-bottom:24px}
+ .tgal{margin-top:28px}
+ footer{padding-top:32px}
+}
+</style>
 </head>
 <body>
 
