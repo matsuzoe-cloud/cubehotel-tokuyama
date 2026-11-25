@@ -522,6 +522,9 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
 .hub .more a{font-weight:700;font-size:15px;text-decoration:none;color:var(--ink);border-bottom:2px solid var(--accent);padding-bottom:4px}
 .hub .more a::after{content:" →";color:var(--accent);font-weight:400}
 .hub .more a:hover{color:var(--accent)}
+/* 写真の高さを、横幅に合わせる（リモートワークの写真がスマホで縦に伸びていた） */
+.hub .ph img{height:auto}
+.hub .ph .ph-a{aspect-ratio:4/3}
 @media(max-width:640px){.hub .more a{display:flex;justify-content:space-between;padding:12px 0 10px}}
 </style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
