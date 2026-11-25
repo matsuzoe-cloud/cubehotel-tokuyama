@@ -589,6 +589,9 @@ footer{background:#0a0908}
 <style id="plain-css">
 /* 仮案：章の番号と小さい副題をやめた（このかたまりを外すと区切り線の余白だけ元に戻る） */
 .sh:empty{display:block;padding-top:0;margin-bottom:clamp(28px,4vw,44px)}
+/* スリッパの写真を外して2枚になった並びは、2列で横いっぱいに */
+.gal.g2{grid-template-columns:repeat(2,1fr)}
+.gal.g2 img{aspect-ratio:4/3}
 </style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head>
@@ -674,7 +677,7 @@ footer{background:#0a0908}
       </div>
       <div class="ph"><figure><img loading="lazy" decoding="async" class="ph-a" src="img/desk.jpg" alt="共用のテレビとデスク"></figure></div>
     </div>
-    <div class="gal">
+    <div class="gal g2">
       <figure><img loading="lazy" decoding="async" src="img/amenity.jpg" alt="共用の電子レンジ・ケトル"></figure>
       <figure><img loading="lazy" decoding="async" src="img/hangers.jpg" alt="客室のハンガー"></figure>
     </div>
