@@ -527,6 +527,8 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
 .hub .ph .ph-a{aspect-ratio:4/3}
 /* スマホでは客室の写真も横長に（縦長だと壁ばかりが画面の半分を占めた）。ベッドが入る位置で切る */
 @media(max-width:640px){.hub .ph .ph-p{aspect-ratio:4/3;object-position:50% 78%}}
+/* 料金の横の写真はPCだけ（スマホは短く） */
+@media(max-width:820px){.wp.pc-only{display:none}}
 @media(max-width:640px){.hub .more a{display:flex;justify-content:space-between;padding:12px 0 10px}}
 </style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
@@ -653,6 +655,8 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
   <div class="wrap">
     <header class="sh"></header>
     <h2 class="lead" style="margin-bottom:32px">料金</h2>
+    <div class="withph">
+      <div>
     <div class="rate">
       <div class="r"><div class="k">宿泊<wbr>（素泊まり）<small>1泊・1名</small></div><div class="v">4,800<small>円〜</small></div></div>
       <div class="r"><div class="k">リモートワーク・休憩<small>1時間・<wbr>泊まらない<wbr>方</small></div><div class="v">1,000<small>円</small></div></div>
@@ -661,6 +665,9 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
       <div class="r"><div class="k">マンスリー<small>長期滞在</small></div><div class="v">特別価格<small>お見積り</small></div></div>
     </div>
     <p class="subnote">料金は<wbr>税込です。<wbr>団体<wbr>割引は<wbr>10名以上の<wbr>ご宿泊が<wbr>対象です。<wbr>団体・長期は、<a href="shuzen/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">定期修繕・工事</a>と<a href="gasshuku/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">合宿・部<wbr>活動</a>の<wbr>ページも<wbr>ご覧ください。</p>
+      </div>
+      <figure class="wp pc-only"><img loading="lazy" decoding="async" src="img/rooms-two.jpg" width="1200" height="900" alt="並んだ客室。どれもひとり用の個室"></figure>
+    </div>
   </div>
 </section>
 
