@@ -425,14 +425,6 @@ section{position:relative;z-index:0}
   },
   {
    "@type": "Question",
-   "name": "サウナは宿泊しなくても利用できますか？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "はい。一般利用 1,000円／1時間、宿泊者 700円／1時間、貸し切り 6,000円／1時間でご利用いただけます。サウナは男性専用です。貸し切りは男女どなたでもご利用いただけます。営業は10:00〜23:00で、最終受付は22:00です。フロントにてお申し付けください。"
-   }
-  },
-  {
-   "@type": "Question",
    "name": "駐車場はありますか？",
    "acceptedAnswer": {
     "@type": "Answer",
@@ -441,82 +433,10 @@ section{position:relative;z-index:0}
   },
   {
    "@type": "Question",
-   "name": "泊まらずに、仕事や打ち合わせだけで使えますか？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "はい。ひとり用の個室を1時間1,000円（税込）でお使いいただけます。Wi-Fi・コンセントつきで、オンライン会議にも使えます。フロントでお申し付けください。"
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "トイレやシャワーは部屋にありますか？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "客室にはありません。トイレとシャワー室は各階に共用で2か所ずつあります。洗面所も各階にあります。"
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "部屋にテレビはありますか？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "客室にはありません。館内の共用テレビを無料でご覧いただけます。"
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Wi-Fiやコンセントはありますか？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "全室に無料Wi-Fi・コンセントを完備しています。テレワークや長期滞在にもご利用いただけます。"
-   }
-  },
-  {
-   "@type": "Question",
    "name": "チェックイン・チェックアウトの時間は？",
    "acceptedAnswer": {
     "@type": "Answer",
     "text": "チェックイン 15:00〜23:00、チェックアウト 10:00 です。"
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "連泊・団体・長期滞在はできますか？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "10名以上の団体には団体割引があります。マンスリー（長期）も特別価格です。工場・プラントの定期修繕などのご利用も、お電話（0834-32-1270）でご相談ください。"
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "徳山駅から近い格安ホテルを探しています。",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "はい。JR徳山駅 北口から徒歩1分、素泊まり4,800円（税込）からご利用いただけます。全72室すべてが個室のキューブルームで、ビジネス・観光・合宿の拠点に便利です。"
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "広島・福岡からのアクセスは？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "新幹線で広島から約30分、博多（福岡）から約45分です。徳山駅の北口を出て、左手すぐです（徒歩1分）。週末旅や出張の途中下車にもご利用いただけます。"
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "コインランドリーはありますか？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "はい。洗濯機500円／乾燥機100円（10分）／洗濯洗剤100円でご利用いただけます。連泊・長期滞在・合宿にも便利です。"
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "大浴場はありますか？",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "大浴場はございません。各階に共用のシャワー室があります。セルフロウリュのサウナ（男性専用・水風呂・整いエリアあり）を併設しており、宿泊者は700円／1時間でご利用いただけます。貸し切りは男女どなたでもご利用いただけます。"
    }
   },
   {
@@ -593,6 +513,17 @@ footer{background:#0a0908}
 .gal.g2{grid-template-columns:repeat(2,1fr)}
 .gal.g2 img{aspect-ratio:4/3}
 </style>
+<style id="hub-css">
+/* 仮案：トップを短くして各ページへ（リンクは下線と矢印） */
+section.hub{padding:clamp(56px,7vw,96px) 0}
+.hub .lead{font-size:clamp(26px,3.6vw,38px)}
+.hub .txt{font-size:15px;line-height:2;color:var(--ink);margin-top:18px;max-width:34em}
+.hub .more{margin-top:24px}
+.hub .more a{font-weight:700;font-size:15px;text-decoration:none;color:var(--ink);border-bottom:2px solid var(--accent);padding-bottom:4px}
+.hub .more a::after{content:" →";color:var(--accent);font-weight:400}
+.hub .more a:hover{color:var(--accent)}
+@media(max-width:640px){.hub .more a{display:flex;justify-content:space-between;padding:12px 0 10px}}
+</style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head>
 <body>
@@ -610,7 +541,7 @@ footer{background:#0a0908}
         <a href="#access">アクセス</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="book" href="#reserve">空室・予約</a> <details class="gm sp-only"><summary aria-label="メニュー"><span class="gm-ic"></span><span class="gm-t">メニュー</span></summary><nav class="gm-p" aria-label="サイトの案内"><a href="/">トップ</a><a href="/#room">客室と<wbr>設備</a><a href="/sauna/">サウナ</a><a href="/#work">リモートワーク</a><a href="/#plan">料金</a><p class="gm-h">目的で<wbr>選ぶ</p><a href="/gasshuku/">合宿・部<wbr>活動</a><a href="/shuzen/">定期修繕・工事の<wbr>ご宿泊</a><a href="/hiroshima/">広島で<wbr>泊まれない<wbr>とき</a><a href="/kankou/">周辺の<wbr>観光</a><a href="/trip/">まちごとホテル<wbr>（町歩きの<wbr>特集）</a><p class="gm-h">ご案内</p><a href="/#access">アクセス</a><a href="/#faq">よく<wbr>ある<wbr>質問</a><a href="/#reserve">空室・予約</a></nav></details>
+      <a class="book" href="#reserve">空室・予約</a> <details class="gm sp-only"><summary aria-label="メニュー"><span class="gm-ic"></span><span class="gm-t">メニュー</span></summary><nav class="gm-p" aria-label="サイトの案内"><a href="/">トップ</a><a href="/room/">客室と<wbr>設備</a><a href="/sauna/">サウナ</a><a href="/#work">リモートワーク</a><a href="/#plan">料金</a><p class="gm-h">目的で<wbr>選ぶ</p><a href="/gasshuku/">合宿・部<wbr>活動</a><a href="/shuzen/">定期修繕・工事の<wbr>ご宿泊</a><a href="/hiroshima/">広島で<wbr>泊まれない<wbr>とき</a><a href="/kankou/">周辺の<wbr>観光</a><a href="/trip/">まちごとホテル<wbr>（町歩きの<wbr>特集）</a><p class="gm-h">ご案内</p><a href="/#access">アクセス</a><a href="/faq/">よく<wbr>ある<wbr>質問</a><a href="/#reserve">空室・予約</a></nav></details>
     </div>
   </div>
 </header>
@@ -637,147 +568,52 @@ footer{background:#0a0908}
   </div>
 </section>
 
-<!-- まちごとホテル（3本柱の下） -->
-
-<!-- 01 STAY -->
-<section id="room">
+<!-- 客室 -->
+<section id="room" class="hub">
   <div class="wrap">
     <header class="sh"></header>
     <div class="two">
       <div class="ph"><img loading="lazy" decoding="async" class="ph-p" src="img/bed.jpg" width="1200" height="1500" alt="キューブホテル徳山の客室のベッド"></div>
       <div>
-        <h2 class="lead" style="font-size:clamp(23px,3.2vw,32px)">客室</h2>
-        <dl class="spec">
-          <div><dt>客室数</dt><dd>全72室で、<wbr>すべて<wbr>ひとり用の<wbr>個室です<wbr>（約5㎡）。</dd></div>
-          <div><dt>設備</dt><dd>ベッド・机・<wbr>椅子が<wbr>あります。<wbr>無料Wi-Fiと<wbr>コンセントも<wbr>使えます。<wbr>テレビは<wbr>共用で、<wbr>客室には<wbr>ありません。</dd></div>
-          <div><dt>トイレ・シャワー</dt><dd>客室の<wbr>外に<wbr>あります。<wbr>各階に<wbr>共用で<wbr>2か所ずつ<wbr>あり、<wbr>洗面所も<wbr>各階に<wbr>あります。</dd></div>
-          <div><dt>ご注意</dt><dd>簡易宿泊施設の<wbr>ため、<wbr>客室に<wbr>鍵は<wbr>ございません。<wbr>貴重品は<wbr>2・3階の<wbr>ロッカー、<wbr>または<wbr>フロントで<wbr>お預かりします。<wbr>24:00〜翌6:00は<wbr>入口を<wbr>施錠し、<wbr>インターホンで<wbr>対応します。</dd></div>
-        </dl>
+        <h2 class="lead">客室</h2>
+        <p class="txt">全72室が、<wbr>すべて<wbr>ひとり用の<wbr>個室です<wbr>（約5㎡）。<wbr>ベッド・机・<wbr>椅子が<wbr>あり、<wbr>無料Wi-Fiと<wbr>コンセントも<wbr>使えます。<wbr>トイレと<wbr>シャワーは<wbr>各階の<wbr>共用です。</p>
+        <p class="more"><a href="room/">客室と<wbr>館内の<wbr>設備を<wbr>見る</a></p>
       </div>
-    </div>
-    <div class="wc">
-      <h3>トイレ・シャワー</h3>
-      <p>各階に<wbr>共用の<wbr>トイレと<wbr>シャワー室が<wbr>2か所ずつあります。<wbr>場所は<wbr>各階の<wbr>案内板で<wbr>確かめられます。</p>
-      <div class="gal g4">
-        <figure><img loading="lazy" decoding="async" src="img/floor-guide.jpg" alt="3階のフロア案内板。シャワー室・洗面所・トイレの位置"></figure>
-        <figure><img loading="lazy" decoding="async" src="img/powder.jpg" width="1000" height="1000" alt="各階の共用の洗面所"></figure>
-        <figure><img loading="lazy" decoding="async" src="img/shower.jpg" width="1000" height="1000" alt="共用のシャワー室の扉。空室の表示つき"></figure>
-        <figure><img loading="lazy" decoding="async" src="img/toilet.jpg" alt="各階の共用トイレ"></figure>
-      </div>
-    </div>
-    <div class="two rev" id="amenity" style="margin-top:clamp(56px,7vw,88px)">
-      <div>
-        <h2 class="lead" style="font-size:clamp(23px,3.2vw,32px)">設備と<wbr>備品</h2>
-        <dl class="spec">
-          <div><dt>共用設備</dt><dd>電子レンジ・<wbr>電気ケトル・<wbr>テレビを<wbr>無料で<wbr>ご利用いただけます。</dd></div>
-          <div><dt>ランドリー</dt><dd>洗濯機 500円／乾燥機 100円<wbr>（10分）<wbr>／洗濯洗剤 100円</dd></div>
-          <div><dt>販売</dt><dd>タオル 200円／スリッパ 100円／歯ブラシ 50円／髭剃り 50円<wbr>（税込）</dd></div>
-          <div><dt>宿泊者へ</dt><dd>スリッパ・<wbr>タオル・<wbr>ナイトガウンを<wbr>お渡しします。</dd></div>
-        </dl>
-      </div>
-      <div class="ph"><figure><img loading="lazy" decoding="async" class="ph-a" src="img/desk.jpg" alt="共用のテレビとデスク"></figure></div>
-    </div>
-    <div class="gal g2">
-      <figure><img loading="lazy" decoding="async" src="img/amenity.jpg" alt="共用の電子レンジ・ケトル"></figure>
-      <figure><img loading="lazy" decoding="async" src="img/hangers.jpg" alt="客室のハンガー"></figure>
     </div>
   </div>
 </section>
 
-<!-- サウナ帯 -->
-<section class="saunaband" aria-label="サウナ">
-</section>
-
-<!-- 04 SAUNA -->
-<section id="sauna">
+<!-- サウナ -->
+<section id="sauna" class="hub">
   <div class="wrap">
     <header class="sh"></header>
-    <h2 class="lead" style="margin-bottom:44px">サウナ</h2>
     <div class="withph">
       <div>
-    <dl class="spec">
-      <div><dt>セルフロウリュ</dt><dd>自分で<wbr>水を<wbr>かけて、<wbr>蒸気の<wbr>量を<wbr>変えられます。</dd></div>
-      <div><dt>水風呂</dt><dd>サウナの<wbr>あとに<wbr>体を<wbr>冷やせます。</dd></div>
-      <div><dt>整い<wbr>エリア</dt><dd>水風呂の<wbr>あとに<wbr>休める<wbr>場所が<wbr>あります。</dd></div>
-      <div><dt>使える<wbr>方</dt><dd>男性専用です。<wbr>貸し切りなら、<wbr>男女どなたでも<wbr>使えます。</dd></div>
-      <div><dt>営業時間</dt><dd>10:00〜23:00です。<wbr>最終受付は<wbr>22:00です。<wbr>フロントで<wbr>お申し込みください。</dd></div>
-      <div><dt>タオル</dt><dd>館内で<wbr>販売しています<wbr>（200円）。<wbr>宿泊の<wbr>方には<wbr>お渡しします。</dd></div>
-    </dl>
-    <div class="rate" style="margin-top:28px">
-      <div class="r"><div class="k">宿泊の<wbr>方<small>1時間</small></div><div class="v">700<small>円</small></div></div>
-      <div class="r"><div class="k">一般<small>1時間</small></div><div class="v">1,000<small>円</small></div></div>
-      <div class="r"><div class="k">貸し切り<small>1時間・<wbr>男女どなたでも</small></div><div class="v">6,000<small>円</small></div></div>
-    </div>
-    <p class="subnote">料金は<wbr>税込です。<a href="sauna/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">サウナの<wbr>ページ</a>も<wbr>ご覧ください。</p>
+        <h2 class="lead">サウナ</h2>
+        <p class="txt">セルフロウリュ・<wbr>水風呂・整い<wbr>エリアが<wbr>あります。<wbr>男性専用で、<wbr>1時間1,000円<wbr>（宿泊の<wbr>方は<wbr>700円）です。<wbr>貸し切りは<wbr>1時間6,000円で、<wbr>男女どなたでも<wbr>使えます。</p>
+        <p class="more"><a href="sauna/">サウナの<wbr>使い方と<wbr>料金を<wbr>見る</a></p>
       </div>
       <figure class="wp small"><img loading="lazy" decoding="async" src="img/sauna.jpg" width="376" height="318" alt="キューブホテル徳山のサウナ"></figure>
     </div>
   </div>
 </section>
 
-<!-- 03 REMOTE WORK -->
-<section id="work">
+<!-- リモートワーク -->
+<section id="work" class="hub">
   <div class="wrap">
     <header class="sh"></header>
-    <h2 class="lead" style="margin-bottom:44px">リモートワーク</h2>
-    <div class="two">
-      <div class="ph"><img loading="lazy" decoding="async" class="ph-p" src="img/work-desk.jpg" width="1200" height="1500" alt="客室の机と椅子。Wi-Fi・コンセントつき"></div>
+    <div class="two rev">
       <div>
-    <div class="rate">
-      <div class="r"><div class="k">リモートワーク<small>時間制・<wbr>泊まらなくても<wbr>使えます</small></div><div class="v">1,000<small>円／1時間</small></div></div>
-    </div>
-    <dl class="spec" style="margin-top:28px">
-      <div><dt>使い方</dt><dd>オンライン会議や<wbr>資料づくり、<wbr>移動の<wbr>合間の<wbr>作業に<wbr>使えます。</dd></div>
-      <div><dt>部屋</dt><dd>ひとり用の<wbr>個室です。<wbr>机・椅子・<wbr>無料Wi-Fi・<wbr>コンセントが<wbr>あります。</dd></div>
-      <div><dt>申込み</dt><dd>フロントで<wbr>お申し付けください。<wbr>空き状況は<wbr>お電話<wbr>（0834-32-1270）で<wbr>確かめられます。</dd></div>
-    </dl>
-    <p class="subnote">料金は<wbr>税込です。</p>
+        <h2 class="lead">リモートワーク</h2>
+        <p class="txt">ひとり用の<wbr>個室を、<wbr>1時間1,000円<wbr>（税込）で<wbr>仕事に<wbr>使えます。<wbr>Wi-Fiと<wbr>コンセントが<wbr>あり、<wbr>オンライン会議も<wbr>できます。<wbr>フロントで<wbr>お申し込みください。</p>
+        <p class="more"><a href="room/#work">リモートワークの<wbr>使い方を<wbr>見る</a></p>
       </div>
+      <div class="ph"><img loading="lazy" decoding="async" class="ph-a" src="img/work-desk.jpg" width="1200" height="1500" alt="客室の机と椅子。Wi-Fi・コンセントつき"></div>
     </div>
   </div>
 </section>
 
-<!-- 04 PLAN -->
-<section id="plan">
-  <div class="wrap">
-    <header class="sh"></header>
-    <h2 class="lead" style="margin-bottom:44px">料金</h2>
-    <div class="withph">
-      <div>
-    <div class="rate">
-      <div class="r"><div class="k">宿泊<wbr>（素泊まり）<small>1泊・1名</small></div><div class="v">4,800<small>円〜</small></div></div>
-      <div class="r"><div class="k">リモートワーク・休憩<small>1時間・<wbr>泊まらない<wbr>方</small></div><div class="v">1,000<small>円</small></div></div>
-      <div class="r"><div class="k">サウナ<small>1時間・<wbr>男性専用・<wbr>宿泊の<wbr>方は<wbr>700円</small></div><div class="v">1,000<small>円</small></div></div>
-      <div class="r"><div class="k">団体割引<small>10名以上</small></div><div class="v">特別価格<small>お電話で</small></div></div>
-      <div class="r"><div class="k">マンスリー<small>長期滞在</small></div><div class="v">特別価格<small>お見積り</small></div></div>
-    </div>
-    <p class="subnote">料金は<wbr>税込です。<wbr>団体<wbr>割引は<wbr>10名以上の<wbr>ご宿泊が<wbr>対象です。<wbr>団体・<wbr>マンスリーは<wbr>お電話<wbr>（<b style="color:var(--accent)">0834-32-1270</b>）で<wbr>ご相談ください。</p>
-      </div>
-      <figure class="wp"><img loading="lazy" decoding="async" src="img/rooms-two.jpg" width="1200" height="900" alt="並んだ客室。どれもひとり用の個室"></figure>
-    </div>
-  </div>
-</section>
-
-<!-- 05 BUSINESS -->
-<section class="biz" id="business">
-  <div class="wrap">
-    <header class="sh"></header>
-    <h2 class="lead">団体・長期の<wbr>ご宿泊</h2>
-    <div class="withph rev" style="margin-top:44px">
-      <figure class="wp"><img loading="lazy" decoding="async" src="img/hallway.jpg" width="1200" height="1500" alt="客室フロアの廊下"></figure>
-      <div>
-    <div class="blist" style="margin-top:0">
-      <div class="brow"><h4>団体<wbr>（10名以上）</h4><p>工場・プラントの<wbr>定期修繕など、<wbr>まと<wbr>まった<wbr>人数での<wbr>ご宿泊を<wbr>承ります。<wbr>10名以上は<wbr>団体<wbr>割引が<wbr>あります。<wbr>全72室あり、<wbr>駅から<wbr>1分なので<wbr>移動も<wbr>楽です。</p></div>
-      <div class="brow"><h4>マンスリー・長期</h4><p>単身赴任や<wbr>長期出張で<wbr>お使いいただけます。<wbr>期間と<wbr>人数に<wbr>合わせてお見積りします。</p></div>
-      <div class="brow"><h4>大きい車で<wbr>お越しの<wbr>方</h4><p>専用駐車場は<wbr>ありません。<wbr>トラックなど<wbr>大きい車は、<wbr>止められる<wbr>場所を<wbr>ご案内します。<wbr>ご予約の<wbr>ときに<wbr>お電話で<wbr>お知らせ<wbr>ください。</p></div>
-    </div>
-    <p class="subnote" style="margin-top:26px">団体・長期の<wbr>ご相談・<wbr>お見積りは <a href="tel:0834321270" style="color:var(--accent);font-weight:700;text-decoration:none;border-bottom:1px solid var(--accent)">TEL 0834-32-1270</a>（受付 目安 9:00–22:00）まで。<wbr>部活動・<wbr>クラブチームの<wbr>合宿・<wbr>大会遠征は <a href="gasshuku/" style="color:var(--accent);border-bottom:1px solid var(--accent)">合宿・団体<wbr>プラン</a> も<wbr>ご覧ください。<br>周南コンビナートの<wbr>定期修繕・<wbr>工事での<wbr>ご宿泊は、<a href="shuzen/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">事業所までの<wbr>時間と<wbr>長期・団体の<wbr>料金</a>を<wbr>ご覧ください。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 07 ACCESS -->
+<!-- 目的別のご案内 -->
 <section class="around purpose" id="purpose">
   <div class="wrap">
     <header class="sh"></header>
@@ -792,6 +628,24 @@ footer{background:#0a0908}
   </div>
 </section>
 <style id="purpose-css">.purpose .a b a{color:inherit;text-decoration:none;border-bottom:1px solid var(--accent)}.purpose .a b a::after{content:"\00a0→";color:var(--accent);font-weight:400}.purpose .a b a:hover{color:var(--accent)}</style>
+
+<!-- 料金 -->
+<section id="plan" class="hub">
+  <div class="wrap">
+    <header class="sh"></header>
+    <h2 class="lead" style="margin-bottom:32px">料金</h2>
+    <div class="rate">
+      <div class="r"><div class="k">宿泊<wbr>（素泊まり）<small>1泊・1名</small></div><div class="v">4,800<small>円〜</small></div></div>
+      <div class="r"><div class="k">リモートワーク・休憩<small>1時間・<wbr>泊まらない<wbr>方</small></div><div class="v">1,000<small>円</small></div></div>
+      <div class="r"><div class="k">サウナ<small>1時間・<wbr>男性専用・<wbr>宿泊の<wbr>方は<wbr>700円</small></div><div class="v">1,000<small>円</small></div></div>
+      <div class="r"><div class="k">団体割引<small>10名以上</small></div><div class="v">特別価格<small>お電話で</small></div></div>
+      <div class="r"><div class="k">マンスリー<small>長期滞在</small></div><div class="v">特別価格<small>お見積り</small></div></div>
+    </div>
+    <p class="subnote">料金は<wbr>税込です。<wbr>団体<wbr>割引は<wbr>10名以上の<wbr>ご宿泊が<wbr>対象です。<wbr>団体・長期は、<a href="shuzen/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">定期修繕・工事</a>と<a href="gasshuku/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">合宿・部<wbr>活動</a>の<wbr>ページも<wbr>ご覧ください。</p>
+  </div>
+</section>
+
+<!-- アクセス -->
 <section class="access" id="access">
   <div class="wrap">
     <header class="sh"></header>
@@ -800,7 +654,6 @@ footer{background:#0a0908}
         <h2 class="big">アクセス</h2>
         <p class="addr">キューブホテル徳山<br>山口県周南市有楽町15-1<br>北口を<wbr>出て<wbr>左手すぐ<wbr>・徒歩1分<br>チェックイン 15:00–23:00 ／ チェックアウト 10:00<br>TEL <a href="tel:0834321270">0834-32-1270</a></p>
         <p class="near"><b>電車</b>JR山陽本線・<wbr>山陽新幹線 徳山駅 北口すぐ<br><b>お車</b>専用駐車場は<wbr>ございません。<wbr>近隣コインパーキングを<wbr>ご利用ください<br><b>大きい<wbr>車</b>トラックなどは<wbr>止められる<wbr>場所を<wbr>ご案内します。<wbr>ご予約の<wbr>ときに<wbr>お電話ください<br><b>徒歩1分</b>スターバックス・<wbr>蔦屋書店<br><b>徒歩3分</b>大型商業施設 TOKUYAMA DECK<br><b>隣接</b>吉野家・ローソン<wbr>（歩いて行ける<wbr>飲食店・居酒屋も<wbr>多く<wbr>あります）</p>
-        <p class="near" style="margin-top:14px"><b>広島・福岡から</b>新幹線で<wbr>広島から<wbr>約30分、<wbr>博多<wbr>（福岡）から<wbr>約45分です。<wbr>週末の<wbr>途中下車にも<wbr>お使いください。<a href="hiroshima/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">広島の<wbr>ホテルが<wbr>取れない<wbr>とき</a></p>
         <div class="links">
           <a href="https://www.jalan.net/yad343195/plan/?adultNum=1&amp;roomCount=1&amp;stayCount=1" target="_blank" rel="noopener">じゃらんで<wbr>予約</a>
           <a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/193341?f_otona_su=1&amp;f_heya_su=1" target="_blank" rel="noopener">楽天トラベルで<wbr>予約</a>
@@ -822,43 +675,18 @@ footer{background:#0a0908}
   </div>
 </section>
 
-<!-- 08 AROUND -->
-<section class="around" id="around">
+<!-- よくある質問 -->
+<section class="faq hub" id="faq">
   <div class="wrap">
     <header class="sh"></header>
-    <h2 class="lead" style="margin-bottom:44px">駅の<wbr>周辺</h2>
-    <div class="list">
-      <div class="a"><span class="d">徒歩1分</span><div><b>蔦屋書店・<wbr>周南市立徳山駅前図書館</b><small>本屋と<wbr>スターバックスが<wbr>入った、<wbr>駅前の<wbr>図書館です。</small></div></div>
-      <div class="a"><span class="d">徒歩3分</span><div><b>TOKUYAMA DECK</b><small>飲食店や<wbr>物販の<wbr>店が<wbr>集まる<wbr>商業施設です。</small></div></div>
-      <div class="a"><span class="d">徒歩・車圏</span><div><b>周南の<wbr>工場夜<wbr>景</b><small>海側に<wbr>広がる<wbr>コンビナートの<wbr>夜景です。</small></div></div>
-      <div class="a"><span class="d">駅前一帯</span><div><b>銀南街アーケード・<wbr>昭和通り</b><small>純喫茶や<wbr>大衆酒場が<wbr>ある、<wbr>昔ながらの<wbr>商店街です。</small></div></div>
-    </div>
-    <div class="gal">
-      <figure><img loading="lazy" decoding="async" src="img/ginnangai.jpg" width="1000" height="1000" alt="銀南街アーケードの入口（夜）"></figure>
-      <figure><img loading="lazy" decoding="async" src="img/chuogai.jpg" width="1000" height="1000" alt="提灯の並ぶ銀座中央街のアーケード"></figure>
-      <figure><img loading="lazy" decoding="async" src="img/ginza.jpg" width="1000" height="1000" alt="徳山駅前の銀座通りの夜"></figure>
-    </div>
-    <p class="subnote" style="margin-top:28px">まちを<wbr>丸ごと<wbr>楽しむ<wbr>「周南ノスタルジー」<wbr>特集も、<wbr>あわせて<wbr>ご覧ください。<br>錦帯橋・<wbr>宮島・<wbr>秋芳洞など、<a href="kankou/" style="color:var(--accent);border-bottom:1px solid var(--accent);text-decoration:none">徳山駅から<wbr>行ける<wbr>観光地</a>も<wbr>まとめています。</p>
-  </div>
-</section>
-
-<!-- 09 FAQ -->
-<section class="faq" id="faq">
-  <div class="wrap">
-    <header class="sh"></header>
-    <h2 class="lead" style="margin-bottom:44px">よく<wbr>ある<wbr>質問</h2>
+    <h2 class="lead" style="margin-bottom:36px">よく<wbr>ある<wbr>質問</h2>
     <dl class="list">
       <div class="q"><dt>客室に<wbr>鍵は<wbr>ありますか？</dt><dd>簡易宿泊施設の<wbr>ため、<wbr>客室に<wbr>鍵は<wbr>ございません。<wbr>貴重品は<wbr>2・3階の<wbr>ロッカー、<wbr>または<wbr>フロントで<wbr>お預かりします。<wbr>24:00〜翌6:00は<wbr>入口を<wbr>施錠し、<wbr>インターホンで<wbr>対応いたします。</dd></div>
-      <div class="q"><dt>サウナは<wbr>宿泊しなくても<wbr>利用できますか？</dt><dd>はい。<wbr>一般利用 1,000円／1時間、<wbr>宿泊者 700円／1時間、<wbr>貸し切り 6,000円／1時間で<wbr>ご利用いただけます。<wbr>サウナは<wbr>男性専用です。<wbr>貸し切りは<wbr>男女どなたでも<wbr>ご利用いただけます。<wbr>営業は<wbr>10:00〜23:00で、<wbr>最終受付は<wbr>22:00です。<wbr>フロントにてお申し付けください。</dd></div>
       <div class="q"><dt>駐車場は<wbr>ありますか？</dt><dd>専用駐車場は<wbr>ございません。<wbr>お車の<wbr>場合は、<wbr>近隣の<wbr>コインパーキングを<wbr>ご利用ください。<wbr>トラックなど<wbr>大きい<wbr>お車で<wbr>お越しの<wbr>方には、<wbr>止められる<wbr>場所を<wbr>ご案内します。<wbr>ご予約の<wbr>ときに<wbr>お電話<wbr>（0834-32-1270）で<wbr>お知らせ<wbr>ください。</dd></div>
-      <div class="q"><dt>泊まらずに、<wbr>仕事や<wbr>打ち合わせだけで<wbr>使えますか？</dt><dd>はい。<wbr>ひとり用の<wbr>個室を<wbr>1時間1,000円<wbr>（税込）で<wbr>お使いいただけます。<wbr>Wi-Fi・<wbr>コンセントつきで、<wbr>オンライン会議にも<wbr>使えます。<wbr>フロントで<wbr>お申し付けください。</dd></div>
-      <div class="q"><dt>トイレや<wbr>シャワーは<wbr>部屋に<wbr>ありますか？</dt><dd>客室には<wbr>ありません。<wbr>トイレと<wbr>シャワー室は<wbr>各階に<wbr>共用で<wbr>2か所ずつあります。<wbr>洗面所も<wbr>各階に<wbr>あります。</dd></div>
-      <div class="q"><dt>部屋に<wbr>テレビは<wbr>ありますか？</dt><dd>客室には<wbr>ありません。<wbr>館内の<wbr>共用テレビを<wbr>無料で<wbr>ご覧いただけます。</dd></div>
-      <div class="q"><dt>Wi-Fiや<wbr>コンセントは<wbr>ありますか？</dt><dd>全室に<wbr>無料Wi-Fi・<wbr>コンセントを<wbr>完備しています。<wbr>テレワークや<wbr>長期滞在にも<wbr>ご利用いただけます。</dd></div>
       <div class="q"><dt>チェックイン・<wbr>チェックアウトの<wbr>時間は？</dt><dd>チェックイン 15:00〜23:00、<wbr>チェックアウト 10:00 です。</dd></div>
-      <div class="q"><dt>連泊・<wbr>団体・<wbr>長期滞在は<wbr>できますか？</dt><dd>10名以上の<wbr>団体には<wbr>団体<wbr>割引が<wbr>あります。<wbr>マンスリー<wbr>（長期）も<wbr>特別価格です。<wbr>工場・プラントの<wbr>定期修繕などの<wbr>ご利用も、<wbr>お電話<wbr>（0834-32-1270）で<wbr>ご相談ください。</dd></div>
-      <div class="q"><dt>徳山駅から<wbr>近い<wbr>格安ホテルを<wbr>探しています。</dt><dd>はい。<wbr>JR徳山駅 北口から<wbr>徒歩1分、<wbr>素泊まり<wbr>4,800円<wbr>（税込）から<wbr>ご利用いただけます。<wbr>全72室すべてが<wbr>個室の<wbr>キューブルームで、<wbr>ビジネス・<wbr>観光・<wbr>合宿の<wbr>拠点に<wbr>便利です。</dd></div><div class="q"><dt>広島・福岡からの<wbr>アクセスは？</dt><dd>新幹線で<wbr>広島から<wbr>約30分、<wbr>博多<wbr>（福岡）から<wbr>約45分です。<wbr>徳山駅の<wbr>北口を<wbr>出て、<wbr>左手すぐです<wbr>（徒歩1分）。<wbr>週末旅や<wbr>出張の<wbr>途中下車にも<wbr>ご利用いただけます。</dd></div><div class="q"><dt>コインランドリーは<wbr>ありますか？</dt><dd>はい。<wbr>洗濯機500円／乾燥機100円<wbr>（10分）<wbr>／洗濯洗剤100円で<wbr>ご利用いただけます。<wbr>連泊・<wbr>長期滞在・<wbr>合宿にも<wbr>便利です。</dd></div><div class="q"><dt>大浴場は<wbr>ありますか？</dt><dd>大浴場は<wbr>ございません。<wbr>各階に<wbr>共用の<wbr>シャワー室が<wbr>あります。<wbr>セルフロウリュの<wbr>サウナ<wbr>（男性専用・<wbr>水風呂・整い<wbr>エリアあり）を<wbr>併設しており、<wbr>宿泊者は<wbr>700円／1時間で<wbr>ご利用いただけます。<wbr>貸し切りは<wbr>男女どなたでも<wbr>ご利用いただけます。</dd></div><div class="q"><dt>予約方法を<wbr>教えてください。</dt><dd>じゃらん・<wbr>楽天トラベル・<wbr>Booking.com、<wbr>または<wbr>お電話<wbr>（0834-32-1270）で<wbr>承っています。<wbr>空室と<wbr>料金は<wbr>各予約サイトで<wbr>ご確認いただけます。</dd></div>
+      <div class="q"><dt>予約方法を<wbr>教えてください。</dt><dd>じゃらん・<wbr>楽天トラベル・<wbr>Booking.com、<wbr>または<wbr>お電話<wbr>（0834-32-1270）で<wbr>承っています。<wbr>空室と<wbr>料金は<wbr>各予約サイトで<wbr>ご確認いただけます。</dd></div>
     </dl>
+    <p class="more"><a href="faq/">よく<wbr>ある<wbr>質問を<wbr>すべて<wbr>見る</a></p>
   </div>
 </section>
 
