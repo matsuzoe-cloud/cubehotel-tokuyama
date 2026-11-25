@@ -120,9 +120,11 @@ footer .addr{margin-top:12px}
 .floor{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:clamp(20px,3vw,36px);align-items:start}
 .floor img{width:100%;height:auto;display:block}
 @media(max-width:720px){.floor{grid-template-columns:1fr}}
+.model li{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:24px;align-items:baseline}
 .model li b{display:block}
-.model li span{color:var(--ink-2)}
+.model li span{color:var(--ink-2);text-align:right;white-space:nowrap}
 .model li span::before{content:"→ ";color:var(--accent)}
+@media(max-width:640px){.model li{grid-template-columns:1fr}.model li span{white-space:normal;margin-top:2px}}
 </style>
 <style id="gm-css">.gm{position:relative}.gm>summary{list-style:none;display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:700;letter-spacing:.06em;color:#1c1a15;padding:8px 2px}.gm>summary::-webkit-details-marker{display:none}.gm-ic,.gm-ic::before,.gm-ic::after{display:block;width:18px;height:2px;background:#1c1a15;position:relative;content:"";transition:transform .2s}.gm-ic::before,.gm-ic::after{position:absolute;left:0}.gm-ic::before{top:-6px}.gm-ic::after{top:6px}.gm[open] .gm-ic{background:transparent}.gm[open] .gm-ic::before{top:0;transform:rotate(45deg)}.gm[open] .gm-ic::after{top:0;transform:rotate(-45deg)}.gm-p{position:fixed;left:0;right:0;top:var(--gm-top,66px);max-height:calc(100vh - var(--gm-top,66px));overflow:auto;background:#f3ede1;border-top:1px solid rgba(28,26,21,.18);border-bottom:1px solid rgba(28,26,21,.18);padding:6px 0 22px;z-index:60}.gm-p a,.gm-p .gm-h{display:block;max-width:720px;margin:0 auto;padding:13px 24px}.gm-p a{font-size:15px;color:#1c1a15;text-decoration:none;border-bottom:1px solid rgba(28,26,21,.12)}.gm-p a:hover{color:#b8402a}.gm-p .gm-h{font-size:11.5px;letter-spacing:.14em;color:#b8402a;padding-top:22px;padding-bottom:4px}@media(max-width:820px){.gm-t{display:none}}@media(min-width:821px){.gm.sp-only{display:none}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "@id": "https://solution-cube.jp/shuzen/#page", "url": "https://solution-cube.jp/shuzen/", "name": "周南コンビナートの定期修繕・工事の宿｜フロア貸し切り・長期滞在 出光・トクヤマ・東ソー・日本ゼオン近く｜キューブホテル徳山", "description": "出光興産 徳山事業所、トクヤマ 徳山製造所、日本ゼオン 徳山工場、日本製鉄 山口製鉄所（周南）、東ソー 南陽事業所まで車で約5〜11分。JR徳山駅前のひとり用個室ホテル。1フロア18室の貸し切りは1泊77,760円、1棟72室は1泊311,040円（税込）。長期滞在はお見積りします。", "inLanguage": "ja", "isPartOf": {"@type": "WebSite", "url": "https://solution-cube.jp/", "name": "キューブホテル徳山"}, "about": {"@id": "https://solution-cube.jp/#hotel"}, "primaryImageOfPage": "https://solution-cube.jp/img/hallway.jpg"}</script>
@@ -141,6 +143,17 @@ html{background:#0f0e0c;color-scheme:dark}
 .book{color:var(--ink)}
 footer{background:#0a0908}
 iframe{filter:brightness(.86) saturate(.85)}
+</style>
+<style id="sp-balance-css">
+/* 仮案：スマホで左に寄らないように（このかたまりを外せば元に戻る） */
+@media (max-width:760px){
+ .facts div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:11px 0}
+ .facts .k{font-size:12.5px}
+ .facts .v{text-align:right}
+ .cta{flex-direction:column;gap:0;margin-top:16px}
+ .cta .btn{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;padding:14px 0 12px}
+ .cta .btn::after{flex:none}
+}
 </style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 </head><body>
