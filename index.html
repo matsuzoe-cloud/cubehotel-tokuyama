@@ -558,13 +558,15 @@ section.hub{padding:clamp(56px,7vw,96px) 0}
 </style>
 <style id="jp-wbr">/* jp-wbr: 文節の切れ目（wbr）でだけ改行する。jp_wbr.py と対。2026-10-22 */:where(p,li,dt,dd,th,td,caption,figcaption,blockquote,summary,label,h1,h2,h3,h4,h5,h6):has(wbr),:where(div,span,a,button,small,strong,b,em):has(> wbr){word-break:keep-all;overflow-wrap:anywhere;}:where(h1,h2,h3,h4):has(wbr){text-wrap:balance;}:where(p,li,dd,td,figcaption):has(wbr){text-wrap:pretty;}</style>
 <style id="nav-narrow-css">
-/* 幅360以下（小さいiPhone）：上の帯が1行に入るように、字の間と部品の間を詰める */
+/* 幅360以下（小さいiPhone）：上の帯が1行に入るように、字の間と部品の間を詰める。
+   最初の画面の見出し「ひとり用個室ホテル」で「ル」だけが次の行に落ちないよう、字を少し小さく */
 @media(max-width:360px){
  .nav .wrap{gap:10px}
  .nav .right{gap:12px}
  .brand{font-size:14.5px;letter-spacing:.06em}
  .brand small{letter-spacing:.22em}
  .nav a.book{letter-spacing:.02em}
+ .hero h1{font-size:27px}
 }
 </style>
 </head>
