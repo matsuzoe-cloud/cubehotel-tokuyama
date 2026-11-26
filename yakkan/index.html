@@ -72,6 +72,10 @@ td:first-child{text-align:left}
 th:nth-child(5){word-break:keep-all}
 @media(max-width:640px){table{font-size:11px}th,td{padding:7px 2px}}
 </style>
+<style id="yakkan-table-narrow-css">
+/* 幅360以下（小さいiPhone）：キャンセル料の表は入りきらないので、表の中だけ横に動かして見る */
+@media(max-width:360px){table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
+</style>
 </head><body>
 <header class="nav"><div class="w"><a class="b" href="/">キューブホテル徳山<small>CUBE HOTEL TOKUYAMA</small></a><a class="home" href="/">← トップに<wbr>戻る</a></div></header>
 <main>
